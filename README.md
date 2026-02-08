@@ -36,59 +36,59 @@
    2.1 修改/src/livox_ros_driver2/config/mid360配置文件（ps:我用的是mid360,其他的可能要做适配）<br>   
        可以看看参考配置：<br>
    ```   
-         { <br>
-      "lidar_summary_info" : { <br>
-        "lidar_type": 8 <br>
+         { 
+      "lidar_summary_info" : { 
+        "lidar_type": 8 
       }, <br>
-      "MID360": { <br>
-        "lidar_net_info" : { <br>
-          "cmd_data_port": 56100, <br>
-          "push_msg_port": 56200, <br>
-          "point_data_port": 56300, <br>
-          "imu_data_port": 56400, <br>
-          "log_data_port": 56500 <br>
-        }, <br>
-        "host_net_info" : { <br>
-          "cmd_data_ip" : "192.168.1.51", <br>
-          "cmd_data_port": 56101, <br>
-          "push_msg_ip": "192.168.1.51", <br>
-          "push_msg_port": 56201, <br>
-          "point_data_ip": "192.168.1.51", <br>
-          "point_data_port": 56301, <br>
-          "imu_data_ip" : "192.168.1.51", <br>
-          "imu_data_port": 56401, <br>
-          "log_data_ip" : "", <br>
-          "log_data_port": 56501 <br>
+      "MID360": { 
+        "lidar_net_info" : { 
+          "cmd_data_port": 56100, 
+          "push_msg_port": 56200, 
+          "point_data_port": 56300, 
+          "imu_data_port": 56400, 
+          "log_data_port": 56500 
+        }, 
+        "host_net_info" : { 
+          "cmd_data_ip" : "192.168.1.51", 
+          "cmd_data_port": 56101, 
+          "push_msg_ip": "192.168.1.51", 
+          "push_msg_port": 56201, 
+          "point_data_ip": "192.168.1.51", 
+          "point_data_port": 56301, 
+          "imu_data_ip" : "192.168.1.51", 
+          "imu_data_port": 56401, 
+          "log_data_ip" : "", 
+          "log_data_port": 56501 
         } <br>
       }, <br>
-          "lidar_configs" :[  <br>
+          "lidar_configs" :[  
           { <br>
-              "ip" : "192.168.1.192", <br>
-              "pcl_data_type" : 1, <br>
-              "pattern_mode" : 0, <br>
-              "extrinsic_parameter" : { <br>
-                "roll": 0.0, <br>
-                "pitch": 0.0, <br>
-                "yaw": 0.0, <br>
-                "x": 0, <br>
-                "y": 0, <br>
-                "z": 0 <br>
-              } <br>
-            } <br>
-          ] <br>
-        } <br>
-      <br>
+              "ip" : "192.168.1.192", 
+              "pcl_data_type" : 1, 
+              "pattern_mode" : 0, 
+              "extrinsic_parameter" : { 
+                "roll": 0.0, 
+                "pitch": 0.0, 
+                "yaw": 0.0, 
+                "x": 0, 
+                "y": 0, 
+                "z": 0 
+              } 
+            } 
+          ] 
+        } 
+  
    ```
       2.2 修改动态链接库路径<br>
-      
+  ```
         错误信息： [livox_ros_driver2_node-1] 抛出 "class_loader::LibraryLoadException" 异常 [livox_ros_driver2_node-1] 具体错误：无法加载库 dlopen 错误：liblivox_lidar_sdk_shared.so - 无法打开共享对象文件（文件不存在），位于 ./src/shared_library.c:99<br>
-        
+  
         # 找到 Livox SDK 安装位置
         
         find ~ -name "liblivox_lidar_sdk_shared.so" 2>/dev/null
         
         请确保将 SDK 文件 liblivox_lidar_sdk_shared.so 手动复制到 ~/install/livox_ros_driver2/lib 目录下，否则运行时会报错
-
+```
 3. D435i安装<br>
       3.1 安装RealSense SDK<br>
          
