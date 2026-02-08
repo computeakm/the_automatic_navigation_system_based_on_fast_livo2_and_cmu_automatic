@@ -1,1 +1,1 @@
-/home/ht/autonomous_exploration_development_environment/build/terrain_analysis_ext/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin

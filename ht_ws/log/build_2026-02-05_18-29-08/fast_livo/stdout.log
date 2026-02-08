@@ -1,0 +1,6 @@
+[ 12%] Built target utils
+[ 37%] Built target vio
+[ 50%] Built target laser_mapping
+[ 62%] Built target imu_proc
+[ 75%] Built target pre
+[ 81%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m

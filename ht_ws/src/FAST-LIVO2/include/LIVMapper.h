@@ -70,7 +70,7 @@ public:
 
   std::mutex mtx_buffer, mtx_buffer_imu_prop;
   std::condition_variable sig_buffer;
-
+  std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
   SLAM_MODE slam_mode_;
   std::unordered_map<VOXEL_LOCATION, VoxelOctoTree *> voxel_map;
   

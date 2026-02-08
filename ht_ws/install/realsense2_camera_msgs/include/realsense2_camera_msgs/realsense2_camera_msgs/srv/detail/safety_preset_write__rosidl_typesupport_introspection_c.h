@@ -1,1 +1,0 @@
-/home/ht/ht_ws/build/realsense2_camera_msgs/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/safety_preset_write__rosidl_typesupport_introspection_c.h

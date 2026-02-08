@@ -1,0 +1,53 @@
+[0.023s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[0.128s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[0.141s] [ 12%] Built target utils
+[0.162s] [ 18%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[0.190s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[0.201s] [ 50%] Built target vio
+[0.206s] [ 62%] Built target lio
+[0.218s] [ 68%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[14.024s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K In member function ‘[01m[Kvoid Preprocess::process(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’:
+[14.024s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:58:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPreprocess::avia_handler(const SharedPtr&, std::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZINormal>, __gnu_cxx::_S_atomic, false, false>::element_type&)[m[K’
+[14.024s]    58 |   [01;31m[Kavia_handler(msg,*pcl_out)[m[K;
+[14.024s]       |   [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[14.024s] In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13[m[K:
+[14.025s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&)[m[K’
+[14.025s]   158 |   void [01;36m[Kavia_handler[m[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);
+[14.025s]       |        [01;36m[K^~~~~~~~~~~~[m[K
+[14.025s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[14.025s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K At global scope:
+[14.025s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:91:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’
+[14.025s]    91 | void [01;31m[KPreprocess[m[K::avia_handler(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)
+[14.025s]       |      [01;31m[K^~~~~~~~~~[m[K
+[14.025s] In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13[m[K:
+[14.025s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&)[m[K’
+[14.026s]   158 |   void [01;36m[Kavia_handler[m[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);
+[14.026s]       |        [01;36m[K^~~~~~~~~~~~[m[K
+[14.026s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Preprocess[m[K’ defined here
+[14.026s]   133 | class [01;36m[KPreprocess[m[K
+[14.026s]       |       [01;36m[K^~~~~~~~~~[m[K
+[15.064s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:[m[K In member function ‘[01m[Kvoid ImuProcess::Process2(LidarMeasureGroup&, StatesGroup&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr)[m[K’:
+[15.064s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:603:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_init_count[m[K’ was not declared in this scope
+[15.064s]   603 |     if (init_iter_num > [01;31m[Kmax_init_count[m[K){
+[15.065s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.095s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:607:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc_M2[m[K’ was not declared in this scope
+[15.095s]   607 |       V3D acc_std = ([01;31m[Kacc_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+[15.095s]       |                      [01;31m[K^~~~~~[m[K
+[15.123s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:608:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kgyr_M2[m[K’ was not declared in this scope
+[15.123s]   608 |       V3D gyr_std = ([01;31m[Kgyr_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+[15.123s]       |                      [01;31m[K^~~~~~[m[K
+[15.169s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:614:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgravity_align_en[m[K’ was not declared in this scope; did you mean ‘[01m[Kgravity_est_en[m[K’?
+[15.169s]   614 |       if ([01;31m[Kgravity_align_en[m[K) {
+[15.169s]       |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[15.169s]       |           [32m[Kgravity_est_en[m[K
+[19.654s] gmake[2]: *** [CMakeFiles/pre.dir/build.make:76: CMakeFiles/pre.dir/src/preprocess.cpp.o] Error 1
+[19.655s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/pre.dir/all] Error 2
+[19.655s] gmake[1]: *** Waiting for unfinished jobs....
+[35.598s] gmake[2]: *** [CMakeFiles/imu_proc.dir/build.make:76: CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o] Error 1
+[35.598s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/imu_proc.dir/all] Error 2
+[94.166s] [ 75%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[94.364s] [ 75%] Built target laser_mapping
+[94.367s] gmake: *** [Makefile:146: all] Error 2
+[94.373s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '2': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8

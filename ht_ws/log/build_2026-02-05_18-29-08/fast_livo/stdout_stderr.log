@@ -1,0 +1,13 @@
+[ 12%] Built target utils
+[ 37%] Built target vio
+[ 50%] Built target laser_mapping
+[ 62%] Built target imu_proc
+[ 75%] Built target pre
+[ 81%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/voxel_map.cpp:[m[K In member function ‘[01m[Kvoid VoxelMapManager::pubSinglePlane(visualization_msgs::msg::MarkerArray&, std::string, const VoxelPlane&, float, Eigen::Vector3d)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/voxel_map.cpp:941:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kintensity[m[K’
+  941 |   plane.[01;31m[Kintensity[m[K=1.0;
+      |         [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lio.dir/build.make:76: CMakeFiles/lio.dir/src/voxel_map.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/lio.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

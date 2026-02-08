@@ -50,13 +50,6 @@ def generate_launch_description():
     )
   )
 
-  start_visualization_tools = IncludeLaunchDescription(
-    FrontendLaunchDescriptionSource(os.path.join(
-      get_package_share_directory('visualization_tools'), 'launch', 'visualization_tools.launch')
-    )
-    
-  )
-
   start_loam_interface = IncludeLaunchDescription(
     FrontendLaunchDescriptionSource(os.path.join(
       get_package_share_directory('loam_interface'), 'launch', 'loam_interface.launch')
@@ -73,6 +66,12 @@ def generate_launch_description():
                 'deadzone': 0.12,
                 'autorepeat_rate': 0.0,
   		}]
+  )
+  start_visualization_tools = IncludeLaunchDescription(
+    FrontendLaunchDescriptionSource(os.path.join(
+      get_package_share_directory('visualization_tools'), 'launch', 'visualization_tools.launch')
+    )
+    
   )
 
   rviz_config_file = os.path.join(get_package_share_directory('vehicle_simulator'), 'rviz', 'vehicle_simulator.rviz')
@@ -102,9 +101,9 @@ def generate_launch_description():
   ld.add_action(start_terrain_analysis)
   ld.add_action(start_terrain_analysis_ext)
   ld.add_action(start_sensor_scan_generation)
+
   ld.add_action(start_loam_interface)
-  ld.add_action(start_joy) 
-  ld.add_action(start_visualization_tools)
+  ld.add_action(start_joy)
   ld.add_action(delayed_start_rviz)
 
   return ld

@@ -1,0 +1,61 @@
+[0.109s] Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
+[0.970s] [ 68%] Built target vikit_common
+[0.970s] [ 78%] Built target test_vk_common_triangulation
+[0.970s] [ 89%] Built target test_vk_common_camera
+[0.970s] [100%] Built target test_vk_common_patch_score
+[1.082s] Invoked command in '/home/bxi_nx/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
+[1.083s] Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_common
+[1.110s] -- Install configuration: "Release"
+[1.111s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/libvikit_common.so
+[1.112s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera
+[1.114s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation
+[1.115s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/math_utils.h
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/timer.h
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader_types.h
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/img_align.h
+[1.116s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/homography.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/omni_camera.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/patch_score.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/vision.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/user_input_thread.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/blender_utils.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/performance_monitor.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver_impl.hpp
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/atan_camera.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/equidistant_camera.h
+[1.117s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/pinhole_camera.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/robust_cost.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/aligned_mem.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/polynomial_camera.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/abstract_camera.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/sample.h
+[1.118s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/ringbuffer.h
+[1.119s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.sh
+[1.119s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.dsv
+[1.120s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/package_run_dependencies/vikit_common
+[1.120s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/parent_prefix_path/vikit_common
+[1.121s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.sh
+[1.121s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.dsv
+[1.122s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/path.sh
+[1.122s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/path.dsv
+[1.122s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.bash
+[1.123s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.sh
+[1.123s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.zsh
+[1.124s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.dsv
+[1.124s] -- Installing: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.dsv
+[1.125s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/packages/vikit_common
+[1.126s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport.cmake
+[1.127s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport-release.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_libraries-extras.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_targets-extras.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig-version.cmake
+[1.128s] -- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.xml
+[1.140s] Invoked command in '/home/bxi_nx/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_common

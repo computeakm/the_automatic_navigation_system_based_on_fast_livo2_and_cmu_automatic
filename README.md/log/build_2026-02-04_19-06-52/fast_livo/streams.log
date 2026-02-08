@@ -1,0 +1,45 @@
+[0.031s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[0.250s] [ 25%] Built target vio
+[0.293s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[0.385s] [ 37%] Built target laser_mapping
+[0.460s] [ 50%] Built target imu_proc
+[0.551s] [ 62%] Built target pre
+[0.619s] [ 75%] Built target utils
+[0.701s] [ 81%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[98.883s] [ 87%] [32m[1mLinking CXX static library liblio.a[0m
+[98.978s] [ 87%] Built target lio
+[99.070s] [ 93%] [32m[1mLinking CXX executable fastlivo_mapping[0m
+[102.039s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[102.041s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[102.045s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[103.717s] [100%] Built target fastlivo_mapping
+[103.757s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[103.759s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo
+[103.772s] -- Install configuration: "Release"
+[103.772s] -- Execute custom install script
+[103.773s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/lib/fast_livo/fastlivo_mapping
+[103.773s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/MARS_LVIG.yaml
+[103.774s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/avia.yaml
+[103.774s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/camera_MARS_LVIG.yaml
+[103.774s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/camera_pinhole.yaml
+[103.774s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia.launch.py
+[103.775s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia_marslvig.launch.py
+[103.775s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/M300.rviz
+[103.775s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/fast_livo2.rviz
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/package_run_dependencies/fast_livo
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/parent_prefix_path/fast_livo
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.sh
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.dsv
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/path.sh
+[103.776s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/path.dsv
+[103.777s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.bash
+[103.778s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.sh
+[103.778s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.zsh
+[103.778s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.dsv
+[103.778s] -- Symlinking: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.dsv
+[103.801s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/packages/fast_livo
+[103.801s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/ament_cmake_export_dependencies-extras.cmake
+[103.801s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig.cmake
+[103.802s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig-version.cmake
+[103.802s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.xml
+[103.807s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo

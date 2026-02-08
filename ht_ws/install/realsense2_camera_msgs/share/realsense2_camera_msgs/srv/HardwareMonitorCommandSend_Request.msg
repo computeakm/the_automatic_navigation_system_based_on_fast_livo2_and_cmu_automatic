@@ -1,1 +1,0 @@
-/home/ht/ht_ws/build/realsense2_camera_msgs/rosidl_cmake/srv/HardwareMonitorCommandSend_Request.msg

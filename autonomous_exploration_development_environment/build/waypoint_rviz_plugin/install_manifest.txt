@@ -1,1 +1,0 @@
-/home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/lib/waypoint_rviz_plugin/libwaypoint_rviz_plugin.so

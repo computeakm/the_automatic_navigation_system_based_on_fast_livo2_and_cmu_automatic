@@ -152,16 +152,18 @@ void odometryHandler(const nav_msgs::msg::Odometry::ConstSharedPtr odom)
 }
 
 void laserCloudHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr laserCloudIn)
-{
+{  auto nh1 = rclcpp::Node::make_shared("visualization");
   if (!systemDelayInited) {
     systemDelayCount++;
     if (systemDelayCount > systemDelay) {
       systemDelayInited = true;
+     RCLCPP_INFO(nh1->get_logger(), "init visualization.");
     }
   }
 
-  if (!systemInited) {
-    RCLCPP_INFO(nh->get_logger(), "Couldn't init visualization.");
+  if (!systemInited) { 
+   
+     RCLCPP_INFO(nh1->get_logger(), "Couldn't init visualization.");
     return;
   }
 

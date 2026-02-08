@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target pre[0m
+[ 12%] Built target utils
+[35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[ 37%] Built target vio
+[ 50%] Built target laser_mapping
+[ 56%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[ 75%] Built target imu_proc
+[ 81%] Built target lio

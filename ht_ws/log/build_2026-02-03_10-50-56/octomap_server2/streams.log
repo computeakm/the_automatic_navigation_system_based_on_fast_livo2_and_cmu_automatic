@@ -1,0 +1,69 @@
+[0.044s] Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[0.122s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.448s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.507s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.512s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.524s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.543s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.625s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.628s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.813s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.917s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.979s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.038s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[1.482s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.746s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.760s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.760s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.004s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.016s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.027s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.255s] -- Found Qhull version 8.0.2
+[2.490s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.724s] -- looking for PCL_COMMON
+[2.724s] -- looking for PCL_KDTREE
+[2.725s] -- looking for PCL_OCTREE
+[2.725s] -- looking for PCL_SEARCH
+[2.726s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.726s] -- looking for PCL_FILTERS
+[2.727s] -- looking for PCL_2D
+[2.727s] -- looking for PCL_GEOMETRY
+[2.728s] -- looking for PCL_IO
+[2.728s] -- looking for PCL_FEATURES
+[2.729s] -- looking for PCL_ML
+[2.729s] -- looking for PCL_SEGMENTATION
+[2.730s] -- looking for PCL_VISUALIZATION
+[2.731s] -- looking for PCL_SURFACE
+[2.731s] -- looking for PCL_REGISTRATION
+[2.732s] -- looking for PCL_KEYPOINTS
+[2.732s] -- looking for PCL_TRACKING
+[2.733s] -- looking for PCL_RECOGNITION
+[2.734s] -- looking for PCL_STEREO
+[2.734s] -- looking for PCL_APPS
+[2.735s] -- looking for PCL_IN_HAND_SCANNER
+[2.736s] -- looking for PCL_MODELER
+[2.736s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.737s] -- looking for PCL_OUTOFCORE
+[2.737s] -- looking for PCL_PEOPLE
+[2.742s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.794s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.821s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.852s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[2.871s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.913s] -- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)
+[2.937s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.944s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.038s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.044s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.046s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.046s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.074s] [31mCMake Error at CMakeLists.txt:70 (target_compile_definitions):
+[3.074s]   Cannot specify compile definitions for target "octomap_server2_color" which
+[3.074s]   is not built by this project.
+[3.075s] 
+[3.075s] [0m
+[3.219s] -- Configuring incomplete, errors occurred!
+[3.219s] See also "/home/bxi_nx/ht_ws/build/octomap_server2/CMakeFiles/CMakeOutput.log".
+[3.271s] gmake: *** [Makefile:362: cmake_check_build_system] Error 1
+[3.275s] Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '2': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8

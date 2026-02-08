@@ -1,6 +1,0 @@
-[  7%] Built target livox_interfaces2__rosidl_generator_c
-[  8%] Built target livox_interfaces2__cpp
-[ 12%] Built target livox_ros_driver2_node
-[ 26%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
-[ 26%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
-[ 33%] Built target livox_interfaces2__rosidl_typesupport_c

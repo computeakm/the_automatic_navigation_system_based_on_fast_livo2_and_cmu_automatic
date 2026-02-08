@@ -1,0 +1,9 @@
+[0.090s] Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
+[0.925s] [ 42%] Built target livox_lidar_sdk_static
+[0.925s] [ 84%] Built target livox_lidar_sdk_shared
+[0.925s] [ 86%] Built target debug_point_cloud
+[0.925s] [ 89%] Built target lidar_cmd_observer
+[0.925s] [ 91%] Built target multi_lidars_upgrade
+[0.925s] [ 95%] Built target livox_lidar_rmc_time_sync
+[0.926s] [ 98%] Built target logger
+[0.926s] [100%] Built target livox_lidar_quick_start

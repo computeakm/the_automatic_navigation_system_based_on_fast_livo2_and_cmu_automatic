@@ -1,2 +1,0 @@
-# the_automatic_navigation_system_based_on_fast_livo2_and_cmu_automatic
-基于fast_livo2与cmu_automatic的自动导航系统，使用了mid360与d435i作为传感器，在nx上完成了测试

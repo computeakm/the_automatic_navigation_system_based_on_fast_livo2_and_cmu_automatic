@@ -1,0 +1,823 @@
+[0.000000] (-) TimerEvent: {}
+[0.000512] (livox_sdk2) JobQueued: {'identifier': 'livox_sdk2', 'dependencies': OrderedDict()}
+[0.000982] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001184] (vikit_common) JobQueued: {'identifier': 'vikit_common', 'dependencies': OrderedDict()}
+[0.001393] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs')])}
+[0.001522] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs')])}
+[0.001588] (vikit_ros) JobQueued: {'identifier': 'vikit_ros', 'dependencies': OrderedDict([('vikit_common', '/home/bxi_nx/ht_ws/install/vikit_common')])}
+[0.001646] (fast_livo) JobQueued: {'identifier': 'fast_livo', 'dependencies': OrderedDict([('vikit_common', '/home/bxi_nx/ht_ws/install/vikit_common'), ('vikit_ros', '/home/bxi_nx/ht_ws/install/vikit_ros')])}
+[0.001705] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.011375] (vikit_common) JobStarted: {'identifier': 'vikit_common'}
+[0.018450] (livox_sdk2) JobStarted: {'identifier': 'livox_sdk2'}
+[0.026803] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.027968] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.028982] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.033925] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'cmake'}
+[0.035000] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'build'}
+[0.035383] (vikit_common) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/vikit_common', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/vikit_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/vikit_common'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.041313] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'cmake'}
+[0.042361] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'build'}
+[0.042718] (livox_sdk2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/livox_sdk2', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/livox_sdk2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/livox_sdk2'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.099525] (-) TimerEvent: {}
+[0.133433] (realsense2_camera_msgs) StdoutLine: {'line': b'[  5%] Built target realsense2_camera_msgs__cpp\n'}
+[0.134024] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[0.155385] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_realsense2_camera_msgs\n'}
+[0.157805] (vikit_common) StdoutLine: {'line': b'[ 68%] Built target vikit_common\n'}
+[0.188841] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[0.199710] (-) TimerEvent: {}
+[0.200275] (livox_sdk2) StdoutLine: {'line': b'[ 42%] Built target livox_lidar_sdk_shared\n'}
+[0.203536] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[0.205392] (livox_sdk2) StdoutLine: {'line': b'[ 84%] Built target livox_lidar_sdk_static\n'}
+[0.211240] (vikit_common) StdoutLine: {'line': b'[ 78%] Built target test_vk_common_patch_score\n'}
+[0.212189] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 45%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.220956] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.222391] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 67%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.239863] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[0.252108] (vikit_common) StdoutLine: {'line': b'[100%] Built target test_vk_common_camera\n'}
+[0.252557] (vikit_common) StdoutLine: {'line': b'[100%] Built target test_vk_common_triangulation\n'}
+[0.276159] (livox_sdk2) StdoutLine: {'line': b'[ 86%] Built target multi_lidars_upgrade\n'}
+[0.280908] (livox_sdk2) StdoutLine: {'line': b'[ 89%] Built target logger\n'}
+[0.283492] (livox_sdk2) StdoutLine: {'line': b'[ 92%] Built target debug_point_cloud\n'}
+[0.284521] (livox_sdk2) StdoutLine: {'line': b'[ 93%] Built target livox_lidar_quick_start\n'}
+[0.292073] (vikit_common) CommandEnded: {'returncode': 0}
+[0.292874] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'install'}
+[0.292960] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs\n'}
+[0.293134] (livox_sdk2) StdoutLine: {'line': b'[ 96%] Built target lidar_cmd_observer\n'}
+[0.299858] (-) TimerEvent: {}
+[0.304975] (livox_sdk2) StdoutLine: {'line': b'[100%] Built target livox_lidar_rmc_time_sync\n'}
+[0.310116] (vikit_common) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/vikit_common'], 'cwd': '/home/bxi_nx/ht_ws/build/vikit_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/vikit_common'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.326352] (vikit_common) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.326939] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/libvikit_common.so\n'}
+[0.327345] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera\n'}
+[0.327487] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation\n'}
+[0.327684] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score\n'}
+[0.327983] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common\n'}
+[0.328135] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit\n'}
+[0.328315] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/math_utils.h\n'}
+[0.328849] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/timer.h\n'}
+[0.329032] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader_types.h\n'}
+[0.329159] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/img_align.h\n'}
+[0.329271] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/homography.h\n'}
+[0.329376] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/omni_camera.h\n'}
+[0.329509] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/patch_score.h\n'}
+[0.329618] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/vision.h\n'}
+[0.329720] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/user_input_thread.h\n'}
+[0.329822] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/blender_utils.h\n'}
+[0.329920] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/performance_monitor.h\n'}
+[0.330042] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver_impl.hpp\n'}
+[0.330147] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/atan_camera.h\n'}
+[0.330245] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/equidistant_camera.h\n'}
+[0.330341] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader.h\n'}
+[0.330437] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/pinhole_camera.h\n'}
+[0.330533] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/robust_cost.h\n'}
+[0.330644] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/aligned_mem.h\n'}
+[0.330757] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/polynomial_camera.h\n'}
+[0.330873] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver.h\n'}
+[0.330992] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/abstract_camera.h\n'}
+[0.331110] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/sample.h\n'}
+[0.331227] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/include/vikit_common/vikit/ringbuffer.h\n'}
+[0.331344] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.sh\n'}
+[0.331462] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.dsv\n'}
+[0.332087] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/package_run_dependencies/vikit_common\n'}
+[0.333985] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/parent_prefix_path/vikit_common\n'}
+[0.334489] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.sh\n'}
+[0.336607] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.dsv\n'}
+[0.337758] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/path.sh\n'}
+[0.338832] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/environment/path.dsv\n'}
+[0.339079] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.bash\n'}
+[0.339273] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.sh\n'}
+[0.339534] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.zsh\n'}
+[0.340935] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/local_setup.dsv\n'}
+[0.341136] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.dsv\n'}
+[0.344224] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/ament_index/resource_index/packages/vikit_common\n'}
+[0.345285] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport.cmake\n'}
+[0.347084] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport-release.cmake\n'}
+[0.347435] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.348873] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.349518] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.349785] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.349961] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig.cmake\n'}
+[0.350190] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig-version.cmake\n'}
+[0.350724] (vikit_common) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.xml\n'}
+[0.351352] (livox_sdk2) CommandEnded: {'returncode': 0}
+[0.352193] (livox_sdk2) JobProgress: {'identifier': 'livox_sdk2', 'progress': 'install'}
+[0.352270] (livox_sdk2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/livox_sdk2'], 'cwd': '/home/bxi_nx/ht_ws/build/livox_sdk2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/livox_sdk2'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.353116] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[0.354148] (vikit_common) CommandEnded: {'returncode': 0}
+[0.354854] (livox_sdk2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.355284] (livox_sdk2) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a\n'}
+[0.356830] (livox_sdk2) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_def.h\n'}
+[0.357028] (livox_sdk2) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_api.h\n'}
+[0.357171] (livox_sdk2) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_cfg.h\n'}
+[0.357301] (livox_sdk2) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so\n'}
+[0.384203] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 89%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[0.391020] (vikit_common) JobEnded: {'identifier': 'vikit_common', 'rc': 0}
+[0.393635] (vikit_ros) JobStarted: {'identifier': 'vikit_ros'}
+[0.401750] (livox_sdk2) CommandEnded: {'returncode': 0}
+[0.402607] (-) TimerEvent: {}
+[0.415397] (livox_sdk2) JobEnded: {'identifier': 'livox_sdk2', 'rc': 0}
+[0.418060] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'cmake'}
+[0.419410] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'build'}
+[0.419964] (vikit_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/vikit_ros', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/vikit_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('ROS_PACKAGE_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/share'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/vikit_ros'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.429394] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.429894] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[0.430040] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.502788] (-) TimerEvent: {}
+[0.531566] (vikit_ros) StdoutLine: {'line': b'[100%] Built target vikit_ros\n'}
+[0.557229] (vikit_ros) CommandEnded: {'returncode': 0}
+[0.559376] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'install'}
+[0.560345] (vikit_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/vikit_ros'], 'cwd': '/home/bxi_nx/ht_ws/build/vikit_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('ROS_PACKAGE_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/share'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/vikit_ros'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.575828] (vikit_ros) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.576634] (vikit_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.577458] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/camera_loader.h\n'}
+[0.577851] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/output_helper.h\n'}
+[0.578182] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/params_helper.h\n'}
+[0.578504] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.sh\n'}
+[0.578849] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.dsv\n'}
+[0.579165] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/package_run_dependencies/vikit_ros\n'}
+[0.579500] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/parent_prefix_path/vikit_ros\n'}
+[0.579846] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.sh\n'}
+[0.580207] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.dsv\n'}
+[0.580536] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.sh\n'}
+[0.580826] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.dsv\n'}
+[0.581069] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.bash\n'}
+[0.581354] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.sh\n'}
+[0.581738] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.zsh\n'}
+[0.581989] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.dsv\n'}
+[0.582225] (vikit_ros) StdoutLine: {'line': b'-- Symlinking: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv\n'}
+[0.599309] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/packages/vikit_ros\n'}
+[0.599968] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.600336] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.600742] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.601051] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.601310] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig.cmake\n'}
+[0.601711] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig-version.cmake\n'}
+[0.601958] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.xml\n'}
+[0.602199] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_ros/lib/libvikit_ros.so\n'}
+[0.602474] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport.cmake\n'}
+[0.602707] (vikit_ros) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport-release.cmake\n'}
+[0.602940] (-) TimerEvent: {}
+[0.606138] (vikit_ros) CommandEnded: {'returncode': 0}
+[0.663952] (vikit_ros) JobEnded: {'identifier': 'vikit_ros', 'rc': 0}
+[0.667278] (fast_livo) JobStarted: {'identifier': 'fast_livo'}
+[0.689187] (fast_livo) JobProgress: {'identifier': 'fast_livo', 'progress': 'cmake'}
+[0.692876] (fast_livo) JobProgress: {'identifier': 'fast_livo', 'progress': 'build'}
+[0.694694] (fast_livo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/fast_livo', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/fast_livo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('ROS_PACKAGE_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/share'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/vikit_ros:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/fast_livo'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.701132] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.703098] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[0.703309] (-) TimerEvent: {}
+[0.703742] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[0.704152] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[0.709951] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.711850] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[0.792134] (fast_livo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imu_proc\x1b[0m\n'}
+[0.792835] (fast_livo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pre\x1b[0m\n'}
+[0.793299] (fast_livo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laser_mapping\x1b[0m\n'}
+[0.801272] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[0.803475] (-) TimerEvent: {}
+[0.808334] (fast_livo) StdoutLine: {'line': b'[ 12%] Built target utils\n'}
+[0.833395] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[0.837026] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[0.837182] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[0.838084] (fast_livo) StdoutLine: {'line': b'[ 37%] Built target vio\n'}
+[0.850042] (fast_livo) StdoutLine: {'line': b'[ 50%] Built target laser_mapping\n'}
+[0.850625] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.850860] (fast_livo) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o\x1b[0m\n'}
+[0.851545] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.852325] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[0.853281] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[0.853729] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[0.853890] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[0.854012] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[0.854169] (fast_livo) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[0.854358] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[0.854494] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[0.854626] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[0.854750] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[0.854859] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[0.854991] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[0.855134] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h\n'}
+[0.855266] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h\n'}
+[0.855389] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.855498] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[0.855620] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[0.855746] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[0.855886] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h\n'}
+[0.856113] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[0.856598] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[0.857429] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[0.858450] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.858587] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[0.858697] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.858801] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.858956] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[0.859116] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[0.859307] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[0.859497] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.859698] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[0.860871] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[0.861398] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[0.861608] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[0.861779] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[0.861964] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[0.862442] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[0.862740] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[0.864153] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp\n'}
+[0.864514] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[0.864749] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[0.865004] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[0.865239] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[0.865412] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[0.865863] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[0.865979] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[0.866109] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.866767] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[0.867255] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[0.867439] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[0.867958] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp\n'}
+[0.868579] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[0.868714] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.868830] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.868937] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.869378] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.869856] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.870034] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.870595] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.870847] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.871000] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.871409] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[0.871571] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[0.871719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/PKG-INFO\n'}
+[0.871874] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/SOURCES.txt\n'}
+[0.872007] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/dependency_links.txt\n'}
+[0.872398] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/top_level.txt\n'}
+[0.873421] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py\n'}
+[0.873652] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.873818] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.873970] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.874336] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[0.874477] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[0.875031] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[0.875289] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[0.875755] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[0.875973] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[0.876160] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[0.877147] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[0.878398] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.878632] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.878750] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.878901] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[0.879120] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[0.879352] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[0.879470] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.879581] (fast_livo) StdoutLine: {'line': b'[ 75%] Built target lio\n'}
+[0.879729] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.879837] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.879939] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[0.880039] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[0.880288] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[0.880657] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[0.880811] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[0.880918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[0.881019] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[0.881281] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[0.881397] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[0.881526] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[0.881636] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[0.881737] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[0.881839] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[0.881954] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[0.882051] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[0.882263] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[0.882459] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[0.882896] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[0.883020] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[0.883374] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[0.883484] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[0.894841] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[0.895435] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.895685] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.895852] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.896005] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.896118] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.896365] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.896744] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.897007] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[0.897267] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[0.897489] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[0.897873] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[0.897988] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.898522] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.898652] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[0.898803] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.899153] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.899505] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[0.903600] (-) TimerEvent: {}
+[0.958659] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...\n"}
+[0.959122] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...\n"}
+[0.959266] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...\n"}
+[0.970210] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[0.970710] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[0.970926] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.971080] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.971258] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.971406] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.971605] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.971776] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.971917] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.972055] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.972244] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.972369] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.972473] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.972578] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.972680] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.972779] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.972879] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.972975] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.977416] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[1.003744] (-) TimerEvent: {}
+[1.013073] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[1.015894] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[1.022937] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[1.037118] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[1.037273] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'build'}
+[1.037317] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/realsense2_camera', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_camera'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[1.044109] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[1.044266] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[1.044311] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bxi_nx/ht_ws/build/realsense2_description', '--', '-j8', '-l8'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_description'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[1.103938] (-) TimerEvent: {}
+[1.127130] (realsense2_description) CommandEnded: {'returncode': 0}
+[1.129671] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[1.129804] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/realsense2_description'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_description'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[1.148847] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.150427] (realsense2_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.152267] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[1.153038] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[1.154125] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[1.154682] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[1.155139] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[1.155587] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[1.156065] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[1.156588] (realsense2_camera) StdoutLine: {'line': b'[ 10%] Built target realsense2_frame_latency_node\n'}
+[1.157214] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[1.157991] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[1.159127] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[1.159631] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[1.160077] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[1.160513] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[1.160760] (realsense2_camera) StdoutLine: {'line': b'[ 21%] Built target realsense2_camera_node\n'}
+[1.161600] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[1.162075] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_l515.urdf.xacro\n'}
+[1.162509] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[1.163250] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[1.163698] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[1.164115] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[1.164527] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[1.164944] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[1.165360] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[1.165997] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[1.166678] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[1.167134] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_l515_camera.urdf.xacro\n'}
+[1.167551] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[1.168229] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[1.168812] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[1.169350] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[1.169897] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[1.170405] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[1.171224] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[1.171802] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[1.172281] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[1.172768] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[1.173558] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[1.173929] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[1.174182] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[1.191276] (realsense2_camera) StdoutLine: {'line': b'[100%] Built target realsense2_camera\n'}
+[1.194004] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[1.194737] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[1.195217] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[1.195731] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[1.201596] (realsense2_description) CommandEnded: {'returncode': 0}
+[1.204028] (-) TimerEvent: {}
+[1.232790] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[1.234827] (realsense2_camera) CommandEnded: {'returncode': 0}
+[1.235618] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'install'}
+[1.236013] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bxi_nx/ht_ws/build/realsense2_camera'], 'cwd': '/home/bxi_nx/ht_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bxi_nx'), ('SSH_CLIENT', '192.168.88.134 42406 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64'), ('BROWSER', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/bxi_nx'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ae5f6053-0844-4bd3-95b4-52acf503e31a.sock'), ('JETSON_L4T', '36.4.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/bxi_nx/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bxi_nx'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (16GB ram)'), ('JETSON_SERIAL_NUMBER', '1421025038318'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/bxi_nx/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7469b89a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/bxi_nx/ht_ws/build/realsense2_camera'), ('SSH_CONNECTION', '192.168.88.134 42406 192.168.88.122 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/interface/local/lib/python3.10/dist-packages:/home/bxi_nx/ws_livox/install/communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0000')]), 'shell': False}
+[1.254197] (realsense2_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[1.254646] (realsense2_camera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.254770] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node\n'}
+[1.254879] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_frame_latency_node\n'}
+[1.254981] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/librealsense2_camera.so\n'}
+[1.255176] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/base_realsense_node.h\n'}
+[1.255295] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/constants.h\n'}
+[1.255432] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/dynamic_params.h\n'}
+[1.255533] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/image_publisher.h\n'}
+[1.255628] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/named_filter.h\n'}
+[1.255788] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/profile_manager.h\n'}
+[1.255898] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/realsense_node_factory.h\n'}
+[1.255996] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_param_backend.h\n'}
+[1.256090] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_sensor.h\n'}
+[1.256234] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_utils.h\n'}
+[1.256340] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/sensor_params.h\n'}
+[1.256435] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/t265_realsense_node.h\n'}
+[1.256697] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz\n'}
+[1.256873] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py\n'}
+[1.257023] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py\n'}
+[1.257172] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py\n'}
+[1.257320] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py\n'}
+[1.257594] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh\n'}
+[1.257859] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv\n'}
+[1.258064] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera\n'}
+[1.258299] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera\n'}
+[1.258535] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh\n'}
+[1.258742] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv\n'}
+[1.258964] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh\n'}
+[1.259169] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv\n'}
+[1.259373] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash\n'}
+[1.259573] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh\n'}
+[1.259774] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh\n'}
+[1.259976] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv\n'}
+[1.260135] (realsense2_camera) StdoutLine: {'line': b'-- Symlinking: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.dsv\n'}
+[1.278282] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera\n'}
+[1.278775] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera\n'}
+[1.279011] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.279295] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.279499] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.279623] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake\n'}
+[1.279785] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake\n'}
+[1.279891] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.xml\n'}
+[1.285141] (realsense2_camera) CommandEnded: {'returncode': 0}
+[1.304226] (-) TimerEvent: {}
+[1.316308] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 0}
+[1.404437] (-) TimerEvent: {}
+[1.505069] (-) TimerEvent: {}
+[1.605732] (-) TimerEvent: {}
+[1.706362] (-) TimerEvent: {}
+[1.807003] (-) TimerEvent: {}
+[1.907645] (-) TimerEvent: {}
+[2.008302] (-) TimerEvent: {}
+[2.109038] (-) TimerEvent: {}
+[2.209772] (-) TimerEvent: {}
+[2.310547] (-) TimerEvent: {}
+[2.411417] (-) TimerEvent: {}
+[2.512132] (-) TimerEvent: {}
+[2.612775] (-) TimerEvent: {}
+[2.713431] (-) TimerEvent: {}
+[2.814232] (-) TimerEvent: {}
+[2.914911] (-) TimerEvent: {}
+[3.015578] (-) TimerEvent: {}
+[3.116230] (-) TimerEvent: {}
+[3.216904] (-) TimerEvent: {}
+[3.317567] (-) TimerEvent: {}
+[3.418211] (-) TimerEvent: {}
+[3.518870] (-) TimerEvent: {}
+[3.619695] (-) TimerEvent: {}
+[3.720422] (-) TimerEvent: {}
+[3.821111] (-) TimerEvent: {}
+[3.921859] (-) TimerEvent: {}
+[4.022543] (-) TimerEvent: {}
+[4.123391] (-) TimerEvent: {}
+[4.224212] (-) TimerEvent: {}
+[4.324880] (-) TimerEvent: {}
+[4.425547] (-) TimerEvent: {}
+[4.526189] (-) TimerEvent: {}
+[4.626821] (-) TimerEvent: {}
+[4.727452] (-) TimerEvent: {}
+[4.828116] (-) TimerEvent: {}
+[4.928813] (-) TimerEvent: {}
+[5.029495] (-) TimerEvent: {}
+[5.130183] (-) TimerEvent: {}
+[5.230856] (-) TimerEvent: {}
+[5.331541] (-) TimerEvent: {}
+[5.432243] (-) TimerEvent: {}
+[5.532912] (-) TimerEvent: {}
+[5.633596] (-) TimerEvent: {}
+[5.734260] (-) TimerEvent: {}
+[5.834935] (-) TimerEvent: {}
+[5.935594] (-) TimerEvent: {}
+[6.036224] (-) TimerEvent: {}
+[6.136881] (-) TimerEvent: {}
+[6.237576] (-) TimerEvent: {}
+[6.338208] (-) TimerEvent: {}
+[6.438838] (-) TimerEvent: {}
+[6.539474] (-) TimerEvent: {}
+[6.640080] (-) TimerEvent: {}
+[6.740679] (-) TimerEvent: {}
+[6.841288] (-) TimerEvent: {}
+[6.941968] (-) TimerEvent: {}
+[7.042604] (-) TimerEvent: {}
+[7.143240] (-) TimerEvent: {}
+[7.243918] (-) TimerEvent: {}
+[7.344594] (-) TimerEvent: {}
+[7.445250] (-) TimerEvent: {}
+[7.545943] (-) TimerEvent: {}
+[7.646685] (-) TimerEvent: {}
+[7.747440] (-) TimerEvent: {}
+[7.848124] (-) TimerEvent: {}
+[7.948833] (-) TimerEvent: {}
+[8.049516] (-) TimerEvent: {}
+[8.150148] (-) TimerEvent: {}
+[8.250824] (-) TimerEvent: {}
+[8.351540] (-) TimerEvent: {}
+[8.452220] (-) TimerEvent: {}
+[8.552921] (-) TimerEvent: {}
+[8.653591] (-) TimerEvent: {}
+[8.754220] (-) TimerEvent: {}
+[8.854866] (-) TimerEvent: {}
+[8.955525] (-) TimerEvent: {}
+[9.056209] (-) TimerEvent: {}
+[9.157637] (-) TimerEvent: {}
+[9.258352] (-) TimerEvent: {}
+[9.359112] (-) TimerEvent: {}
+[9.459810] (-) TimerEvent: {}
+[9.560512] (-) TimerEvent: {}
+[9.661213] (-) TimerEvent: {}
+[9.761946] (-) TimerEvent: {}
+[9.862633] (-) TimerEvent: {}
+[9.963345] (-) TimerEvent: {}
+[10.063989] (-) TimerEvent: {}
+[10.164616] (-) TimerEvent: {}
+[10.265301] (-) TimerEvent: {}
+[10.365996] (-) TimerEvent: {}
+[10.466660] (-) TimerEvent: {}
+[10.567328] (-) TimerEvent: {}
+[10.667987] (-) TimerEvent: {}
+[10.768631] (-) TimerEvent: {}
+[10.869250] (-) TimerEvent: {}
+[10.969850] (-) TimerEvent: {}
+[11.070436] (-) TimerEvent: {}
+[11.171071] (-) TimerEvent: {}
+[11.271752] (-) TimerEvent: {}
+[11.372442] (-) TimerEvent: {}
+[11.473103] (-) TimerEvent: {}
+[11.573803] (-) TimerEvent: {}
+[11.674478] (-) TimerEvent: {}
+[11.775142] (-) TimerEvent: {}
+[11.875806] (-) TimerEvent: {}
+[11.976494] (-) TimerEvent: {}
+[12.077135] (-) TimerEvent: {}
+[12.177809] (-) TimerEvent: {}
+[12.278490] (-) TimerEvent: {}
+[12.379159] (-) TimerEvent: {}
+[12.479860] (-) TimerEvent: {}
+[12.580523] (-) TimerEvent: {}
+[12.681174] (-) TimerEvent: {}
+[12.781860] (-) TimerEvent: {}
+[12.882499] (-) TimerEvent: {}
+[12.983125] (-) TimerEvent: {}
+[13.083819] (-) TimerEvent: {}
+[13.184565] (-) TimerEvent: {}
+[13.285300] (-) TimerEvent: {}
+[13.386080] (-) TimerEvent: {}
+[13.486815] (-) TimerEvent: {}
+[13.587500] (-) TimerEvent: {}
+[13.688196] (-) TimerEvent: {}
+[13.788975] (-) TimerEvent: {}
+[13.889737] (-) TimerEvent: {}
+[13.990413] (-) TimerEvent: {}
+[14.091084] (-) TimerEvent: {}
+[14.191738] (-) TimerEvent: {}
+[14.292425] (-) TimerEvent: {}
+[14.393127] (-) TimerEvent: {}
+[14.493824] (-) TimerEvent: {}
+[14.566063] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Preprocess::process(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.566588] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:58:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KPreprocess::avia_handler(const SharedPtr&, std::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZINormal>, __gnu_cxx::_S_atomic, false, false>::element_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.566732] (fast_livo) StderrLine: {'line': b'   58 |   \x1b[01;31m\x1b[Kavia_handler(msg,*pcl_out)\x1b[m\x1b[K;\n'}
+[14.566842] (fast_livo) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.567197] (fast_livo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13\x1b[m\x1b[K:\n'}
+[14.567320] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid Preprocess::avia_handler(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.567428] (fast_livo) StderrLine: {'line': b'  158 |   void \x1b[01;36m\x1b[Kavia_handler\x1b[m\x1b[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);\n'}
+[14.567527] (fast_livo) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.567621] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[14.567717] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:\x1b[m\x1b[K At global scope:\n'}
+[14.567811] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:91:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid Preprocess::avia_handler(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.567907] (fast_livo) StderrLine: {'line': b'   91 | void \x1b[01;31m\x1b[KPreprocess\x1b[m\x1b[K::avia_handler(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)\n'}
+[14.567998] (fast_livo) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.568090] (fast_livo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13\x1b[m\x1b[K:\n'}
+[14.568180] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid Preprocess::avia_handler(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.568271] (fast_livo) StderrLine: {'line': b'  158 |   void \x1b[01;36m\x1b[Kavia_handler\x1b[m\x1b[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);\n'}
+[14.568361] (fast_livo) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.568451] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:133:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Preprocess\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[14.568568] (fast_livo) StderrLine: {'line': b'  133 | class \x1b[01;36m\x1b[KPreprocess\x1b[m\x1b[K\n'}
+[14.568657] (fast_livo) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.593992] (-) TimerEvent: {}
+[14.694720] (-) TimerEvent: {}
+[14.795440] (-) TimerEvent: {}
+[14.896155] (-) TimerEvent: {}
+[14.996809] (-) TimerEvent: {}
+[15.097524] (-) TimerEvent: {}
+[15.198544] (-) TimerEvent: {}
+[15.299215] (-) TimerEvent: {}
+[15.399870] (-) TimerEvent: {}
+[15.500535] (-) TimerEvent: {}
+[15.574395] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuProcess::Process2(LidarMeasureGroup&, StatesGroup&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.574850] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:607:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kacc_M2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.574990] (fast_livo) StderrLine: {'line': b'  607 |       V3D acc_std = (\x1b[01;31m\x1b[Kacc_M2\x1b[m\x1b[K / (init_iter_num - 1)).cwiseSqrt();\n'}
+[15.575103] (fast_livo) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.600704] (-) TimerEvent: {}
+[15.604094] (fast_livo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:608:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgyr_M2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.604463] (fast_livo) StderrLine: {'line': b'  608 |       V3D gyr_std = (\x1b[01;31m\x1b[Kgyr_M2\x1b[m\x1b[K / (init_iter_num - 1)).cwiseSqrt();\n'}
+[15.604588] (fast_livo) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.700864] (-) TimerEvent: {}
+[15.801555] (-) TimerEvent: {}
+[15.902208] (-) TimerEvent: {}
+[16.002882] (-) TimerEvent: {}
+[16.103533] (-) TimerEvent: {}
+[16.204197] (-) TimerEvent: {}
+[16.304963] (-) TimerEvent: {}
+[16.405643] (-) TimerEvent: {}
+[16.506331] (-) TimerEvent: {}
+[16.606985] (-) TimerEvent: {}
+[16.707630] (-) TimerEvent: {}
+[16.808257] (-) TimerEvent: {}
+[16.908864] (-) TimerEvent: {}
+[17.009513] (-) TimerEvent: {}
+[17.110104] (-) TimerEvent: {}
+[17.210722] (-) TimerEvent: {}
+[17.311388] (-) TimerEvent: {}
+[17.412061] (-) TimerEvent: {}
+[17.512740] (-) TimerEvent: {}
+[17.613423] (-) TimerEvent: {}
+[17.714116] (-) TimerEvent: {}
+[17.814797] (-) TimerEvent: {}
+[17.915478] (-) TimerEvent: {}
+[18.016161] (-) TimerEvent: {}
+[18.116829] (-) TimerEvent: {}
+[18.217533] (-) TimerEvent: {}
+[18.318210] (-) TimerEvent: {}
+[18.418880] (-) TimerEvent: {}
+[18.519536] (-) TimerEvent: {}
+[18.620185] (-) TimerEvent: {}
+[18.720828] (-) TimerEvent: {}
+[18.821675] (-) TimerEvent: {}
+[18.922343] (-) TimerEvent: {}
+[19.023021] (-) TimerEvent: {}
+[19.123706] (-) TimerEvent: {}
+[19.224402] (-) TimerEvent: {}
+[19.325089] (-) TimerEvent: {}
+[19.425772] (-) TimerEvent: {}
+[19.526490] (-) TimerEvent: {}
+[19.627178] (-) TimerEvent: {}
+[19.727855] (-) TimerEvent: {}
+[19.828522] (-) TimerEvent: {}
+[19.929190] (-) TimerEvent: {}
+[20.029871] (-) TimerEvent: {}
+[20.119517] (fast_livo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pre.dir/build.make:76: CMakeFiles/pre.dir/src/preprocess.cpp.o] Error 1\n'}
+[20.120078] (fast_livo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/pre.dir/all] Error 2\n'}
+[20.120255] (fast_livo) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[20.129978] (-) TimerEvent: {}
+[20.230604] (-) TimerEvent: {}
+[20.331322] (-) TimerEvent: {}
+[20.432035] (-) TimerEvent: {}
+[20.532728] (-) TimerEvent: {}
+[20.633424] (-) TimerEvent: {}
+[20.734155] (-) TimerEvent: {}
+[20.834843] (-) TimerEvent: {}
+[20.935576] (-) TimerEvent: {}
+[21.036238] (-) TimerEvent: {}
+[21.136868] (-) TimerEvent: {}
+[21.237520] (-) TimerEvent: {}
+[21.338199] (-) TimerEvent: {}
+[21.438853] (-) TimerEvent: {}
+[21.539509] (-) TimerEvent: {}
+[21.640142] (-) TimerEvent: {}
+[21.740784] (-) TimerEvent: {}
+[21.841500] (-) TimerEvent: {}
+[21.942178] (-) TimerEvent: {}
+[22.042853] (-) TimerEvent: {}
+[22.143495] (-) TimerEvent: {}
+[22.244146] (-) TimerEvent: {}
+[22.344804] (-) TimerEvent: {}
+[22.445485] (-) TimerEvent: {}
+[22.546140] (-) TimerEvent: {}
+[22.646790] (-) TimerEvent: {}
+[22.747432] (-) TimerEvent: {}
+[22.848044] (-) TimerEvent: {}
+[22.948645] (-) TimerEvent: {}
+[23.049273] (-) TimerEvent: {}
+[23.149928] (-) TimerEvent: {}
+[23.250610] (-) TimerEvent: {}
+[23.351382] (-) TimerEvent: {}
+[23.452033] (-) TimerEvent: {}
+[23.552703] (-) TimerEvent: {}
+[23.653384] (-) TimerEvent: {}
+[23.754073] (-) TimerEvent: {}
+[23.854723] (-) TimerEvent: {}
+[23.955362] (-) TimerEvent: {}
+[24.055967] (-) TimerEvent: {}
+[24.156558] (-) TimerEvent: {}
+[24.257203] (-) TimerEvent: {}
+[24.357881] (-) TimerEvent: {}
+[24.458533] (-) TimerEvent: {}
+[24.559251] (-) TimerEvent: {}
+[24.659990] (-) TimerEvent: {}
+[24.760676] (-) TimerEvent: {}
+[24.861364] (-) TimerEvent: {}
+[24.962124] (-) TimerEvent: {}
+[25.062781] (-) TimerEvent: {}
+[25.163419] (-) TimerEvent: {}
+[25.264210] (-) TimerEvent: {}
+[25.365032] (-) TimerEvent: {}
+[25.465715] (-) TimerEvent: {}
+[25.566398] (-) TimerEvent: {}
+[25.667004] (-) TimerEvent: {}
+[25.767615] (-) TimerEvent: {}
+[25.868235] (-) TimerEvent: {}
+[25.968989] (-) TimerEvent: {}
+[26.069798] (-) TimerEvent: {}
+[26.170459] (-) TimerEvent: {}
+[26.271209] (-) TimerEvent: {}
+[26.371935] (-) TimerEvent: {}
+[26.472602] (-) TimerEvent: {}
+[26.573247] (-) TimerEvent: {}
+[26.673927] (-) TimerEvent: {}
+[26.774581] (-) TimerEvent: {}
+[26.875236] (-) TimerEvent: {}
+[26.975903] (-) TimerEvent: {}
+[27.076554] (-) TimerEvent: {}
+[27.177226] (-) TimerEvent: {}
+[27.277899] (-) TimerEvent: {}
+[27.378564] (-) TimerEvent: {}
+[27.479223] (-) TimerEvent: {}
+[27.579864] (-) TimerEvent: {}
+[27.680490] (-) TimerEvent: {}
+[27.781093] (-) TimerEvent: {}
+[27.881712] (-) TimerEvent: {}
+[27.982311] (-) TimerEvent: {}
+[28.082978] (-) TimerEvent: {}
+[28.183620] (-) TimerEvent: {}
+[28.284306] (-) TimerEvent: {}
+[28.385010] (-) TimerEvent: {}
+[28.485700] (-) TimerEvent: {}
+[28.586362] (-) TimerEvent: {}
+[28.687031] (-) TimerEvent: {}
+[28.787683] (-) TimerEvent: {}
+[28.888344] (-) TimerEvent: {}
+[28.989010] (-) TimerEvent: {}
+[29.089672] (-) TimerEvent: {}
+[29.190300] (-) TimerEvent: {}
+[29.290973] (-) TimerEvent: {}
+[29.391632] (-) TimerEvent: {}
+[29.492288] (-) TimerEvent: {}
+[29.592945] (-) TimerEvent: {}
+[29.693585] (-) TimerEvent: {}
+[29.794245] (-) TimerEvent: {}
+[29.894877] (-) TimerEvent: {}
+[29.995515] (-) TimerEvent: {}
+[30.096118] (-) TimerEvent: {}
+[30.196740] (-) TimerEvent: {}
+[30.297489] (-) TimerEvent: {}
+[30.398156] (-) TimerEvent: {}
+[30.498823] (-) TimerEvent: {}
+[30.599502] (-) TimerEvent: {}
+[30.700179] (-) TimerEvent: {}
+[30.800849] (-) TimerEvent: {}
+[30.901548] (-) TimerEvent: {}
+[31.002235] (-) TimerEvent: {}
+[31.102907] (-) TimerEvent: {}
+[31.203549] (-) TimerEvent: {}
+[31.304210] (-) TimerEvent: {}
+[31.404875] (-) TimerEvent: {}
+[31.505553] (-) TimerEvent: {}
+[31.606223] (-) TimerEvent: {}
+[31.706998] (-) TimerEvent: {}
+[31.807665] (-) TimerEvent: {}
+[31.908332] (-) TimerEvent: {}
+[32.009012] (-) TimerEvent: {}
+[32.109687] (-) TimerEvent: {}
+[32.210330] (-) TimerEvent: {}
+[32.311481] (-) TimerEvent: {}
+[32.412165] (-) TimerEvent: {}
+[32.512830] (-) TimerEvent: {}
+[32.613519] (-) TimerEvent: {}
+[32.714184] (-) TimerEvent: {}
+[32.814855] (-) TimerEvent: {}
+[32.915522] (-) TimerEvent: {}
+[33.016191] (-) TimerEvent: {}
+[33.116837] (-) TimerEvent: {}
+[33.217488] (-) TimerEvent: {}
+[33.318133] (-) TimerEvent: {}
+[33.418744] (-) TimerEvent: {}
+[33.519401] (-) TimerEvent: {}
+[33.620068] (-) TimerEvent: {}
+[33.720738] (-) TimerEvent: {}
+[33.821398] (-) TimerEvent: {}
+[33.922095] (-) TimerEvent: {}
+[34.022754] (-) TimerEvent: {}
+[34.123385] (-) TimerEvent: {}
+[34.224073] (-) TimerEvent: {}
+[34.324718] (-) TimerEvent: {}
+[34.425340] (-) TimerEvent: {}
+[34.525985] (-) TimerEvent: {}
+[34.626614] (-) TimerEvent: {}
+[34.727269] (-) TimerEvent: {}
+[34.827937] (-) TimerEvent: {}
+[34.928607] (-) TimerEvent: {}
+[35.029269] (-) TimerEvent: {}
+[35.129954] (-) TimerEvent: {}
+[35.230590] (-) TimerEvent: {}
+[35.256908] (fast_livo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_proc.dir/build.make:76: CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o] Error 1\n'}
+[35.257595] (fast_livo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/imu_proc.dir/all] Error 2\n'}
+[35.258084] (fast_livo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[35.265102] (fast_livo) CommandEnded: {'returncode': 2}
+[35.291439] (fast_livo) JobEnded: {'identifier': 'fast_livo', 'rc': 2}
+[35.303358] (-) EventReactorShutdown: {}

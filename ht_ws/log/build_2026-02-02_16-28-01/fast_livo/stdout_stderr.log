@@ -1,0 +1,127 @@
+[  6%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:[m[K In constructor ‘[01m[KVoxelMapManager::VoxelMapManager(VoxelMapConfig&, std::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>&)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:233:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >::unordered_map(std::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>&)[m[K’
+  233 |       : config_setting_(config_setting), [01;31m[Kvoxel_map_(voxel_map)[m[K
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/utils/so3_math.h:4[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/common_lib.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:252:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(_InputIterator, _InputIterator, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const allocator_type&) [with _InputIterator = _InputIterator; _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  252 |         [01;36m[Kunordered_map[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:252:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:233:42:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 1 provided
+  233 |       : config_setting_(config_setting), [01;36m[Kvoxel_map_(voxel_map)[m[K
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/utils/so3_math.h:4[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/common_lib.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:245:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(_InputIterator, _InputIterator, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const allocator_type&) [with _InputIterator = _InputIterator; _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  245 |         [01;36m[Kunordered_map[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:245:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:233:42:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+  233 |       : config_setting_(config_setting), [01;36m[Kvoxel_map_(voxel_map)[m[K
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/utils/so3_math.h:4[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/common_lib.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:172:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(_InputIterator, _InputIterator, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const key_equal&, const allocator_type&) [with _InputIterator = _InputIterator; _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  172 |         [01;36m[Kunordered_map[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:172:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:233:42:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 1 provided
+  233 |       : config_setting_(config_setting), [01;36m[Kvoxel_map_(voxel_map)[m[K
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:85[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/utils/so3_math.h:4[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/common_lib.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+                 from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:264:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::initializer_list<typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type>, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type = std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::hasher = std::hash<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  264 |       [01;36m[Kunordered_map[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:264:7:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:258:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::initializer_list<typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type>, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type = std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  258 |       [01;36m[Kunordered_map[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:258:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:239:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::hasher = std::hash<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  239 |       [01;36m[Kunordered_map[m[K(size_type __n, const hasher& __hf,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:239:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:235:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  235 |       [01;36m[Kunordered_map[m[K(size_type __n, const allocator_type& __a)
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:235:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:227:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::initializer_list<typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type>, std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const key_equal&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; typename std::_Hashtable<_Key, std::pair<const _Key, _Tp>, _Alloc, std::__detail::_Select1st, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Key&> > >::value, false, true> >::value_type = std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::hasher = std::hash<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::key_equal = std::equal_to<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  227 |       [01;36m[Kunordered_map[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:227:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>[m[K’ to ‘[01m[Kstd::initializer_list<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >[m[K’
+  227 |       unordered_map([01;36m[Kinitializer_list<value_type> __l[m[K,
+      |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:210:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  210 |       [01;36m[Kunordered_map[m[K(unordered_map&& __umap,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:210:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:200:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  200 |       [01;36m[Kunordered_map[m[K(const unordered_map& __umap,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:200:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/unordered_map.h:191:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  191 |       [01;36m[Kunordered_map[m[K(const allocator_type& __a)
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:191:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>[m[K’ to ‘[01m[Kconst allocator_type&[m[K’ {aka ‘[01m[Kconst std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >&[m[K’}
+  191 |       unordered_map([01;36m[Kconst allocator_type& __a[m[K)
+      |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:184:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  184 |       [01;36m[Kunordered_map[m[K(unordered_map&&) = default;
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:184:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>[m[K’ to ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >&&[m[K’
+  184 |       unordered_map([01;36m[Kunordered_map&&[m[K) = default;
+      |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  181 |       [01;36m[Kunordered_map[m[K(const unordered_map&) = default;
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:181:21:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>[m[K’ to ‘[01m[Kconst std::unordered_map<VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >&[m[K’
+  181 |       unordered_map([01;36m[Kconst unordered_map&[m[K) = default;
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:151:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map(std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type, const hasher&, const key_equal&, const allocator_type&) [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::size_type = long unsigned int; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::hasher = std::hash<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::key_equal = std::equal_to<VOXEL_LOCATION>; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::allocator_type = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  151 |       [01;36m[Kunordered_map[m[K(size_type __n,
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:151:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, VoxelOctoTree*>[m[K’ to ‘[01m[Kstd::unordered_map<VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  151 |       unordered_map([01;36m[Ksize_type __n[m[K,
+      |                     [01;36m[K~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:141:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map() [with _Key = VOXEL_LOCATION; _Tp = std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> >; _Hash = std::hash<VOXEL_LOCATION>; _Pred = std::equal_to<VOXEL_LOCATION>; _Alloc = std::allocator<std::pair<const VOXEL_LOCATION, std::_List_iterator<std::pair<VOXEL_LOCATION, VoxelOctoTree*> > > >][m[K’
+  141 |       [01;36m[Kunordered_map[m[K() = default;
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:141:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/vio.dir/build.make:76: CMakeFiles/vio.dir/src/vio.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/vio.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

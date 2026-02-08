@@ -1,1 +1,1 @@
-/home/ht/autonomous_exploration_development_environment/build/waypoint_rviz_plugin/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/waypoint_rviz_plugin
+rclcpp;rclpy;std_msgs;rviz2;rviz_common;rviz_rendering;rviz_default_plugins;qtbase5-dev;geometry_msgs;libqt5-core;libqt5-gui;libqt5-widgets;pluginlib;ament_lint_auto;ament_lint_common

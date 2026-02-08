@@ -1,0 +1,7 @@
+[0mCurrent CPU archtecture: aarch64[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TOOLS
+
+[0m

@@ -1,0 +1,123 @@
+[0.038s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[0.106s] -- Build Type: Release
+[0.106s] -- Current CPU architecture: aarch64
+[0.106s] -- Using 64-bit ARM optimizations: -O3 -mcpu=native -mtune=native -ffast-math
+[0.113s] -- Processor count: 8
+[0.113s] -- Multithreading enabled. Cores: 4
+[0.117s] -- OpenMP found
+[0.134s] -- mimalloc not found, proceeding without it
+[0.134s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.379s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.405s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.470s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.474s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.484s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.498s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.516s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.563s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.565s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.731s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.804s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.804s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.820s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.843s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.867s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.894s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.959s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.026s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[1.557s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.568s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.805s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.815s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.830s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.050s] -- Found Qhull version 8.0.2
+[2.282s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.534s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.536s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.536s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.652s] -- Found livox_ros_driver2: 1.0.0 (/home/bxi_nx/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.682s] -- Found vikit_common: 0.0.0 (/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake)
+[2.740s] -- Found CUDA: /usr/local/cuda-12.6 (found suitable exact version "12.6") 
+[2.764s] -- Found vikit_ros: 0.0.0 (/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake)
+[2.776s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.779s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[2.809s] [33mCMake Warning (dev) at CMakeLists.txt:99 (find_package):
+[2.809s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.810s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.810s]   command to set the policy and suppress this warning.
+[2.810s] 
+[2.810s]   CMake variable PCL_ROOT is set to:
+[2.811s] 
+[2.811s]     /usr
+[2.811s] 
+[2.811s]   For compatibility, CMake is ignoring the variable.
+[2.812s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.812s] [0m
+[2.837s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[2.840s] -- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") 
+[3.106s] -- Configuring done
+[3.506s] -- Generating done
+[3.588s] -- Build files have been written to: /home/bxi_nx/ht_ws/build/fast_livo
+[3.679s] [35m[1mConsolidate compiler generated dependencies of target utils[0m
+[3.681s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[3.681s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[3.682s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[3.685s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[3.704s] [  6%] [32mBuilding CXX object CMakeFiles/utils.dir/src/utils.cpp.o[0m
+[3.752s] [ 12%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[3.758s] [ 25%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[3.759s] [ 25%] [32mBuilding CXX object CMakeFiles/vio.dir/src/frame.cpp.o[0m
+[3.768s] [ 37%] [32mBuilding CXX object CMakeFiles/vio.dir/src/visual_point.cpp.o[0m
+[3.771s] [ 37%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[3.773s] [ 43%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[4.201s] [ 50%] [32m[1mLinking CXX static library libutils.a[0m
+[4.261s] [ 50%] Built target utils
+[4.283s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[4.331s] [ 56%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[27.777s] [ 62%] [32m[1mLinking CXX static library libpre.a[0m
+[27.842s] [ 62%] Built target pre
+[34.827s] [ 68%] [32m[1mLinking CXX static library libimu_proc.a[0m
+[34.886s] [ 68%] Built target imu_proc
+[58.177s] [ 75%] [32m[1mLinking CXX static library libvio.a[0m
+[58.241s] [ 75%] Built target vio
+[78.644s] [ 81%] [32m[1mLinking CXX static library liblio.a[0m
+[78.716s] [ 81%] Built target lio
+[97.199s] [ 87%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[97.383s] [ 87%] Built target laser_mapping
+[97.408s] [35m[1mConsolidate compiler generated dependencies of target fastlivo_mapping[0m
+[97.471s] [ 93%] [32mBuilding CXX object CMakeFiles/fastlivo_mapping.dir/src/main.cpp.o[0m
+[118.218s] [100%] [32m[1mLinking CXX executable fastlivo_mapping[0m
+[120.176s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[120.178s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[120.181s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[121.624s] [100%] Built target fastlivo_mapping
+[121.653s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[121.658s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo
+[121.674s] -- Install configuration: "Release"
+[121.675s] -- Execute custom install script
+[121.675s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/lib/fast_livo/fastlivo_mapping
+[121.676s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/MARS_LVIG.yaml
+[121.676s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/avia.yaml
+[121.677s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/camera_MARS_LVIG.yaml
+[121.677s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/config/camera_pinhole.yaml
+[121.678s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia.launch.py
+[121.678s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia_marslvig.launch.py
+[121.679s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/M300.rviz
+[121.679s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/fast_livo2.rviz
+[121.679s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/package_run_dependencies/fast_livo
+[121.679s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/parent_prefix_path/fast_livo
+[121.680s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.sh
+[121.680s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.dsv
+[121.681s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/path.sh
+[121.681s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/environment/path.dsv
+[121.681s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.bash
+[121.682s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.sh
+[121.682s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.zsh
+[121.682s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/local_setup.dsv
+[121.683s] -- Symlinking: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.dsv
+[121.703s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/ament_index/resource_index/packages/fast_livo
+[121.703s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/ament_cmake_export_dependencies-extras.cmake
+[121.703s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig.cmake
+[121.704s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig-version.cmake
+[121.704s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.xml
+[121.710s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo

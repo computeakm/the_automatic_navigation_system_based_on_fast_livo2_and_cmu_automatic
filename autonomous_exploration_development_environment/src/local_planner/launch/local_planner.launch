@@ -22,7 +22,7 @@
     <param name="terrainVoxelSize" value="0.2" />
     <param name="useTerrainAnalysis" value="true" />
     <param name="checkObstacle" value="true" />
-    <param name="checkRotObstacle" value="true" />
+    <param name="checkRotObstacle" value="false" />
     <param name="adjacentRange" value="250.25" />
     <param name="obstacleHeightThre" value="0.15" />
     <param name="groundHeightThre" value="0.1" />

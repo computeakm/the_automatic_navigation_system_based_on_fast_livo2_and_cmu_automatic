@@ -1,1 +1,12 @@
-/home/ht/autonomous_exploration_development_environment/src/loam_interface/launch/loam_interface.launch
+<launch>
+
+  <node pkg="loam_interface" exec="loamInterface" name="loamInterface" output="screen">
+    <param name="stateEstimationTopic" value="/aft_mapped_to_init" />
+    <param name="registeredScanTopic" value="/cloud_registered" />
+    <param name="flipStateEstimation" value="false" />
+    <param name="flipRegisteredScan" value="false" />
+    <param name="sendTF" value="true" />
+    <param name="reverseTF" value="false" />
+  </node>
+
+</launch>

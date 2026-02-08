@@ -1,0 +1,75 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found vikit_common: 0.0.0 (/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found OpenCV: /usr (found version "4.8.0") 
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bxi_nx/ht_ws/build/vikit_ros
+[ 50%] [32mBuilding CXX object CMakeFiles/vikit_ros.dir/src/output_helper.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libvikit_ros.so[0m
+[100%] Built target vikit_ros
+-- Install configuration: "Release"
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/output_helper.h
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/camera_loader.h
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/include/vikit_ros/vikit/params_helper.h
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/lib/libvikit_ros.so
+-- Set runtime path of "/home/bxi_nx/ht_ws/install/vikit_ros/lib/libvikit_ros.so" to ""
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.sh
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/package_run_dependencies/vikit_ros
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/parent_prefix_path/vikit_ros
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.sh
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.sh
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.bash
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.sh
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.zsh
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/ament_index/resource_index/packages/vikit_ros
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport-release.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig-version.cmake
+-- Installing: /home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.xml

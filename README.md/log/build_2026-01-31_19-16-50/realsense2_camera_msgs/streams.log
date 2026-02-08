@@ -1,0 +1,35 @@
+[0.045s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake /home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs
+[0.067s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.312s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.327s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.336s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.386s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.425s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.442s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.981s] -- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.982s] -- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.983s] -- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.984s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.358s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.895s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.936s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.976s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.976s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.976s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[2.037s] -- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[2.038s] -- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[2.055s] -- Configuring done
+[2.121s] -- Generating done
+[2.140s] -- Build files have been written to: /home/bxi_nx/ht_ws/build/realsense2_camera_msgs
+[2.162s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake /home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs
+[2.165s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8
+[2.239s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_c[0m
+[2.257s] failed to create symbolic link '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs' because existing path cannot be removed: Is a directory
+[2.257s] [  1%] Built target realsense2_camera_msgs__cpp
+[2.259s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_realsense2_camera_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_realsense2_camera_msgs] Error 1
+[2.259s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_realsense2_camera_msgs.dir/all] Error 2
+[2.259s] gmake[1]: *** Waiting for unfinished jobs....
+[2.262s] [ 12%] Built target realsense2_camera_msgs__rosidl_generator_c
+[2.265s] gmake: *** [Makefile:146: all] Error 2
+[2.270s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '2': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8

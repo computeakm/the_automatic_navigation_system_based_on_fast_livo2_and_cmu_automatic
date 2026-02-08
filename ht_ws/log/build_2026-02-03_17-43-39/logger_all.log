@@ -1,0 +1,644 @@
+[0.186s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.186s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa34642e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa342fdc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa342fdc0>>)
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.460s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bxi_nx/ht_ws'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ros'
+[0.490s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FAST-LIVO2' with type 'ros.ament_cmake' and name 'fast_livo'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['colcon_meta']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'colcon_meta'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['ros']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'ros'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extensions ['cmake', 'python']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'cmake'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/Livox-SDK2) by extension 'python'
+[0.510s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Livox-SDK2' with type 'cmake' and name 'livox_sdk2'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extensions ['ros']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_ros2) by extension 'ros'
+[0.512s] DEBUG:colcon.colcon_core.package_identification:Package 'src/octomap_ros2' with type 'ros.ament_cmake' and name 'octomap_server2'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.517s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.519s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ros'
+[0.521s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['ignore', 'ignore_ament_install']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ignore'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ignore_ament_install'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['colcon_pkg']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'colcon_pkg'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['colcon_meta']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'colcon_meta'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['ros']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ros'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['cmake', 'python']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'cmake'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'python'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['python_setup_py']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'python_setup_py'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['ignore', 'ignore_ament_install']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ignore'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['colcon_pkg']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['colcon_meta']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ros'
+[0.526s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rpg_vikit/vikit_common' with type 'ros.catkin' and name 'vikit_common'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ignore_ament_install'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['colcon_pkg']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ros'
+[0.528s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rpg_vikit/vikit_ros' with type 'ros.ament_cmake' and name 'vikit_ros'
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.605s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/bxi_nx/ht_ws/install
+[0.606s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/bxi_nx/ws_livox/install
+[0.608s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 311 installed packages in /opt/ros/humble
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.679s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_args' from command line to 'None'
+[0.679s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target' from command line to 'None'
+[0.679s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.679s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.679s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_first' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_force_configure' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'ament_cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.680s] DEBUG:colcon.colcon_core.verb:Building package 'livox_sdk2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/livox_sdk2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/livox_sdk2', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/Livox-SDK2', 'symlink_install': False, 'test_result_base': None}
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_target' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_clean_first' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'cmake_force_configure' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'ament_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'octomap_server2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.681s] DEBUG:colcon.colcon_core.verb:Building package 'octomap_server2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/octomap_server2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/octomap_server2', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/octomap_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.682s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_target' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_clean_first' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_force_configure' from command line to 'False'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'ament_cmake_args' from command line to 'None'
+[0.682s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.683s] DEBUG:colcon.colcon_core.verb:Building package 'vikit_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/vikit_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/vikit_common', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_common', 'symlink_install': False, 'test_result_base': None}
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.683s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.683s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/realsense2_camera', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera', 'symlink_install': False, 'test_result_base': None}
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.684s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.684s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/realsense2_description', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_args' from command line to 'None'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_target' from command line to 'None'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.685s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.685s] DEBUG:colcon.colcon_core.verb:Building package 'vikit_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/vikit_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/vikit_ros', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_ros', 'symlink_install': False, 'test_result_base': None}
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_target' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_clean_first' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_force_configure' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'ament_cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.686s] DEBUG:colcon.colcon_core.verb:Building package 'fast_livo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bxi_nx/ht_ws/build/fast_livo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bxi_nx/ht_ws/install/fast_livo', 'merge_install': False, 'path': '/home/bxi_nx/ht_ws/src/FAST-LIVO2', 'symlink_install': False, 'test_result_base': None}
+[0.686s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.689s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.690s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.690s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs'
+[0.694s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.694s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.703s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_common' with build type 'catkin'
+[0.703s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_common'
+[0.704s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.704s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.712s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/Livox-SDK2'
+[0.712s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.712s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.720s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/octomap_ros2' with build type 'ament_cmake'
+[0.721s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/octomap_ros2'
+[0.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8
+[0.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
+[0.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/octomap_server2
+[1.034s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(octomap_server2)
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/octomap_server2
+[1.040s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2' for CMake module files
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2' for CMake config files
+[1.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_server2', 'cmake_prefix_path')
+[1.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib'
+[1.051s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_server2', 'ld_library_path_lib')
+[1.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.ps1'
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.sh'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/bin'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib/pkgconfig/octomap_server2.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib/python3.10/site-packages'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/bin'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.bash'
+[1.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.zsh'
+[1.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/octomap_server2/share/colcon-core/packages/octomap_server2)
+[1.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(octomap_server2)
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2' for CMake module files
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2' for CMake config files
+[1.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_server2', 'cmake_prefix_path')
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/cmake_prefix_path.sh'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib'
+[1.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_server2', 'ld_library_path_lib')
+[1.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.ps1'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/hook/ld_library_path_lib.sh'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/bin'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib/pkgconfig/octomap_server2.pc'
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/lib/python3.10/site-packages'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/octomap_server2/bin'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.sh'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.bash'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.zsh'
+[1.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/octomap_server2/share/colcon-core/packages/octomap_server2)
+[1.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_common
+[1.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
+[1.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2
+[1.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'ros_package_path')
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.sh'
+[1.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'pkg_config_path')
+[1.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.sh'
+[1.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_common
+[1.150s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'pkg_config_path_multiarch')
+[1.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.ps1'
+[1.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.dsv'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.sh'
+[1.154s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_common)
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common' for CMake module files
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common' for CMake config files
+[1.156s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'cmake_prefix_path')
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.ps1'
+[1.157s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.dsv'
+[1.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.sh'
+[1.159s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common/lib'
+[1.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'ld_library_path_lib')
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.ps1'
+[1.161s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.dsv'
+[1.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.sh'
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common/bin'
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig/vikit_common.pc'
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common/lib/python3.10/site-packages'
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_common/bin'
+[1.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.dsv'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.sh'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.bash'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_common/share/vikit_common/package.zsh'
+[1.169s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/vikit_common/share/colcon-core/packages/vikit_common)
+[1.170s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_ros' with build type 'ament_cmake'
+[1.171s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_ros'
+[1.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_sdk2)
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2' for CMake module files
+[1.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2' for CMake config files
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2/lib'
+[1.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_sdk2', 'ld_library_path_lib')
+[1.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.sh'
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2/bin'
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2/lib/pkgconfig/livox_sdk2.pc'
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2/lib/python3.10/site-packages'
+[1.192s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/livox_sdk2/bin'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/package.ps1'
+[1.194s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/package.dsv'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/package.sh'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/package.bash'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/livox_sdk2/share/livox_sdk2/package.zsh'
+[1.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/livox_sdk2/share/colcon-core/packages/livox_sdk2)
+[1.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/vikit_ros': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/vikit_ros:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_ros -- -j8 -l8
+[1.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/vikit_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/vikit_ros:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_ros -- -j8 -l8
+[1.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/vikit_ros': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/vikit_ros:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_ros
+[1.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_ros)
+[1.395s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros' for CMake module files
+[1.396s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros' for CMake config files
+[1.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/vikit_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/vikit_ros:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/vikit_ros
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'cmake_prefix_path')
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.ps1'
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.dsv'
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.sh'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib'
+[1.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'ld_library_path_lib')
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.ps1'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.sh'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/bin'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib/pkgconfig/vikit_ros.pc'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib/python3.10/site-packages'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/bin'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.sh'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.bash'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.zsh'
+[1.411s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/vikit_ros/share/colcon-core/packages/vikit_ros)
+[1.413s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_ros)
+[1.413s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros' for CMake module files
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros' for CMake config files
+[1.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'cmake_prefix_path')
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.ps1'
+[1.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.dsv'
+[1.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.sh'
+[1.418s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib'
+[1.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'ld_library_path_lib')
+[1.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.ps1'
+[1.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.dsv'
+[1.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.sh'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/bin'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib/pkgconfig/vikit_ros.pc'
+[1.421s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/lib/python3.10/site-packages'
+[1.422s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/vikit_ros/bin'
+[1.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.ps1'
+[1.424s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv'
+[1.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.sh'
+[1.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.bash'
+[1.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/package.zsh'
+[1.427s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/vikit_ros/share/colcon-core/packages/vikit_ros)
+[1.428s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/FAST-LIVO2' with build type 'ament_cmake'
+[1.428s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/FAST-LIVO2'
+[1.429s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.429s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[1.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8
+[1.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera_msgs
+[1.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.633s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs' for CMake module files
+[1.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera_msgs
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs' for CMake config files
+[1.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.639s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib'
+[1.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.644s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/bin'
+[1.644s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.644s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.645s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/bin'
+[1.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.652s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs' for CMake module files
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs' for CMake config files
+[1.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib'
+[1.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/bin'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.663s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/bin'
+[1.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.665s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.669s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[1.669s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera'
+[1.670s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.670s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.679s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[1.680s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bxi_nx/ht_ws/src/realsense-ros/realsense2_description'
+[1.680s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera -- -j8 -l8
+[1.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_description -- -j8 -l8
+[1.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[1.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo
+[1.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_livo)
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo' for CMake module files
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo' for CMake config files
+[1.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_livo', 'cmake_prefix_path')
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.ps1'
+[1.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.dsv'
+[1.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/fast_livo
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.sh'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/bin'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib/pkgconfig/fast_livo.pc'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib/python3.10/site-packages'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/bin'
+[1.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.ps1'
+[1.797s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.dsv'
+[1.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.sh'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.bash'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.zsh'
+[1.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/fast_livo/share/colcon-core/packages/fast_livo)
+[1.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_livo)
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo' for CMake module files
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo' for CMake config files
+[1.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_livo', 'cmake_prefix_path')
+[1.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.ps1'
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.dsv'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.sh'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/bin'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib/pkgconfig/fast_livo.pc'
+[1.810s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/lib/python3.10/site-packages'
+[1.810s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/fast_livo/bin'
+[1.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.ps1'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.dsv'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.sh'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.bash'
+[1.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/fast_livo/share/fast_livo/package.zsh'
+[1.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/fast_livo/share/colcon-core/packages/fast_livo)
+[1.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_description -- -j8 -l8
+[1.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_description
+[1.866s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description' for CMake module files
+[1.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_description
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description' for CMake config files
+[1.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[1.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[1.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/bin'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/lib/python3.10/site-packages'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/bin'
+[1.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[1.876s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[1.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[1.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[1.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description' for CMake module files
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description' for CMake config files
+[1.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[1.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/bin'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/lib/python3.10/site-packages'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_description/bin'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[1.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[1.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[1.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera -- -j8 -l8
+[1.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera
+[1.952s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[1.952s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera' for CMake module files
+[1.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/ht_ws/install/realsense2_camera/lib:/home/bxi_nx/ht_ws/install/octomap_server2/lib:/home/bxi_nx/ht_ws/install/livox_sdk2/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera
+[1.954s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera' for CMake config files
+[1.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[1.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[1.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[1.959s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib'
+[1.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[1.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[1.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/bin'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib/python3.10/site-packages'
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/bin'
+[1.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[1.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[1.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[1.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[1.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[1.970s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[1.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[1.971s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera' for CMake module files
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera' for CMake config files
+[1.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[1.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[1.977s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib'
+[1.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[1.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[1.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[1.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/bin'
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/lib/python3.10/site-packages'
+[1.981s] Level 1:colcon.colcon_core.environment:checking '/home/bxi_nx/ht_ws/install/realsense2_camera/bin'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[1.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[1.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[1.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[1.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bxi_nx/ht_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[1.987s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.989s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.002s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.002s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.002s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.021s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.022s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bxi_nx/ht_ws/install/local_setup.ps1'
+[2.024s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bxi_nx/ht_ws/install/_local_setup_util_ps1.py'
+[2.027s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bxi_nx/ht_ws/install/setup.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bxi_nx/ht_ws/install/local_setup.sh'
+[2.031s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bxi_nx/ht_ws/install/_local_setup_util_sh.py'
+[2.032s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bxi_nx/ht_ws/install/setup.sh'
+[2.035s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bxi_nx/ht_ws/install/local_setup.bash'
+[2.036s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bxi_nx/ht_ws/install/setup.bash'
+[2.039s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bxi_nx/ht_ws/install/local_setup.zsh'
+[2.040s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bxi_nx/ht_ws/install/setup.zsh'

@@ -1,0 +1,175 @@
+[0.049s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8
+[0.159s] [ 10%] Built target realsense2_camera_msgs__rosidl_generator_c
+[0.169s] [ 12%] Built target realsense2_camera_msgs__cpp
+[0.193s] [ 12%] Built target ament_cmake_python_symlink_realsense2_camera_msgs
+[0.234s] [ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[0.251s] [ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[0.254s] [ 45%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.275s] [ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.299s] [ 67%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.318s] [ 78%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[0.405s] [ 78%] Built target realsense2_camera_msgs
+[0.453s] [ 80%] Built target realsense2_camera_msgs__py
+[0.503s] [ 89%] Built target realsense2_camera_msgs__rosidl_generator_py
+[0.554s] [ 94%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.554s] [ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[0.562s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[0.730s] running egg_info
+[0.731s] writing realsense2_camera_msgs.egg-info/PKG-INFO
+[0.732s] writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt
+[0.732s] writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt
+[0.737s] reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[0.738s] writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[0.825s] [100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg
+[0.856s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera_msgs -- -j8 -l8
+[0.862s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera_msgs
+[0.876s] -- Install configuration: ""
+[0.877s] -- Execute custom install script
+[0.877s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs
+[0.878s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h
+[0.878s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h
+[0.878s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h
+[0.879s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h
+[0.879s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h
+[0.879s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h
+[0.879s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h
+[0.879s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h
+[0.880s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h
+[0.881s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h
+[0.881s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h
+[0.881s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh
+[0.881s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv
+[0.882s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[0.882s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[0.882s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[0.882s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.883s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[0.883s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[0.884s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[0.884s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[0.884s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.884s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h
+[0.885s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp
+[0.885s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp
+[0.885s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp
+[0.886s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp
+[0.886s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp
+[0.886s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp
+[0.886s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp
+[0.886s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp
+[0.887s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp
+[0.887s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp
+[0.887s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp
+[0.887s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp
+[0.887s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp
+[0.888s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp
+[0.889s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp
+[0.889s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp
+[0.890s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[0.890s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[0.890s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[0.890s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.890s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[0.891s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[0.891s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[0.891s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[0.891s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[0.892s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh
+[0.892s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv
+[0.892s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/PKG-INFO
+[0.892s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/SOURCES.txt
+[0.893s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/dependency_links.txt
+[0.893s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.51.1-py3.10.egg-info/top_level.txt
+[0.894s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py
+[0.897s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c
+[0.897s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.897s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.897s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so
+[0.897s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c
+[0.898s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.899s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg
+[0.900s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv
+[0.901s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg
+[0.901s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg
+[0.901s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs
+[0.901s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs
+[0.901s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh
+[0.902s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv
+[0.902s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh
+[0.902s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv
+[0.902s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash
+[0.902s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh
+[0.903s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh
+[0.903s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv
+[0.903s] -- Symlinking: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv
+[0.924s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs
+[0.924s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[0.924s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.925s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.925s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.925s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.926s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.927s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.927s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake
+[0.927s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake
+[0.927s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml
+[0.927s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so
+[0.928s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[0.928s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so
+[0.928s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so
+[0.928s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.928s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[0.929s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so
+[0.996s] Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...
+[0.996s] Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...
+[0.996s] Listing '/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...
+[1.012s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so
+[1.013s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake
+[1.013s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.013s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.013s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.014s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.014s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.014s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake
+[1.014s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.014s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake
+[1.015s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake
+[1.016s] -- Up-to-date: /home/bxi_nx/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.023s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:/home/bxi_nx/ht_ws/install/realsense2_description:/home/bxi_nx/ht_ws/install/realsense2_camera:/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ht_ws/install/octomap_server2:/home/bxi_nx/ht_ws/install/fast_livo:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera_msgs

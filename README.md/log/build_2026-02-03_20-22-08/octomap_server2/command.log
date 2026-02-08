@@ -1,0 +1,2 @@
+Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8

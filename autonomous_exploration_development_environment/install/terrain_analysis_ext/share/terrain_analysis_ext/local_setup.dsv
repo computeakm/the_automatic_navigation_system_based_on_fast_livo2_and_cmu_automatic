@@ -1,1 +1,2 @@
-/home/ht/autonomous_exploration_development_environment/build/terrain_analysis_ext/ament_cmake_environment_hooks/local_setup.dsv
+source;share/terrain_analysis_ext/environment/ament_prefix_path.sh
+source;share/terrain_analysis_ext/environment/path.sh

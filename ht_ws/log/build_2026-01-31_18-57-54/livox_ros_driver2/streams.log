@@ -1,0 +1,3 @@
+[0.033s] Invoking command in '/home/bxi_nx/ht_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/bxi_nx/ht_ws/livox_ros_driver2 -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/livox_ros_driver2
+[0.042s] [0mCMake Error: The source "/home/bxi_nx/ht_ws/livox_ros_driver2/CMakeLists.txt" does not match the source "/home/bxi_nx/ht_ws/src/livox_ros_driver2/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m
+[0.049s] Invoked command in '/home/bxi_nx/ht_ws/build/livox_ros_driver2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/bxi_nx/ht_ws/livox_ros_driver2 -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/livox_ros_driver2

@@ -1,0 +1,46 @@
+[0.032s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[0.132s] [35m[1mConsolidate compiler generated dependencies of target utils[0m
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[0.147s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[0.148s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[0.169s] [ 12%] Built target utils
+[0.203s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[0.211s] [ 18%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[0.237s] [ 37%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[0.237s] [ 37%] Built target pre
+[0.238s] [ 43%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[0.254s] [ 56%] Built target lio
+[15.579s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:[m[K In member function ‘[01m[Kvoid ImuProcess::Process2(LidarMeasureGroup&, StatesGroup&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr)[m[K’:
+[15.579s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:594:7:[m[K [01;31m[Kerror: [m[K‘[01m[KLOGW[m[K’ was not declared in this scope
+[15.579s]   594 |       [01;31m[KLOGW[m[K("[LIO] meas imu is empty");
+[15.579s]       |       [01;31m[K^~~~[m[K
+[15.626s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:603:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_init_count[m[K’ was not declared in this scope
+[15.627s]   603 |     if (init_iter_num > [01;31m[Kmax_init_count[m[K){
+[15.627s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.657s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:607:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc_M2[m[K’ was not declared in this scope
+[15.657s]   607 |       V3D acc_std = ([01;31m[Kacc_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+[15.658s]       |                      [01;31m[K^~~~~~[m[K
+[15.687s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:608:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kgyr_M2[m[K’ was not declared in this scope
+[15.687s]   608 |       V3D gyr_std = ([01;31m[Kgyr_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+[15.687s]       |                      [01;31m[K^~~~~~[m[K
+[15.733s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:614:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgravity_align_en[m[K’ was not declared in this scope; did you mean ‘[01m[Kgravity_est_en[m[K’?
+[15.733s]   614 |       if ([01;31m[Kgravity_align_en[m[K) {
+[15.733s]       |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[15.733s]       |           [32m[Kgravity_est_en[m[K
+[17.836s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:[m[K In member function ‘[01m[Kvoid LIVMapper::readParameters(rclcpp::Node::SharedPtr&)[m[K’:
+[17.837s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:88:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktry_declare[m[K’
+[17.837s]    88 |   try_declare.template operator()<int>("vio.outlier_threshold", 100)
+[17.837s]       |                                                                     [01;31m[K^[m[K
+[17.837s]       |                                                                     [32m[K;[m[K
+[17.837s]    89 |   [32m[Ktry_declare[m[K.template operator()<double>("time_offset.exposure_time_init", 0.0);
+[17.837s]       |   [32m[K~~~~~~~~~~~[m[K                                                        
+[36.939s] gmake[2]: *** [CMakeFiles/imu_proc.dir/build.make:76: CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o] Error 1
+[36.939s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/imu_proc.dir/all] Error 2
+[36.939s] gmake[1]: *** Waiting for unfinished jobs....
+[50.106s] gmake[2]: *** [CMakeFiles/laser_mapping.dir/build.make:76: CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o] Error 1
+[50.107s] gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/laser_mapping.dir/all] Error 2
+[55.806s] [ 62%] [32m[1mLinking CXX static library libvio.a[0m
+[55.890s] [ 75%] Built target vio
+[55.894s] gmake: *** [Makefile:146: all] Error 2
+[55.899s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '2': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8

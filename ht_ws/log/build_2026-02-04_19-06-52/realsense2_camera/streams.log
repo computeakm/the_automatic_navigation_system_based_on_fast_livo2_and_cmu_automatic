@@ -1,0 +1,50 @@
+[0.050s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera -- -j8 -l8
+[0.312s] [ 78%] Built target realsense2_camera
+[0.396s] [ 89%] Built target realsense2_frame_latency_node
+[0.462s] [100%] Built target realsense2_camera_node
+[0.486s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/realsense2_camera -- -j8 -l8
+[0.489s] Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera
+[0.512s] -- Install configuration: "Release"
+[0.512s] -- Execute custom install script
+[0.513s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[0.514s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_frame_latency_node
+[0.514s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[0.514s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/base_realsense_node.h
+[0.515s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/constants.h
+[0.517s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/dynamic_params.h
+[0.517s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/image_publisher.h
+[0.518s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/named_filter.h
+[0.519s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/profile_manager.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/realsense_node_factory.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_param_backend.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_sensor.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/ros_utils.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/sensor_params.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/include/t265_realsense_node.h
+[0.520s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[0.521s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[0.522s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[0.522s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[0.522s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[0.522s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[0.522s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[0.523s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[0.523s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[0.523s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[0.523s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[0.523s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[0.523s] -- Symlinking: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[0.551s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[0.551s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[0.551s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.551s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[0.552s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.552s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[0.552s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[0.552s] -- Up-to-date symlink: /home/bxi_nx/ht_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[0.557s] Invoked command in '/home/bxi_nx/ht_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs:/home/bxi_nx/ws_livox/install/localizer:/home/bxi_nx/ws_livox/install/fastlio2:/home/bxi_nx/ws_livox/install/livox_ros_driver2:/home/bxi_nx/ws_livox/install/interface:/home/bxi_nx/ws_livox/install/communication:/opt/ros/humble LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/realsense2_camera

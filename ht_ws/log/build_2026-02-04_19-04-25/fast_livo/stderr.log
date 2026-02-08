@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/lio.dir/build.make:76: CMakeFiles/lio.dir/src/voxel_map.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/lio.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

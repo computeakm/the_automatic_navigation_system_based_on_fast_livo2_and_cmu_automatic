@@ -135,68 +135,39 @@ float vehicleX = 0, vehicleY = 0, vehicleZ = 0;
 pcl::VoxelGrid<pcl::PointXYZI> laserDwzFilter, terrainDwzFilter;
 rclcpp::Node::SharedPtr nh;
 
-/**
- * @brief 处理里程计信息的回调函数
- * @param odom 接收到的里程计消息的共享指针
- * 该函数从里程计消息中提取位置和姿态信息，并进行坐标转换
- */
 void odometryHandler(const nav_msgs::msg::Odometry::ConstSharedPtr odom)
 {
-  // 获取并转换时间戳，单位为秒
   odomTime = rclcpp::Time(odom->header.stamp).seconds();
-  // 定义用于存储欧拉角的变量
   double roll, pitch, yaw;
-  // 从里程计消息中获取四元数姿态数据
   geometry_msgs::msg::Quaternion geoQuat = odom->pose.pose.orientation;
-  // 将四元数转换为欧拉角（roll, pitch, yaw）
   tf2::Matrix3x3(tf2::Quaternion(geoQuat.x, geoQuat.y, geoQuat.z, geoQuat.w)).getRPY(roll, pitch, yaw);
 
-  // 存储车辆的欧拉角姿态
   vehicleRoll = roll;
   vehiclePitch = pitch;
   vehicleYaw = yaw;
-  // 计算车辆的实际位置，考虑传感器偏移量
-  // X坐标：使用当前X坐标减去偏移量在X方向的分量（考虑偏航角）
   vehicleX = odom->pose.pose.position.x - cos(yaw) * sensorOffsetX + sin(yaw) * sensorOffsetY;
-  // Y坐标：使用当前Y坐标减去偏移量在Y方向的分量（考虑偏航角）
   vehicleY = odom->pose.pose.position.y - sin(yaw) * sensorOffsetX - cos(yaw) * sensorOffsetY;
-  // Z坐标：直接使用原始Z坐标
   vehicleZ = odom->pose.pose.position.z;
 }
 
 void laserCloudHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr laserCloud2)
 {
-/**
- * 如果不使用地形分析功能
- * 则执行以下激光点云处理流程
- */
   if (!useTerrainAnalysis) {
-    // 清空激光点云容器
     laserCloud->clear();
-    // 将ROS消息格式的点云数据转换为PCL格式并存储
     pcl::fromROSMsg(*laserCloud2, *laserCloud);
 
-    // 创建一个点云点对象用于遍历
     pcl::PointXYZI point;
-    // 清空裁剪后的点云容器
     laserCloudCrop->clear();
-    // 获取原始点云的大小
     int laserCloudSize = laserCloud->points.size();
-    // 遍历原始点云中的每一个点
     for (int i = 0; i < laserCloudSize; i++) {
-      // 获取当前点
       point = laserCloud->points[i];
 
-      // 获取当前点的XYZ坐标
       float pointX = point.x;
       float pointY = point.y;
       float pointZ = point.z;
 
-      // 计算当前点与车辆位置的水平距离
       float dis = sqrt((pointX - vehicleX) * (pointX - vehicleX) + (pointY - vehicleY) * (pointY - vehicleY));
-      // 如果点在车辆相邻范围内
       if (dis < adjacentRange) {
-        // 将点添加到裁剪后的点云中
         point.x = pointX;
         point.y = pointY;
         point.z = pointZ;
@@ -204,102 +175,72 @@ void laserCloudHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr laser
       }
     }
 
-    // 清空降采样后的点云容器
     laserCloudDwz->clear();
-    // 设置降采样滤波器的输入点云
     laserDwzFilter.setInputCloud(laserCloudCrop);
-    // 执行降采样滤波并存储结果
     laserDwzFilter.filter(*laserCloudDwz);
 
-    // 标记有新的激光点云数据
     newLaserCloud = true;
   }
 }
 
-/**
- * @brief 地形点云处理函数
- * @param terrainCloud2 输入的地形点云数据（ROS2消息格式）
- */
 void terrainCloudHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr terrainCloud2)
 {
-  // 如果启用地形分析功能
   if (useTerrainAnalysis) {
-    // 清空地形点云
     terrainCloud->clear();
-    // 将ROS2点云消息转换为PCL点云格式
     pcl::fromROSMsg(*terrainCloud2, *terrainCloud);
 
-    pcl::PointXYZI point;  // 定义点云点结构
-    terrainCloudCrop->clear();  // 清空裁剪后的点云
-    int terrainCloudSize = terrainCloud->points.size();  // 获取点云大小
-    // 遍历点云中的每个点
+    pcl::PointXYZI point;
+    terrainCloudCrop->clear();
+    int terrainCloudSize = terrainCloud->points.size();
     for (int i = 0; i < terrainCloudSize; i++) {
-      point = terrainCloud->points[i];  // 获取当前点
+      point = terrainCloud->points[i];
 
-      float pointX = point.x;  // 获取点的X坐标
-      float pointY = point.y;  // 获取点的Y坐标
-      float pointZ = point.z;  // 获取点的Z坐标
+      float pointX = point.x;
+      float pointY = point.y;
+      float pointZ = point.z;
 
-      // 计算点到车辆的欧氏距离
       float dis = sqrt((pointX - vehicleX) * (pointX - vehicleX) + (pointY - vehicleY) * (pointY - vehicleY));
-      // 如果点在有效范围内且高度超过阈值或使用代价地图
       if (dis < adjacentRange && (point.intensity > obstacleHeightThre || useCost)) {
-        point.x = pointX;  // 保留点的X坐标
-        point.y = pointY;  // 保留点的Y坐标
-        point.z = pointZ;  // 保留点的Z坐标
-        terrainCloudCrop->push_back(point);  // 将点添加到裁剪后的点云
+        point.x = pointX;
+        point.y = pointY;
+        point.z = pointZ;
+        terrainCloudCrop->push_back(point);
       }
     }
 
-    terrainCloudDwz->clear();  // 清空降采样后的点云
-    // 设置降采样滤波器的输入点云
+    terrainCloudDwz->clear();
     terrainDwzFilter.setInputCloud(terrainCloudCrop);
-    // 应用降采样滤波器并输出结果
     terrainDwzFilter.filter(*terrainCloudDwz);
 
-    newTerrainCloud = true;  // 标记有新的地形点云数据
+    newTerrainCloud = true;
   }
 }
 
-/**
- * @brief 处理手柄输入消息的回调函数
- * @param joy 包含手柄状态信息的共享指针
- */
 void joystickHandler(const sensor_msgs::msg::Joy::ConstSharedPtr joy)
 {
-  // 更新手柄输入时间戳
   joyTime = nh->now().seconds();
-  // 计算手柄摇杆原始速度值（3D和4D轴的平方和开方）
   joySpeedRaw = sqrt(joy->axes[3] * joy->axes[3] + joy->axes[4] * joy->axes[4]);
   joySpeed = joySpeedRaw;
-  // 限制最大速度为1.0
   if (joySpeed > 1.0) joySpeed = 1.0;
-  // 如果垂直轴（4D轴）为0，则速度设为0
   if (joy->axes[4] == 0) joySpeed = 0;
 
-  // 如果速度大于0，计算摇杆方向角度
   if (joySpeed > 0) {
-    // 使用atan2函数计算角度，并转换为度
     joyDir = atan2(joy->axes[3], joy->axes[4]) * 180 / PI;
-    // 如果垂直轴为负值，反转角度方向
     if (joy->axes[4] < 0) joyDir *= -1;
   }
 
-  // 如果不支持双向驱动且垂直轴为负值，则速度设为0
   if (joy->axes[4] < 0 && !twoWayDrive) joySpeed = 0;
 
-  // 检查左扳机（2号轴）状态，设置自主模式
   if (joy->axes[2] > -0.1) {
-    autonomyMode = false;  // 扳机释放时为手动模式
+    autonomyMode = false;
   } else {
-    autonomyMode = true;   // 扳机按下时为自主模式
+    autonomyMode = true;
   }
 
-  // 检查右扳机（5号轴）状态，设置障碍物检测
   if (joy->axes[5] > -0.1) {
-    checkObstacle = true;  // 扳机释放时启用障碍物检测
+    checkObstacle = true;
   } else {
-    checkObstacle = false; // 扳机按下时禁用障碍物检测
+    checkObstacle = false;
   }
 }
 
@@ -322,47 +263,35 @@ void speedHandler(const std_msgs::msg::Float32::ConstSharedPtr speed)
 
 void boundaryHandler(const geometry_msgs::msg::PolygonStamped::ConstSharedPtr boundary)
 {
-/**
- * @brief 清空边界点云并处理边界点
- * 该代码用于处理边界点云，根据边界点生成路径点
- */
-  boundaryCloud->clear();  // 清空边界点云
-  pcl::PointXYZI point, point1, point2;  // 定义三个PointXYZI类型的点
-  int boundarySize = boundary->polygon.points.size();  // 获取边界点数量
+  boundaryCloud->clear();
+  pcl::PointXYZI point, point1, point2;
+  int boundarySize = boundary->polygon.points.size();
 
-  if (boundarySize >= 1) {  // 如果边界点数量大于等于1
-    // 将第一个边界点赋值给point2
+  if (boundarySize >= 1) {
     point2.x = boundary->polygon.points[0].x;
     point2.y = boundary->polygon.points[0].y;
     point2.z = boundary->polygon.points[0].z;
   }
 
-// 遍历所有边界点
   for (int i = 0; i < boundarySize; i++) {
-    point1 = point2;  // 将前一个点赋值给point1
+    point1 = point2;
 
-    // 获取当前边界点坐标
     point2.x = boundary->polygon.points[i].x;
     point2.y = boundary->polygon.points[i].y;
     point2.z = boundary->polygon.points[i].z;
 
-    // 如果两个点的Z坐标相同（在同一水平面上）
     if (point1.z == point2.z) {
-        // 计算两点在X和Y方向上的距离
       float disX = point1.x - point2.x;
       float disY = point1.y - point2.y;
-      float dis = sqrt(disX * disX + disY * disY);  // 计算两点间距离
+      float dis = sqrt(disX * disX + disY * disY);
 
-        // 根据距离和地形体素大小计算需要插入的点数
       int pointNum = int(dis / terrainVoxelSize) + 1;
       for (int pointID = 0; pointID < pointNum; pointID++) {
-            // 在两点间线性插值生成路径点
         point.x = float(pointID) / float(pointNum) * point1.x + (1.0 - float(pointID) / float(pointNum)) * point2.x;
         point.y = float(pointID) / float(pointNum) * point1.y + (1.0 - float(pointID) / float(pointNum)) * point2.y;
-        point.z = 0;  // 设置Z坐标为0
-        point.intensity = 100.0;  // 设置强度值为100
+        point.z = 0;
+        point.intensity = 100.0;
 
-            // 根据阈值pointPerPathThre重复添加点
         for (int j = 0; j < pointPerPathThre; j++) {
           boundaryCloud->push_back(point);
         }
@@ -371,20 +300,12 @@ void boundaryHandler(const geometry_msgs::msg::PolygonStamped::ConstSharedPtr bo
   }
 }
 
-/**
- * @brief 处理新增障碍物的点云数据回调函数
- * @param addedObstacles2 接收到的ROS点云消息的共享指针
- */
 void addedObstaclesHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr addedObstacles2)
 {
-  // 清空原有的障碍物点云数据
   addedObstacles->clear();
-  // 将ROS点云消息转换为PCL点云格式并存储到addedObstacles中
   pcl::fromROSMsg(*addedObstacles2, *addedObstacles);
 
-  // 获取新增障碍物点云的大小
   int addedObstaclesSize = addedObstacles->points.size();
-  // 遍历点云中的每个点，将其强度值设置为200.0
   for (int i = 0; i < addedObstaclesSize; i++) {
     addedObstacles->points[i].intensity = 200.0;
   }
@@ -392,11 +313,8 @@ void addedObstaclesHandler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr a
 
 void checkObstacleHandler(const std_msgs::msg::Bool::ConstSharedPtr checkObs)
 {
-// 获取当前时间，以秒为单位
   double checkObsTime = nh->now().seconds();
-// 如果处于自主模式，并且当前时间与上次接收到的joystick控制时间的差值大于设定的延迟时间
   if (autonomyMode && checkObsTime - joyTime > joyToCheckObstacleDelay) {
-    // 检查障碍物
     checkObstacle = checkObs->data;
   }
 }
@@ -430,48 +348,34 @@ int readPlyHeader(FILE *filePtr)
 
 void readStartPaths()
 {
-/**
- * 从PLY文件中读取起始路径点数据
- * 文件格式应为包含x,y,z坐标和组ID的点云数据
- */
-// 构建完整的文件路径
   string fileName = pathFolder + "/startPaths.ply";
 
-// 以只读方式打开PLY文件
   FILE *filePtr = fopen(fileName.c_str(), "r");
-// 检查文件是否成功打开
   if (filePtr == NULL) {
     RCLCPP_INFO(nh->get_logger(), "Cannot read input files, exit.");
     exit(1);
   }
 
-// 读取PLY文件头，获取点云数量
   int pointNum = readPlyHeader(filePtr);
 
-// 创建PointXYZ点对象
   pcl::PointXYZ point;
   int val1, val2, val3, val4, groupID;
-// 遍历文件中的每个点
   for (int i = 0; i < pointNum; i++) {
-    // 读取点的x,y,z坐标和组ID
     val1 = fscanf(filePtr, "%f", &point.x);
     val2 = fscanf(filePtr, "%f", &point.y);
     val3 = fscanf(filePtr, "%f", &point.z);
     val4 = fscanf(filePtr, "%d", &groupID);
 
-    // 检查是否成功读取所有值
     if (val1 != 1 || val2 != 1 || val3 != 1 || val4 != 1) {
       RCLCPP_INFO(nh->get_logger(), "Error reading input files, exit.");
         exit(1);
     }
 
-    // 检查组ID是否在有效范围内，并将点添加到对应的路径组中
     if (groupID >= 0 && groupID < groupNum) {
       startPaths[groupID]->push_back(point);
     }
   }
 
-// 关闭文件指针
   fclose(filePtr);
 }
 
@@ -678,9 +582,9 @@ int main(int argc, char** argv)
   nh->get_parameter("goalX", goalX);
   nh->get_parameter("goalY", goalY);
 
-  auto subOdometry = nh->create_subscription<nav_msgs::msg::Odometry>("/state_estimation", 5, odometryHandler);
+  auto subOdometry = nh->create_subscription<nav_msgs::msg::Odometry>("/state_estimation", 15, odometryHandler);
 
-  auto subLaserCloud = nh->create_subscription<sensor_msgs::msg::PointCloud2>("/registered_scan", 5, laserCloudHandler);
+  auto subLaserCloud = nh->create_subscription<sensor_msgs::msg::PointCloud2>("/registered_scan", 15, laserCloudHandler);
 
   auto subTerrainCloud = nh->create_subscription<sensor_msgs::msg::PointCloud2>("/terrain_map", 5, terrainCloudHandler);
 
@@ -746,81 +650,50 @@ int main(int argc, char** argv)
   while (status) {
     rclcpp::spin_some(nh);
 
-    // 判断是否有新的激光雷达点云或地形点云数据
     if (newLaserCloud || newTerrainCloud) {
-      // 处理新的激光雷达点云数据
       if (newLaserCloud) {
-        newLaserCloud = false;  // 重置标志位，表示已处理
+        newLaserCloud = false;
 
-        // 清空当前激光雷达点云栈，并将当前激光雷达点云数据存入栈中
         laserCloudStack[laserCloudCount]->clear();
         *laserCloudStack[laserCloudCount] = *laserCloudDwz;
-        // 更新激光雷达点云计数器，实现循环存储
         laserCloudCount = (laserCloudCount + 1) % laserCloudStackNum;
 
-        // 清空规划点云，准备合并所有激光雷达点云数据
         plannerCloud->clear();
-        // 遍历激光雷达点云栈，将所有点云数据合并到规划点云中
         for (int i = 0; i < laserCloudStackNum; i++) {
           *plannerCloud += *laserCloudStack[i];
         }
       }
 
-      // 如果新地形云图标志为真
       if (newTerrainCloud) {
-        // 将新地形云图标志重置为假
         newTerrainCloud = false;
 
-        // 清空规划器云图
         plannerCloud->clear();
-        // 将地形云图（无重力补偿）复制到规划器云图
         *plannerCloud = *terrainCloudDwz;
       }
 
-/**
- * 计算车辆航向角的正弦和余弦值
- * 这些值将用于后续的坐标变换计算
- */
       float sinVehicleYaw = sin(vehicleYaw);
       float cosVehicleYaw = cos(vehicleYaw);
 
-/**
- * 创建一个PointXYZI类型的点云点对象
- * 该对象将用于存储处理后的点云数据
- */
       pcl::PointXYZI point;
-      plannerCloudCrop->clear();  // 清空裁剪后的点云容器
-// 获取原始点云的大小，用于循环处理
+      plannerCloudCrop->clear();
       int plannerCloudSize = plannerCloud->points.size();
-// 遍历原始点云中的每一个点
       for (int i = 0; i < plannerCloudSize; i++) {
+        float pointX1 = plannerCloud->points[i].x - vehicleX;
+        float pointY1 = plannerCloud->points[i].y - vehicleY;
+        float pointZ1 = plannerCloud->points[i].z - vehicleZ;
 
-    // 将点云点转换到车辆坐标系下
-        float pointX1 = plannerCloud->points[i].x - vehicleX;  // X轴坐标平移
-        float pointY1 = plannerCloud->points[i].y - vehicleY;  // Y轴坐标平移
-        float pointZ1 = plannerCloud->points[i].z - vehicleZ;  // Z轴坐标平移
+        point.x = pointX1 * cosVehicleYaw + pointY1 * sinVehicleYaw;
+        point.y = -pointX1 * sinVehicleYaw + pointY1 * cosVehicleYaw;
+        point.z = pointZ1;
+        point.intensity = plannerCloud->points[i].intensity;
 
-
-
-    // 应用旋转矩阵，将点云点转换到车辆坐标系
-        point.x = pointX1 * cosVehicleYaw + pointY1 * sinVehicleYaw;  // 新的X坐标
-        point.y = -pointX1 * sinVehicleYaw + pointY1 * cosVehicleYaw;  // 新的Y坐标
-        point.z = pointZ1;  // Z坐标保持不变
-        point.intensity = plannerCloud->points[i].intensity;  // 保持点的强度值不变
-
-    // 计算点到车辆中心的水平距离
         float dis = sqrt(point.x * point.x + point.y * point.y);
-    // 根据距离和高度条件判断是否保留该点
         if (dis < adjacentRange && ((point.z > minRelZ && point.z < maxRelZ) || useTerrainAnalysis)) {
-          plannerCloudCrop->push_back(point);  // 将符合条件的点添加到裁剪后的点云中
+          plannerCloudCrop->push_back(point);
         }
       }
 
-/**
- * 此段代码用于处理边界点云数据，将点云从车辆坐标系转换到世界坐标系，
- * 并筛选出在指定范围内的点，添加到规划点云中。
- */
-      int boundaryCloudSize = boundaryCloud->points.size(); // 获取边界点云的大小
+      int boundaryCloudSize = boundaryCloud->points.size();
       for (int i = 0; i < boundaryCloudSize; i++) {
         point.x = ((boundaryCloud->points[i].x - vehicleX) * cosVehicleYaw 
                 + (boundaryCloud->points[i].y - vehicleY) * sinVehicleYaw);

@@ -1,0 +1,27 @@
+[ 33%] Built target octomap_server
+[ 50%] [32mBuilding CXX object CMakeFiles/octomap_server2.dir/src/octomap_server.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library liboctomap_server2.so[0m
+[100%] Built target octomap_server2
+-- Install configuration: ""
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/lib/octomap_server2/octomap_server
+-- Installing: /home/bxi_nx/ht_ws/install/octomap_server2/lib/liboctomap_server2.so
+-- Set runtime path of "/home/bxi_nx/ht_ws/install/octomap_server2/lib/liboctomap_server2.so" to ""
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch
+-- Installing: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch/octomap_server_launch.py
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch/octomap_server_launch_all.py
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/package_run_dependencies/octomap_server2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/parent_prefix_path/octomap_server2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/ament_prefix_path.sh
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/path.sh
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/path.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.bash
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.sh
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.zsh
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/packages/octomap_server2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/rclcpp_components/octomap_server2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/cmake/octomap_server2Config.cmake
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/cmake/octomap_server2Config-version.cmake
+-- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.xml

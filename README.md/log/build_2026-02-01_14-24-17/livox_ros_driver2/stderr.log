@@ -1,0 +1,5 @@
+[0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+/home/bxi_nx/ht_ws/src/livox_ros_driver2/LIVOX_INTERFACES_INCLUDE_DIRECTORIES
+   used as include directory in directory /home/bxi_nx/ht_ws/src/livox_ros_driver2
+[0m

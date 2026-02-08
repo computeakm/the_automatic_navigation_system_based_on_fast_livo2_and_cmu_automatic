@@ -1,1 +1,6 @@
-/home/ht/autonomous_exploration_development_environment/build/visualization_tools/ament_cmake_python/visualization_tools/visualization_tools.egg-info/SOURCES.txt
+setup.py
+visualization_tools/__init__.py
+visualization_tools.egg-info/PKG-INFO
+visualization_tools.egg-info/SOURCES.txt
+visualization_tools.egg-info/dependency_links.txt
+visualization_tools.egg-info/top_level.txt

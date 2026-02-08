@@ -1,0 +1,31 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found nav2_bringup: 1.1.20 (/opt/ros/humble/share/nav2_bringup/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bxi_nx/ht_ws/build/fishbot_navigation2
+-- Install configuration: ""
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/launch
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/launch/ro.launch.py
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/param
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/maps
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.sh
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.bash
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.sh
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.zsh
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.dsv
+-- Installing: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/packages/fishbot_navigation2
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config.cmake
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config-version.cmake
+-- Up-to-date: /home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/package.xml

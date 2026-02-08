@@ -1,1 +1,1 @@
-/home/ht/autonomous_exploration_development_environment/build/velodyne_description/ament_cmake_environment_hooks/velodyne_description.dsv
+prepend-non-duplicate;GAZEBO_MODEL_PATH;share/

@@ -1,0 +1,11 @@
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:195:53:[m[K [01;31m[Kerror: [m[Kextended character “ is not valid in an identifier
+  195 |   if (!vk::camera_loader::loadFromRosNs(this->node, [01;31m[K“[m[K”, vio_manager->cam))
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:195:53:[m[K [01;31m[Kerror: [m[Kextended character ” is not valid in an identifier
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:[m[K In member function ‘[01m[Kvoid LIVMapper::initializeComponents(rclcpp::Node::SharedPtr&)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:195:53:[m[K [01;31m[Kerror: [m[K‘[01m[K“”[m[K’ was not declared in this scope
+  195 |   if (!vk::camera_loader::loadFromRosNs(this->node, [01;31m[K“”[m[K, vio_manager->cam))
+      |                                                     [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/laser_mapping.dir/build.make:76: CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/laser_mapping.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

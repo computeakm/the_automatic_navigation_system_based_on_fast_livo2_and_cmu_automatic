@@ -1,0 +1,8 @@
+[ 42%] Built target livox_lidar_sdk_static
+[ 84%] Built target livox_lidar_sdk_shared
+[ 86%] Built target debug_point_cloud
+[ 89%] Built target lidar_cmd_observer
+[ 91%] Built target multi_lidars_upgrade
+[ 95%] Built target livox_lidar_rmc_time_sync
+[ 98%] Built target logger
+[100%] Built target livox_lidar_quick_start

@@ -1,3 +1,0 @@
-[console_scripts]
-realsense2_ros_mqtt_bridge = src.entry_point:main
-

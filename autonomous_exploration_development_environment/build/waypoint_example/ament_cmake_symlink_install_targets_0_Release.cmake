@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ht/autonomous_exploration_development_environment/build/waypoint_example/waypointExample" "TARGETS" "waypointExample" "DESTINATION" "lib/waypoint_example")

@@ -1,0 +1,27 @@
+-- main project dir: /home/bxi_nx/ht_ws/src/Livox-SDK2
+-- main project dir: /home/bxi_nx/ht_ws/src/Livox-SDK2/samples
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bxi_nx/ht_ws/build/livox_sdk2
+[35m[1mConsolidate compiler generated dependencies of target livox_lidar_sdk_shared[0m
+[35m[1mConsolidate compiler generated dependencies of target livox_lidar_sdk_static[0m
+[ 42%] Built target livox_lidar_sdk_static
+[ 84%] Built target livox_lidar_sdk_shared
+[35m[1mConsolidate compiler generated dependencies of target multi_lidars_upgrade[0m
+[35m[1mConsolidate compiler generated dependencies of target livox_lidar_quick_start[0m
+[35m[1mConsolidate compiler generated dependencies of target livox_lidar_rmc_time_sync[0m
+[35m[1mConsolidate compiler generated dependencies of target lidar_cmd_observer[0m
+[35m[1mConsolidate compiler generated dependencies of target debug_point_cloud[0m
+[35m[1mConsolidate compiler generated dependencies of target logger[0m
+[ 86%] Built target multi_lidars_upgrade
+[ 89%] Built target livox_lidar_quick_start
+[ 92%] Built target livox_lidar_rmc_time_sync
+[100%] Built target debug_point_cloud
+[100%] Built target logger
+[100%] Built target lidar_cmd_observer
+-- Install configuration: ""
+-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_def.h
+-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_api.h
+-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+-- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so

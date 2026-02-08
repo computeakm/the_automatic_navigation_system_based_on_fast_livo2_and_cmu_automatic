@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(fast_livo)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(realsense2_DIR "/usr/local/lib/cmake/realsense2/")
 set(CMAKE_BUILD_TYPE "Release")
 message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
 

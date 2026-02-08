@@ -1,0 +1,28 @@
+[0.921s] Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[1.147s] [ 33%] Built target octomap_server
+[1.180s] [100%] Built target octomap_server2
+[1.293s] Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[1.296s] Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/octomap_server2
+[1.345s] -- Install configuration: ""
+[1.345s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/lib/octomap_server2/octomap_server
+[1.345s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/lib/liboctomap_server2.so
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch/octomap_server_launch.py
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2//launch/octomap_server_launch_all.py
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/package_run_dependencies/octomap_server2
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/parent_prefix_path/octomap_server2
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/ament_prefix_path.sh
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/ament_prefix_path.dsv
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/path.sh
+[1.346s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/environment/path.dsv
+[1.347s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.bash
+[1.347s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.sh
+[1.347s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.zsh
+[1.347s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/local_setup.dsv
+[1.347s] -- Installing: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.dsv
+[1.347s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/packages/octomap_server2
+[1.354s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/ament_index/resource_index/rclcpp_components/octomap_server2
+[1.354s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/cmake/octomap_server2Config.cmake
+[1.355s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/cmake/octomap_server2Config-version.cmake
+[1.355s] -- Up-to-date: /home/bxi_nx/ht_ws/install/octomap_server2/share/octomap_server2/package.xml
+[1.396s] Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/octomap_server2

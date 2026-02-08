@@ -1,3 +1,0 @@
-uint16[] closed_edges
-uint16[] opened_edges
-EdgeCost[] adjust_edges

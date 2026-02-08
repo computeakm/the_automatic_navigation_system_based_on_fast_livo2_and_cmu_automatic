@@ -1,0 +1,58 @@
+[0.041s] Invoking command in '/home/bxi_nx/ht_ws/build/ht_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/bxi_nx/ht_ws/src/ht_package -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/ht_package
+[0.243s] -- The C compiler identification is GNU 11.4.0
+[0.409s] -- The CXX compiler identification is GNU 11.4.0
+[0.427s] -- Detecting C compiler ABI info
+[0.554s] -- Detecting C compiler ABI info - done
+[0.564s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.565s] -- Detecting C compile features
+[0.568s] -- Detecting C compile features - done
+[0.571s] -- Detecting CXX compiler ABI info
+[0.699s] -- Detecting CXX compiler ABI info - done
+[0.709s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.711s] -- Detecting CXX compile features
+[0.713s] -- Detecting CXX compile features - done
+[0.716s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.007s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.200s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.289s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.299s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.316s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.372s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.452s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.457s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.605s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.660s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.730s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.749s] -- Looking for pthread.h
+[1.895s] -- Looking for pthread.h - found
+[1.896s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.050s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.054s] -- Found Threads: TRUE  
+[2.193s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.336s] -- Added test 'lint_cmake' to check CMake code style
+[2.337s] -- Added test 'xmllint' to check XML markup files
+[2.339s] -- Configuring done
+[2.348s] -- Generating done
+[2.352s] -- Build files have been written to: /home/bxi_nx/ht_ws/build/ht_package
+[2.374s] Invoked command in '/home/bxi_nx/ht_ws/build/ht_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/bxi_nx/ht_ws/src/ht_package -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/ht_package
+[2.378s] Invoking command in '/home/bxi_nx/ht_ws/build/ht_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/ht_package -- -j8 -l8
+[2.458s] Invoked command in '/home/bxi_nx/ht_ws/build/ht_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/ht_package -- -j8 -l8
+[2.464s] Invoking command in '/home/bxi_nx/ht_ws/build/ht_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/ht_package
+[2.480s] -- Install configuration: ""
+[2.480s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ament_index/resource_index/package_run_dependencies/ht_package
+[2.481s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ament_index/resource_index/parent_prefix_path/ht_package
+[2.481s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/environment/ament_prefix_path.sh
+[2.482s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/environment/ament_prefix_path.dsv
+[2.482s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/environment/path.sh
+[2.482s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/environment/path.dsv
+[2.483s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/local_setup.bash
+[2.483s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/local_setup.sh
+[2.483s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/local_setup.zsh
+[2.484s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/local_setup.dsv
+[2.484s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/package.dsv
+[2.484s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ament_index/resource_index/packages/ht_package
+[2.485s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/cmake/ht_packageConfig.cmake
+[2.485s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/cmake/ht_packageConfig-version.cmake
+[2.485s] -- Installing: /home/bxi_nx/ht_ws/install/ht_package/share/ht_package/package.xml
+[2.490s] Invoked command in '/home/bxi_nx/ht_ws/build/ht_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/ht_package

@@ -1,0 +1,40 @@
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K In member function ‘[01m[Kvoid Preprocess::process(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:58:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPreprocess::avia_handler(const SharedPtr&, std::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZINormal>, __gnu_cxx::_S_atomic, false, false>::element_type&)[m[K’
+   58 |   [01;31m[Kavia_handler(msg,*pcl_out)[m[K;
+      |   [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&)[m[K’
+  158 |   void [01;36m[Kavia_handler[m[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);
+      |        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K At global scope:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:91:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’
+   91 | void [01;31m[KPreprocess[m[K::avia_handler(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)
+      |      [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13[m[K:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:158:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&)[m[K’
+  158 |   void [01;36m[Kavia_handler[m[K(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg);
+      |        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/include/preprocess.h:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Preprocess[m[K’ defined here
+  133 | class [01;36m[KPreprocess[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:[m[K In member function ‘[01m[Kvoid ImuProcess::Process2(LidarMeasureGroup&, StatesGroup&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:603:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_init_count[m[K’ was not declared in this scope
+  603 |     if (init_iter_num > [01;31m[Kmax_init_count[m[K){
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:607:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kacc_M2[m[K’ was not declared in this scope
+  607 |       V3D acc_std = ([01;31m[Kacc_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:608:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kgyr_M2[m[K’ was not declared in this scope
+  608 |       V3D gyr_std = ([01;31m[Kgyr_M2[m[K / (init_iter_num - 1)).cwiseSqrt();
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:614:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgravity_align_en[m[K’ was not declared in this scope; did you mean ‘[01m[Kgravity_est_en[m[K’?
+  614 |       if ([01;31m[Kgravity_align_en[m[K) {
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |           [32m[Kgravity_est_en[m[K
+gmake[2]: *** [CMakeFiles/pre.dir/build.make:76: CMakeFiles/pre.dir/src/preprocess.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/pre.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/imu_proc.dir/build.make:76: CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/imu_proc.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

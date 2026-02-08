@@ -48,17 +48,8 @@ LIVMapper::LIVMapper(rclcpp::Node::SharedPtr &node, std::string node_name, const
   path.header.frame_id = "camera_init";
 }
 
-/**
- * LIVMapper类的析构函数
- * 当LIVMapper对象被销毁时自动调用
- * 目前为空实现，不执行任何特殊操作
- */
 LIVMapper::~LIVMapper() {}
 
-/**
- * @brief 从ROS2节点中读取参数并配置LIVMapper
- * @param node ROS2节点的共享指针
- */
 void LIVMapper::readParameters(rclcpp::Node::SharedPtr &node)
 {
   // declare parameters
@@ -237,6 +228,8 @@ void LIVMapper::initializeComponents(rclcpp::Node::SharedPtr &node)
   p_imu->set_gyr_bias_cov(V3D(0.0001, 0.0001, 0.0001));
   p_imu->set_acc_bias_cov(V3D(0.0001, 0.0001, 0.0001));
   p_imu->set_imu_init_frame_num(imu_int_frame);
+  // 在src/LIVMapper.cpp的initializeSubscribersAndPublishers函数中添加
+  tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this->node);
 
   if (!imu_en) p_imu->disable_imu();
   if (!gravity_est_en) p_imu->disable_gravity_est();
@@ -703,7 +696,7 @@ void LIVMapper::imu_prop_callback()
     posi = imu_propagate.pos_end;
     vel_i = imu_propagate.vel_end;
     q = Eigen::Quaterniond(imu_propagate.rot_end);
-    imu_prop_odom.header.frame_id = "world";
+    imu_prop_odom.header.frame_id = "map";
     imu_prop_odom.header.stamp = newest_imu.header.stamp;
     imu_prop_odom.pose.pose.position.x = posi.x();
     imu_prop_odom.pose.pose.position.y = posi.y();
@@ -954,29 +947,17 @@ void LIVMapper::img_cbk(const sensor_msgs::msg::Image::ConstSharedPtr &msg_in)
   sig_buffer.notify_all();
 }
 
-/**
- * @brief 同步不同传感器的数据包，包括激光雷达、IMU和图像数据
- * @param meas LidarMeasureGroup引用，用于存储同步后的测量数据
- * @return bool 如果成功同步数据则返回true，否则返回false
- */
 bool LIVMapper::sync_packages(LidarMeasureGroup &meas)
 {
-  // 检查激光雷达数据缓冲区是否为空（如果激光雷达启用）
   if (lid_raw_data_buffer.empty() && lidar_en) return false;
-  // 检查图像数据缓冲区是否为空（如果图像启用）
   if (img_buffer.empty() && img_en) return false;
-  // 检查IMU数据缓冲区是否为空（如果IMU启用）
   if (imu_buffer.empty() && imu_en) return false;
 
-  // 根据SLAM模式处理数据
   switch (slam_mode_)
   {
-  // 仅激光雷达惯性里程计模式
   case ONLY_LIO:
   {
-    // 如果首次更新，设置LIO更新时间为当前激光雷达时间戳
     if (meas.last_lio_update_time < 0.0) meas.last_lio_update_time = lid_header_time_buffer.front();
-    // 如果激光雷达数据尚未推送到测量缓冲区
     if (!lidar_pushed)
     {
       // If not push the lidar into measurement data buffer
@@ -1214,53 +1195,41 @@ void LIVMapper::publish_img_rgb(const image_transport::Publisher &pubImage, VIOM
   pubImage.publish(out_msg.toImageMsg());
 }
 
-/**
- * @brief 发布世界坐标系下的点云帧
- * @param pubLaserCloudFullRes 点云发布器
- * @param vio_manager VIO管理器指针，用于获取图像和相机信息
- */
 void LIVMapper::publish_frame_world(const rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr &pubLaserCloudFullRes, VIOManagerPtr vio_manager)
 {
-  // 如果待发布的点云为空，直接返回
   if (pcl_w_wait_pub->empty()) return;
-  // 创建RGB点云指针
-  PointCloudXYZRGB::Ptr laserCloudWorldRGB(new PointCloudXYZRGB());
-  PointCloudXYZI::Ptr laserCloudWorld(new PointCloudXYZI());
-  // 如果图像使能
+  PointCloudXYZRGB::Ptr laserCloudWorldRGB(new PointCloudXYZRGB());  
+  PointCloudXYZI::Ptr laserCloudWorldXYZI(new PointCloudXYZI());
+
   if (img_en)
   {
-    static int pub_num = 1;  // 发布计数器
-    // 累加点云数据
+    static int pub_num = 1;
     *pcl_wait_pub += *pcl_w_wait_pub;
     if(pub_num == pub_scan_num)
     {
-// 发布点云计数器初始化
       pub_num = 1;
-// 获取待发布点云的大小
       size_t size = pcl_wait_pub->points.size();
-// 为世界坐标系下的RGB点云预分配内存空间
       laserCloudWorldRGB->reserve(size);
-      laserCloudWorld->reserve(size);
-// 注释掉的代码：计算指数衰减的倒数
+      laserCloudWorldXYZI->reserve(size);
+
       // double inv_expo = _state.inv_expo_time;
-// 获取RGB图像数据
       cv::Mat img_rgb = vio_manager->img_rgb;
-// 遍历点云中的每个点
       for (size_t i = 0; i < size; i++)
       {
-    // 创建RGB点云点
         PointTypeRGB pointRGB;
         PointType pointXYZI;
 
-    // 复制点的坐标信息
         pointRGB.x = pcl_wait_pub->points[i].x;
         pointRGB.y = pcl_wait_pub->points[i].y;
         pointRGB.z = pcl_wait_pub->points[i].z;
+
         pointXYZI.x = pcl_wait_pub->points[i].x;
         pointXYZI.y = pcl_wait_pub->points[i].y;
         pointXYZI.z = pcl_wait_pub->points[i].z;
-        pointXYZI.intensity = pcl_wait_pub->points[i].intensity;
-    // 将点从世界坐标系转换到相机坐标系
+        pointXYZI.intensity = pcl_wait_pub->points[i].intensity/100.0;
+        if(pointXYZI.intensity>5.0) pointXYZI.intensity=5.0;
+        if(pointXYZI.intensity<0.0) pointXYZI.intensity=0.0;
+
         V3D p_w(pcl_wait_pub->points[i].x, pcl_wait_pub->points[i].y, pcl_wait_pub->points[i].z);
         V3D pf(vio_manager->new_frame_->w2f(p_w)); if (pf[2] < 0) continue;
         V2D pc(vio_manager->new_frame_->w2c(p_w));
@@ -1279,13 +1248,10 @@ void LIVMapper::publish_frame_world(const rclcpp::Publisher<sensor_msgs::msg::Po
           // if (pointRGB.b > 255) pointRGB.b = 255;
           // else if (pointRGB.b < 0) pointRGB.b = 0;
           if (pf.norm() > blind_rgb_points) laserCloudWorldRGB->push_back(pointRGB);
-          if (pf.norm() > blind_rgb_points) laserCloudWorld->push_back(pointXYZI);
-          
-          {
-            /* code */
-          }
           
         }
+        if (pf.norm() > blind_rgb_points) laserCloudWorldXYZI->push_back(pointXYZI);
+
       }
     }
     else
@@ -1300,15 +1266,16 @@ void LIVMapper::publish_frame_world(const rclcpp::Publisher<sensor_msgs::msg::Po
   {
     // cout << "RGB pointcloud size: " << laserCloudWorldRGB->size() << endl;
     // pcl::toROSMsg(*laserCloudWorldRGB, laserCloudmsg);
-     pcl::toROSMsg(*laserCloudWorld, laserCloudmsg); 
+    pcl::toROSMsg(*laserCloudWorldXYZI, laserCloudmsg);
+
+    
   }
   else 
   { 
     pcl::toROSMsg(*pcl_w_wait_pub, laserCloudmsg); 
   }
-  
   laserCloudmsg.header.stamp = this->node->get_clock()->now(); //.fromSec(last_timestamp_lidar);
-  laserCloudmsg.header.frame_id = "camera_init";
+  laserCloudmsg.header.frame_id = "map";
   pubLaserCloudFullRes->publish(laserCloudmsg);
 
   /**************** save map ****************/
@@ -1356,17 +1323,12 @@ void LIVMapper::publish_frame_world(const rclcpp::Publisher<sensor_msgs::msg::Po
     }
   }
   if(laserCloudWorldRGB->size() > 0)  PointCloudXYZI().swap(*pcl_wait_pub); 
+  // if(laserCloudWorldXYZI->size() > 0)  PointCloudXYZI().swap(*pcl_wait_pub); 
   PointCloudXYZI().swap(*pcl_w_wait_pub);
 }
 
-/**
- * @brief 发布可视化子地图点云数据
- * 
- * @param pubSubVisualMap 可视化子地图点云数据的共享指针发布器
- */
 void LIVMapper::publish_visual_sub_map(const rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr &pubSubVisualMap)
 {
-  // 创建一个指向完整分辨率激光点云的智能指针，使用visual_sub_map初始化
   PointCloudXYZI::Ptr laserCloudFullRes(visual_sub_map);
   int size = laserCloudFullRes->points.size(); if (size == 0) return;
   PointCloudXYZI::Ptr sub_pcl_visual_map_pub(new PointCloudXYZI());
@@ -1376,7 +1338,7 @@ void LIVMapper::publish_visual_sub_map(const rclcpp::Publisher<sensor_msgs::msg:
     sensor_msgs::msg::PointCloud2 laserCloudmsg;
     pcl::toROSMsg(*sub_pcl_visual_map_pub, laserCloudmsg);
     laserCloudmsg.header.stamp = this->node->get_clock()->now();
-    laserCloudmsg.header.frame_id = "camera_init";
+    laserCloudmsg.header.frame_id = "map";
     pubSubVisualMap->publish(laserCloudmsg);
   }
 }
@@ -1394,7 +1356,7 @@ void LIVMapper::publish_effect_world(const rclcpp::Publisher<sensor_msgs::msg::P
   sensor_msgs::msg::PointCloud2 laserCloudFullRes3;
   pcl::toROSMsg(*laserCloudWorld, laserCloudFullRes3);
   laserCloudFullRes3.header.stamp = this->node->get_clock()->now();
-  laserCloudFullRes3.header.frame_id = "camera_init";
+  laserCloudFullRes3.header.frame_id = "map";
   pubLaserCloudEffect->publish(laserCloudFullRes3);
 }
 
@@ -1411,12 +1373,29 @@ template <typename T> void LIVMapper::set_posestamp(T &out)
 
 void LIVMapper::publish_odometry(const rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr &pubOdomAftMapped)
 {
-  odomAftMapped.header.frame_id = "camera_init";
-  odomAftMapped.child_frame_id = "aft_mapped";
-  odomAftMapped.header.stamp = this->node->get_clock()->now(); //.ros::Time()fromSec(last_timestamp_lidar);
+  // odomAftMapped.header.frame_id = "map";
+  // odomAftMapped.child_frame_id = "odem";
+  // odomAftMapped.header.stamp = this->node->get_clock()->now(); //.ros::Time()fromSec(last_timestamp_lidar);
+  // set_posestamp(odomAftMapped.pose.pose);
+
+  // static std::shared_ptr<tf2_ros::TransformBroadcaster> br;
+  // br = std::make_shared<tf2_ros::TransformBroadcaster>(this->node);
+  // tf2::Transform transform;
+  // tf2::Quaternion q;
+  // transform.setOrigin(tf2::Vector3(_state.pos_end(0), _state.pos_end(1), _state.pos_end(2)));
+  // q.setW(geoQuat.w);
+  // q.setX(geoQuat.x);
+  // q.setY(geoQuat.y);
+  // q.setZ(geoQuat.z);
+  // transform.setRotation(q);
+  // br->sendTransform(geometry_msgs::msg::TransformStamped(createTransformStamped(transform, odomAftMapped.header.stamp, "camera_init", "aft_mapped")));
+  // pubOdomAftMapped->publish(odomAftMapped);
+  odomAftMapped.header.frame_id = "map";  // 修改为map
+  odomAftMapped.child_frame_id = "odem";  // 修改为odem
+  odomAftMapped.header.stamp = this->node->get_clock()->now();
   set_posestamp(odomAftMapped.pose.pose);
 
-  static std::shared_ptr<tf2_ros::TransformBroadcaster> br;
+  static std::shared_ptr<tf2_ros::TransformBroadcaster> br;  // 修复类型声明
   br = std::make_shared<tf2_ros::TransformBroadcaster>(this->node);
   tf2::Transform transform;
   tf2::Quaternion q;
@@ -1426,14 +1405,16 @@ void LIVMapper::publish_odometry(const rclcpp::Publisher<nav_msgs::msg::Odometry
   q.setY(geoQuat.y);
   q.setZ(geoQuat.z);
   transform.setRotation(q);
-  br->sendTransform(geometry_msgs::msg::TransformStamped(createTransformStamped(transform, odomAftMapped.header.stamp, "camera_init", "aft_mapped")));
+  
+  // 修改TF变换的坐标系名称以匹配odomAftMapped
+  br->sendTransform(geometry_msgs::msg::TransformStamped(createTransformStamped(transform, odomAftMapped.header.stamp, "map", "odem")));
   pubOdomAftMapped->publish(odomAftMapped);
 }
 
 void LIVMapper::publish_mavros(const rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr &mavros_pose_publisher)
 {
   msg_body_pose.header.stamp = this->node->get_clock()->now();
-  msg_body_pose.header.frame_id = "camera_init";
+  msg_body_pose.header.frame_id = "map";
   set_posestamp(msg_body_pose.pose);
   mavros_pose_publisher->publish(msg_body_pose);
 }
@@ -1442,7 +1423,7 @@ void LIVMapper::publish_path(const rclcpp::Publisher<nav_msgs::msg::Path>::Share
 {
   set_posestamp(msg_body_pose.pose);
   msg_body_pose.header.stamp = this->node->get_clock()->now();
-  msg_body_pose.header.frame_id = "camera_init";
+  msg_body_pose.header.frame_id = "map";
   path.poses.push_back(msg_body_pose);
   pubPath->publish(path);
 }

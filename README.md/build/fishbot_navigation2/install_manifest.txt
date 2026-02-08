@@ -1,0 +1,17 @@
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/launch/ro.launch.py
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.dsv
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.sh
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.dsv
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.bash
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.sh
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.zsh
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.dsv
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/ament_index/resource_index/packages/fishbot_navigation2
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config.cmake
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config-version.cmake
+/home/bxi_nx/ht_ws/install/fishbot_navigation2/share/fishbot_navigation2/package.xml

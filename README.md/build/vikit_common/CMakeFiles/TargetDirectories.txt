@@ -1,0 +1,13 @@
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/uninstall.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/vikit_common_uninstall.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/vikit_common.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/test_vk_common_camera.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/test_vk_common_triangulation.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/test_vk_common_patch_score.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/test.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/edit_cache.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/rebuild_cache.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/list_install_components.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/install.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/install/local.dir
+/home/bxi_nx/ht_ws/build/vikit_common/CMakeFiles/install/strip.dir

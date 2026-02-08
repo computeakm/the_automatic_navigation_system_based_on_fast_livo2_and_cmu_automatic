@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-ecf96fcfce7a77fa8c8a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vikit_common",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "test_vk_common_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_vk_common_camera-Release-18afa876c79b2314c732.json",
+					"name" : "test_vk_common_camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_vk_common_patch_score::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_vk_common_patch_score-Release-5f0915003b502c091584.json",
+					"name" : "test_vk_common_patch_score",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_vk_common_triangulation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_vk_common_triangulation-Release-bbb82d9158a68f7e98d9.json",
+					"name" : "test_vk_common_triangulation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-9efa957107f6d2b4ed92.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vikit_common::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vikit_common-Release-68a2f1c05052fe4b81bc.json",
+					"name" : "vikit_common",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vikit_common_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vikit_common_uninstall-Release-3ea1b0f273a924abc387.json",
+					"name" : "vikit_common_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bxi_nx/ht_ws/build/vikit_common",
+		"source" : "/home/bxi_nx/ht_ws/src/rpg_vikit/vikit_common"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

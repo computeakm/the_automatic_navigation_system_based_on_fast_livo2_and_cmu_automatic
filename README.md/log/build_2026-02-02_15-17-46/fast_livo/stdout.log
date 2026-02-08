@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[35m[1mConsolidate compiler generated dependencies of target vio[0m
+[35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[ 12%] Built target utils
+[ 18%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[ 50%] Built target vio
+[ 62%] Built target lio
+[ 68%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[ 75%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[ 75%] Built target laser_mapping

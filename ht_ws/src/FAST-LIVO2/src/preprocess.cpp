@@ -15,64 +15,33 @@ which is included as part of this source code package.
 #define RETURN0 0x00
 #define RETURN0AND1 0x10
 
-/**
- * @brief 预处理类的构造函数，初始化各种参数和配置
- */
 Preprocess::Preprocess() : feature_enabled(0), lidar_type(AVIA), blind(0.01), point_filter_num(1)
 {
-  // 设置无限远边界值
   inf_bound = 10;
-
-  
-  // 设置激光雷达相关参数
-  N_SCANS = 6;      // 激光雷达扫描线数
-  SCAN_RATE = 10;   // 扫描频率(Hz)
-
-  
-  // 设置点云处理参数
-  group_size = 8;   // 点云分组大小
-  // 设置距离阈值参数
+  N_SCANS = 6;
+  SCAN_RATE = 20;
+  group_size = 8;
   disA = 0.01;
-  disA = 0.1; // B? (可能是另一个距离阈值，标记为B待确认)
-
-  
-  // 设置点云特征提取相关参数
-  p2l_ratio = 225;          // 点到线的距离比例
-  limit_maxmid = 6.25;      // 最大中间距离限制
-  limit_midmin = 6.25;      // 中间最小距离限制
-  limit_maxmin = 3.24;      // 最大最小距离限制
-
-  
-  // 设置跳跃点检测阈值
-  jump_up_limit = 170.0;    // 向上跳跃角度限制(度)
-  jump_down_limit = 8.0;    // 向下跳跃角度限制(度)
-
-  
-  // 设置边缘检测参数
-  cos160 = 160.0;           // 160度的余弦值(角度)
-  edgea = 2;                // 边缘检测参数a
-  edgeb = 0.1;              // 边缘检测参数b
-
-  
-  // 设置小点云相交参数
-  smallp_intersect = 172.5; // 小点云相交角度(度)
-  smallp_ratio = 1.2;       // 小点云比例
-
-  
-  // 时间戳标志
+  disA = 0.1; // B?
+  p2l_ratio = 225;
+  limit_maxmid = 6.25;
+  limit_midmin = 6.25;
+  limit_maxmin = 3.24;
+  jump_up_limit = 170.0;
+  jump_down_limit = 8.0;
+  cos160 = 160.0;
+  edgea = 2;
+  edgeb = 0.1;
+  smallp_intersect = 172.5;
+  smallp_ratio = 1.2;
   given_offset_time = false;
- // 是否给定偏移时间标志
-  // 将角度值转换为弧度并计算余弦值
+
   jump_up_limit = cos(jump_up_limit / 180 * M_PI);
   jump_down_limit = cos(jump_down_limit / 180 * M_PI);
   cos160 = cos(cos160 / 180 * M_PI);
   smallp_intersect = cos(smallp_intersect / 180 * M_PI);
 }
 
-/**
- * Preprocess类的析构函数
- * 当Preprocess对象被销毁时调用，用于释放资源
- */
 Preprocess::~Preprocess() {}
 
 void Preprocess::set(bool feat_en, int lid_type, double bld, int pfilt_num)
@@ -86,8 +55,7 @@ void Preprocess::set(bool feat_en, int lid_type, double bld, int pfilt_num)
 
 void Preprocess::process(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)
 {
-  avia_handler(msg);
-  *pcl_out = pl_surf;
+  avia_handler(msg,pcl_out);
 }
 
 void Preprocess::process(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)
@@ -120,161 +88,152 @@ void Preprocess::process(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &ms
   *pcl_out = pl_surf;
 }
 
-/**
- * @brief 处理Livox ROS驱动的自定义消息，对点云数据进行预处理和特征提取
- * @param msg 接收到的Livox点云消息的共享指针
- */
-void Preprocess::avia_handler(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg)
+void Preprocess::avia_handler(const livox_ros_driver2::msg::CustomMsg::SharedPtr &msg, PointCloudXYZI::Ptr &pcl_out)
 {
-  // 清空存储点云数据的容器
-  pl_surf.clear();
-  pl_corn.clear();
-  pl_full.clear();
-  // 记录处理开始时间
-  double t1 = omp_get_wtime();
-  int plsize = msg->point_num;
-  printf("[ Preprocess ] Input point number: %d \n", plsize);
-  // printf("point_filter_num: %d\n", point_filter_num);
+  // pl_surf.clear();
+  // pl_corn.clear();
+  // pl_full.clear();
+  // double t1 = omp_get_wtime();
+  // int plsize = msg->point_num;
+  // printf("[ Preprocess ] Input point number: %d \n", plsize);
+  // // printf("point_filter_num: %d\n", point_filter_num);
 
-  // 为点云数据容器预留空间
-  pl_corn.reserve(plsize);
-  pl_surf.reserve(plsize);
-  pl_full.resize(plsize);
+  // pl_corn.reserve(plsize);
+  // pl_surf.reserve(plsize);
+  // pl_full.resize(plsize);
 
-  // 清空并初始化扫描线缓冲区
-  for (int i = 0; i < N_SCANS; i++)
-  {
-    pl_buff[i].clear();
-    pl_buff[i].reserve(plsize);
-  }
-  uint valid_num = 0;
+  // for (int i = 0; i < N_SCANS; i++)
+  // {
+  //   pl_buff[i].clear();
+  //   pl_buff[i].reserve(plsize);
+  // }
+  // uint valid_num = 0;
 
-  // 如果启用了特征提取
-  if (feature_enabled)
-  {
-    // 遍历所有点，提取有效点
-    for (uint i = 1; i < plsize; i++)
-    {
-      // 检查点是否有效（在有效扫描线上且具有正确的标签）
-      if ((msg->points[i].line < N_SCANS) && ((msg->points[i].tag & 0x30) == 0x10))
-      {
-        // 将点的坐标和强度信息存入pl_full
-        pl_full[i].x = msg->points[i].x;
-        pl_full[i].y = msg->points[i].y;
-        pl_full[i].z = msg->points[i].z;
-        pl_full[i].intensity = msg->points[i].reflectivity;
-        pl_full[i].curvature = msg->points[i].offset_time / float(1000000); // use curvature as time of each laser points
-        double range = pl_full[i].x * pl_full[i].x + pl_full[i].y * pl_full[i].y + pl_full[i].z * pl_full[i].z;
-        if (range < blind_sqr) continue;
+  // if (feature_enabled)
+  // {
+  //   for (uint i = 1; i < plsize; i++)
+  //   {
+  //     if ((msg->points[i].line < N_SCANS) && ((msg->points[i].tag & 0x30) == 0x10))
+  //     {
+  //       pl_full[i].x = msg->points[i].x;
+  //       pl_full[i].y = msg->points[i].y;
+  //       pl_full[i].z = msg->points[i].z;
+  //       pl_full[i].intensity = msg->points[i].reflectivity;
+  //       pl_full[i].curvature = msg->points[i].offset_time / float(1000000); // use curvature as time of each laser points
+  //       double range = pl_full[i].x * pl_full[i].x + pl_full[i].y * pl_full[i].y + pl_full[i].z * pl_full[i].z;
+  //       if (range < blind_sqr) continue;
 
-        // 判断是否为新的点，默认为false
-        bool is_new = false;
-        // 检查当前点与前一个点在x、y、z三个维度上的坐标差值是否大于一个很小的阈值(1e-7)
-        // 如果任一维度的差值大于阈值，则认为这是一个新的点
-        if ((abs(pl_full[i].x - pl_full[i - 1].x) > 1e-7) || (abs(pl_full[i].y - pl_full[i - 1].y) > 1e-7) ||
-            (abs(pl_full[i].z - pl_full[i - 1].z) > 1e-7))
-        {
-            // 如果是新的点，则将其添加到pl_buff中对应的line位置
-          pl_buff[msg->points[i].line].push_back(pl_full[i]);
+  //       bool is_new = false;
+  //       if ((abs(pl_full[i].x - pl_full[i - 1].x) > 1e-7) || (abs(pl_full[i].y - pl_full[i - 1].y) > 1e-7) ||
+  //           (abs(pl_full[i].z - pl_full[i - 1].z) > 1e-7))
+  //       {
+  //         pl_buff[msg->points[i].line].push_back(pl_full[i]);
+  //       }
+  //     }
+  //   }
+  //   static int count = 0;
+  //   static double time = 0.0;
+  //   count++;
+  //   double t0 = omp_get_wtime();
+  //   for (int j = 0; j < N_SCANS; j++)
+  //   {
+  //     if (pl_buff[j].size() <= 5) continue;
+  //     pcl::PointCloud<PointType> &pl = pl_buff[j];
+  //     plsize = pl.size();
+  //     vector<orgtype> &types = typess[j];
+  //     types.clear();
+  //     types.resize(plsize);
+  //     plsize--;
+  //     for (uint i = 0; i < plsize; i++)
+  //     {
+  //       types[i].range = pl[i].x * pl[i].x + pl[i].y * pl[i].y;
+  //       vx = pl[i].x - pl[i + 1].x;
+  //       vy = pl[i].y - pl[i + 1].y;
+  //       vz = pl[i].z - pl[i + 1].z;
+  //       types[i].dista = vx * vx + vy * vy + vz * vz;
+  //     }
+  //     types[plsize].range = pl[plsize].x * pl[plsize].x + pl[plsize].y * pl[plsize].y;
+  //     give_feature(pl, types);
+  //     // pl_surf += pl;
+  //   }
+  //   time += omp_get_wtime() - t0;
+  //   printf("Feature extraction time: %lf \n", time / count);
+  // }
+  // else
+  // {
+  //   for (uint i = 0; i < plsize; i++)
+  //   {
+  //     if ((msg->points[i].line < N_SCANS)) // && ((msg->points[i].tag & 0x30) == 0x10))
+  //     {
+  //       valid_num++;
+
+  //       pl_full[i].x = msg->points[i].x;
+  //       pl_full[i].y = msg->points[i].y;
+  //       pl_full[i].z = msg->points[i].z;
+  //       pl_full[i].intensity = msg->points[i].reflectivity;
+  //       pl_full[i].curvature = msg->points[i].offset_time / float(1000000); // use curvature as time of each laser points
+
+  //       if (i == 0)
+  //         pl_full[i].curvature = fabs(pl_full[i].curvature) < 1.0 ? pl_full[i].curvature : 0.0;
+  //       else
+  //       {
+  //         // if(fabs(pl_full[i].curvature - pl_full[i - 1].curvature) > 1.0) ROS_ERROR("time jump: %f", fabs(pl_full[i].curvature - pl_full[i - 1].curvature));
+  //         pl_full[i].curvature = fabs(pl_full[i].curvature - pl_full[i - 1].curvature) < 1.0
+  //                                    ? pl_full[i].curvature
+  //                                    : pl_full[i - 1].curvature + 0.004166667f; // float(100/24000)
+  //       }
+
+  //       if (valid_num % point_filter_num == 0)
+  //       {
+  //         if (pl_full[i].x * pl_full[i].x + pl_full[i].y * pl_full[i].y + pl_full[i].z * pl_full[i].z >= blind_sqr)
+  //         {
+  //           pl_surf.push_back(pl_full[i]);
+  //           // if (i % 100 == 0 || i == 0) printf("pl_full[i].curvature: %f \n",
+  //           // pl_full[i].curvature);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // printf("[ Preprocess ] Output point number: %zu \n", pl_surf.points.size());
+   cloud_out_.clear();
+    size_t plsize = msg->point_num;
+    cloud_out_.reserve(plsize);
+
+    uint valid_num = 0;
+    for (size_t i = 1; i < plsize; i++) {
+        if ((msg->points[i].line < 50) &&
+            ((msg->points[i].tag & 0x30) == 0x10 || (msg->points[i].tag & 0x30) == 0x00)) {
+            if (std::abs(msg->points[i].x) > 1e-6 && std::abs(msg->points[i].y) > 1e-6 && std::abs(msg->points[i].z) > 1e-6) {
+                double dist = msg->points[i].x * msg->points[i].x + msg->points[i].y * msg->points[i].y + msg->points[i].z * msg->points[i].z;
+                if ((dist > 0.01) && (dist < 100.0)) {
+                    if (valid_num % point_filter_num == 0) { 
+                        pcl::PointXYZINormal point;
+                        point.x = msg->points[i].x;
+                        point.y = msg->points[i].y;
+                        point.z = msg->points[i].z;
+                        point.intensity = msg->points[i].reflectivity;
+                        point.curvature =
+                            msg->points[i].offset_time /
+                            float(1000000); 
+                        cloud_out_.emplace_back(std::move(point));
+                    }
+                    valid_num++;
+                }
+            }
         }
-      }
     }
-// 静态变量初始化，用于统计执行次数和时间
-    static int count = 0;      // 执行次数计数器
-    static double time = 0.0;  // 执行时间累加器
-    count++;  // 每次执行增加计数
-// 获取开始时间
-    double t0 = omp_get_wtime();
-// 遍历所有扫描线
-    for (int j = 0; j < N_SCANS; j++)
-    {
-    // 如果当前扫描线的点数小于等于5，跳过处理
-      if (pl_buff[j].size() <= 5) continue;
-    // 获取当前扫描线的点云数据
-      pcl::PointCloud<PointType> &pl = pl_buff[j];
-      plsize = pl.size();  // 获取点云大小
-    // 获取并初始化类型数组
-      vector<orgtype> &types = typess[j];
-      types.clear();  // 清空类型数组
-      types.resize(plsize);  // 调整类型数组大小
-      plsize--;  // 减1，用于后续循环
-    // 计算每个点的特征
-      for (uint i = 0; i < plsize; i++)
-      {
-        // 计算点到原点的距离平方（范围）
-        types[i].range = pl[i].x * pl[i].x + pl[i].y * pl[i].y;
-        // 计算相邻点之间的距离差
-        vx = pl[i].x - pl[i + 1].x;
-        vy = pl[i].y - pl[i + 1].y;
-        vz = pl[i].z - pl[i + 1].z;
-        types[i].dista = vx * vx + vy * vy + vz * vz;  // 距离差的平方
-      }
-    // 处理最后一个点
-      types[plsize].range = pl[plsize].x * pl[plsize].x + pl[plsize].y * pl[plsize].y;
-    // 提取点云特征
-      give_feature(pl, types);
-    // 将处理后的点云添加到表面点云中
-      // pl_surf += pl;
-    }
-    time += omp_get_wtime() - t0;
-    printf("Feature extraction time: %lf \n", time / count);
-  }
-  else
-  {
-    // 遍历所有点云数据
-    for (uint i = 0; i < plsize; i++)
-    {
-      // 检查当前点的激光线号是否小于总扫描线数
-      // 注释掉的代码是检查点的标签是否满足特定条件
-      if ((msg->points[i].line < N_SCANS)) // && ((msg->points[i].tag & 0x30) == 0x10))
-      {
-        valid_num++; // 有效点计数器增加
-
-        // 将点云数据复制到完整点云结构体中
-        pl_full[i].x = msg->points[i].x;
-        pl_full[i].y = msg->points[i].y;
-        pl_full[i].z = msg->points[i].z;
-        pl_full[i].intensity = msg->points[i].reflectivity;
-        pl_full[i].curvature = msg->points[i].offset_time / float(1000000); // use curvature as time of each laser points
-
-        if (i == 0)
-          pl_full[i].curvature = fabs(pl_full[i].curvature) < 1.0 ? pl_full[i].curvature : 0.0;
-        else
-        {
-          // if(fabs(pl_full[i].curvature - pl_full[i - 1].curvature) > 1.0) ROS_ERROR("time jump: %f", fabs(pl_full[i].curvature - pl_full[i - 1].curvature));
-          pl_full[i].curvature = fabs(pl_full[i].curvature - pl_full[i - 1].curvature) < 1.0
-                                     ? pl_full[i].curvature
-                                     : pl_full[i - 1].curvature + 0.004166667f; // float(100/24000)
-        }
-
-        if (valid_num % point_filter_num == 0)
-        {
-          if (pl_full[i].x * pl_full[i].x + pl_full[i].y * pl_full[i].y + pl_full[i].z * pl_full[i].z >= blind_sqr)
-          {
-            pl_surf.push_back(pl_full[i]);
-            // if (i % 100 == 0 || i == 0) printf("pl_full[i].curvature: %f \n",
-            // pl_full[i].curvature);
-          }
-        }
-      }
-    }
-  }
-  printf("[ Preprocess ] Output point number: %zu \n", pl_surf.points.size());
+    *pcl_out = cloud_out_;
 }
 
 void Preprocess::l515_handler(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg)
 {
-// 清空三个点云容器：表面点云、角点云和完整点云
   pl_surf.clear();
   pl_corn.clear();
   pl_full.clear();
-// 创建原始点云对象，用于存储从ROS消息转换的点云数据
   pcl::PointCloud<pcl::PointXYZRGB> pl_orig;
-// 将ROS消息中的点云数据转换为PCL点云格式并存储到pl_orig中
   pcl::fromROSMsg(*msg, pl_orig);
-// 获取原始点云的大小
   int plsize = pl_orig.size();
-// 为角点云和表面云预留内存空间，以提高性能
   pl_corn.reserve(plsize);
   pl_surf.reserve(plsize);
 

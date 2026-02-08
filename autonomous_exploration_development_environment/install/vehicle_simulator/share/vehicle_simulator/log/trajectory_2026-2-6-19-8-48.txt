@@ -1,1 +1,0 @@
-/home/ht/autonomous_exploration_development_environment/src/vehicle_simulator/log/trajectory_2026-2-6-19-8-48.txt

@@ -1,1 +1,5 @@
-/home/ht/autonomous_exploration_development_environment/src/sensor_scan_generation/launch/sensor_scan_generation.launch
+<launch>
+
+  <node pkg="sensor_scan_generation" exec="sensorScanGeneration" name="sensorScanGeneration" output="screen"/>
+
+</launch>

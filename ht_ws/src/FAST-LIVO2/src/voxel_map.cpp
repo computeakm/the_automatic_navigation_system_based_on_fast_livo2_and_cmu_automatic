@@ -669,6 +669,72 @@ void VoxelMapManager::UpdateVoxelMap(const std::vector<pointWithVar> &input_poin
   }
 }
 
+// 加在类成员里
+// std::list<std::pair<VOXEL_LOCATION, VoxelOctoTree*>> voxel_map_cache_;
+// std::unordered_map<VOXEL_LOCATION, std::list<std::pair<VOXEL_LOCATION, VoxelOctoTree*>>::iterator> voxel_map_;
+// const size_t MAX_VOXEL_NUM = 20000;  // 可配置
+
+// void VoxelMapManager::UpdateVoxelMap(const std::vector<pointWithVar> &input_points)
+// {
+//   float voxel_size = config_setting_.max_voxel_size_;
+//   float planer_threshold = config_setting_.planner_threshold_;
+//   int max_layer = config_setting_.max_layer_;
+//   int max_points_num = config_setting_.max_points_num_;
+//   std::vector<int> layer_init_num = config_setting_.layer_init_num_;
+//   uint plsize = input_points.size();
+
+//   for (uint i = 0; i < plsize; i++)
+//   {
+//     const pointWithVar &p_v = input_points[i];
+//     float loc_xyz[3];
+//     for (int j = 0; j < 3; j++)
+//     {
+//       loc_xyz[j] = p_v.point_w[j] / voxel_size;
+//       if (loc_xyz[j] < 0) { loc_xyz[j] -= 1.0f; }
+//     }
+
+//     VOXEL_LOCATION position((int64_t)loc_xyz[0], (int64_t)loc_xyz[1], (int64_t)loc_xyz[2]);
+//     auto it = voxel_map_.find(position);
+
+//     if (it != voxel_map_.end())
+//     {
+//       // -------- 已存在体素：更新访问顺序 + 更新内容 --------
+//       voxel_map_cache_.splice(voxel_map_cache_.begin(), voxel_map_cache_, it->second);
+//       VoxelOctoTree* voxel = it->second->second;
+//       voxel->UpdateOctoTree(p_v);
+//     }
+//     else
+//     {
+//       // -------- 新体素：初始化并插入 --------
+//       VoxelOctoTree *octo_tree = new VoxelOctoTree(max_layer, 0, layer_init_num[0], max_points_num, planer_threshold);
+//       octo_tree->layer_init_num_ = layer_init_num;
+//       octo_tree->quater_length_ = voxel_size / 4.0f;
+//       octo_tree->voxel_center_[0] = (0.5f + position.x) * voxel_size;
+//       octo_tree->voxel_center_[1] = (0.5f + position.y) * voxel_size;
+//       octo_tree->voxel_center_[2] = (0.5f + position.z) * voxel_size;
+//       octo_tree->UpdateOctoTree(p_v);
+
+//       // 插入到前面（最近使用）
+//       voxel_map_cache_.emplace_front(position, octo_tree);
+
+//       // 更新哈希表
+//       voxel_map_[position] = voxel_map_cache_.begin();
+
+//       // -------- 检查是否超出体素上限 --------
+//       if (voxel_map_cache_.size() > MAX_VOXEL_NUM)
+//       {
+//         auto old_it = std::prev(voxel_map_cache_.end());
+
+//         // 删除最旧体素
+//         voxel_map_.erase(old_it->first);
+//         delete old_it->second;
+//         voxel_map_cache_.pop_back();
+//       }
+//     }
+//   }
+// }
+
+
 void VoxelMapManager::BuildResidualListOMP(std::vector<pointWithVar> &pv_list, std::vector<PointToPlane> &ptpl_list)
 {
   int max_layer = config_setting_.max_layer_;
@@ -867,10 +933,12 @@ void VoxelMapManager::pubSinglePlane(visualization_msgs::msg::MarkerArray &plane
                                      const float alpha, const Eigen::Vector3d rgb)
 {
   visualization_msgs::msg::Marker plane;
-  plane.header.frame_id = "camera_init";
+  plane.header.frame_id = "map";
+  // plane.header.base_frame_id="aft_mapped";
   plane.header.stamp = rclcpp::Time();
   plane.ns = plane_ns;
   plane.id = single_plane.id_;
+
   plane.type = visualization_msgs::msg::Marker::CYLINDER;
   plane.action = visualization_msgs::msg::Marker::ADD;
   plane.pose.position.x = single_plane.center_[0];
@@ -905,54 +973,46 @@ void VoxelMapManager::CalcVectQuation(const Eigen::Vector3d &x_vec, const Eigen:
 
 void VoxelMapManager::mapJet(double v, double vmin, double vmax, uint8_t &r, uint8_t &g, uint8_t &b)
 {
-// 初始化RGB颜色值为白色
   r = 255;
   g = 255;
   b = 255;
 
-// 对输入值v进行边界检查，确保其在vmin和vmax之间
   if (v < vmin) { v = vmin; }
 
   if (v > vmax) { v = vmax; }
 
-// 声明红、绿、蓝三个颜色通道的变量
   double dr, dg, db;
 
-
-
-// 根据输入值v的范围计算RGB颜色值
-// 这是一个分段函数，将输入值映射到不同的RGB组合
   if (v < 0.1242)
-  {  // 第一段：低亮度区域
-    db = 0.504 + ((1. - 0.504) / 0.1242) * v;  // 蓝色通道从0.504渐变到1
+  {
+    db = 0.504 + ((1. - 0.504) / 0.1242) * v;
     dg = dr = 0.;
   }
-  else if (v < 0.3747)  // 第二段：低中亮度区域
+  else if (v < 0.3747)
   {
-    db = 1.;  // 蓝色通道保持最大值
-    dr = 0.;  // 红色通道为0
-    dg = (v - 0.1242) * (1. / (0.3747 - 0.1242));  // 绿色通道从0渐变到1
+    db = 1.;
+    dr = 0.;
+    dg = (v - 0.1242) * (1. / (0.3747 - 0.1242));
   }
-  else if (v < 0.6253)  // 第三段：中亮度区域
+  else if (v < 0.6253)
   {
-    db = (0.6253 - v) * (1. / (0.6253 - 0.3747));  // 蓝色通道从1渐变到0
-    dg = 1.;  // 绿色通道保持最大值
-    dr = (v - 0.3747) * (1. / (0.6253 - 0.3747));  // 红色通道从0渐变到1
+    db = (0.6253 - v) * (1. / (0.6253 - 0.3747));
+    dg = 1.;
+    dr = (v - 0.3747) * (1. / (0.6253 - 0.3747));
   }
-  else if (v < 0.8758)  // 第四段：高中亮度区域
+  else if (v < 0.8758)
   {
-    db = 0.;  // 蓝色通道为0
-    dr = 1.;  // 红色通道保持最大值
-    dg = (0.8758 - v) * (1. / (0.8758 - 0.6253));  // 绿色通道从1渐变到0
+    db = 0.;
+    dr = 1.;
+    dg = (0.8758 - v) * (1. / (0.8758 - 0.6253));
   }
-  else  // 第五段：高亮度区域
+  else
   {
-    db = 0.;  // 蓝色通道为0
-    dg = 0.;  // 绿色通道为0
-    dr = 1. - (v - 0.8758) * ((1. - 0.504) / (1. - 0.8758));  // 红色通道从1渐变到0.504
+    db = 0.;
+    dg = 0.;
+    dr = 1. - (v - 0.8758) * ((1. - 0.504) / (1. - 0.8758));
   }
 
-// 将计算得到的RGB值从[0,1]范围映射到[0,255]范围，并转换为8位无符号整数
   r = (uint8_t)(255 * dr);
   g = (uint8_t)(255 * dg);
   b = (uint8_t)(255 * db);

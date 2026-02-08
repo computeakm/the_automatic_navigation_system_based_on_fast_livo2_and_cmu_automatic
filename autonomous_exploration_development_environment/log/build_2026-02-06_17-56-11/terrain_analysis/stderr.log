@@ -1,4 +1,0 @@
-[01m[K/home/ht/autonomous_exploration_development_environment/src/terrain_analysis/src/terrainAnalysis.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/ht/autonomous_exploration_development_environment/src/terrain_analysis/src/terrainAnalysis.cpp:485:43:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
-  485 |                 if ([01;35m[Kangle4 > minDyObsVFOV && angle4 < maxDyObsVFOV[m[K || fabs(pointZ4) < absDyObsRelZThre) {
-      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K

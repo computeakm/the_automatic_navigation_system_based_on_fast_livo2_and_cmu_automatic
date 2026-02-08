@@ -1,0 +1,21 @@
+[1.747s] Invoking command in '/home/bxi_nx/ht_ws/src/my_nav2_bringup': PYTHONPATH=/home/bxi_nx/ht_ws/build/my_nav2_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bxi_nx/ht_ws/install/my_nav2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_nav2_bringup build --build-base /home/bxi_nx/ht_ws/build/my_nav2_bringup/build install --record /home/bxi_nx/ht_ws/build/my_nav2_bringup/install.log --single-version-externally-managed install_data
+[2.324s] running egg_info
+[2.325s] writing ../../build/my_nav2_bringup/my_nav2_bringup.egg-info/PKG-INFO
+[2.326s] writing dependency_links to ../../build/my_nav2_bringup/my_nav2_bringup.egg-info/dependency_links.txt
+[2.326s] writing entry points to ../../build/my_nav2_bringup/my_nav2_bringup.egg-info/entry_points.txt
+[2.326s] writing requirements to ../../build/my_nav2_bringup/my_nav2_bringup.egg-info/requires.txt
+[2.326s] writing top-level names to ../../build/my_nav2_bringup/my_nav2_bringup.egg-info/top_level.txt
+[2.330s] reading manifest file '../../build/my_nav2_bringup/my_nav2_bringup.egg-info/SOURCES.txt'
+[2.331s] writing manifest file '../../build/my_nav2_bringup/my_nav2_bringup.egg-info/SOURCES.txt'
+[2.332s] running build
+[2.332s] running build_py
+[2.332s] running install
+[2.333s] running install_lib
+[2.336s] running install_data
+[2.337s] copying config/my_nav2_params.yaml -> /home/bxi_nx/ht_ws/install/my_nav2_bringup/share/my_nav2_bringup/config
+[2.337s] running install_egg_info
+[2.341s] removing '/home/bxi_nx/ht_ws/install/my_nav2_bringup/lib/python3.10/site-packages/my_nav2_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[2.342s] Copying ../../build/my_nav2_bringup/my_nav2_bringup.egg-info to /home/bxi_nx/ht_ws/install/my_nav2_bringup/lib/python3.10/site-packages/my_nav2_bringup-0.0.0-py3.10.egg-info
+[2.345s] running install_scripts
+[2.396s] writing list of installed files to '/home/bxi_nx/ht_ws/build/my_nav2_bringup/install.log'
+[2.498s] Invoked command in '/home/bxi_nx/ht_ws/src/my_nav2_bringup' returned '0': PYTHONPATH=/home/bxi_nx/ht_ws/build/my_nav2_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bxi_nx/ht_ws/install/my_nav2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_nav2_bringup build --build-base /home/bxi_nx/ht_ws/build/my_nav2_bringup/build install --record /home/bxi_nx/ht_ws/build/my_nav2_bringup/install.log --single-version-externally-managed install_data

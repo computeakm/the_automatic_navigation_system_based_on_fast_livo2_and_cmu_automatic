@@ -1,0 +1,5 @@
+[0.089s] Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
+[0.919s] [ 68%] Built target vikit_common
+[0.919s] [ 78%] Built target test_vk_common_camera
+[0.920s] [ 89%] Built target test_vk_common_patch_score
+[0.920s] [100%] Built target test_vk_common_triangulation

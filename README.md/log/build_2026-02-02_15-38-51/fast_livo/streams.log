@@ -1,0 +1,20 @@
+[0.032s] Invoking command in '/home/bxi_nx/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8
+[0.126s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[0.139s] [ 12%] Built target utils
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[0.169s] [ 37%] Built target vio
+[0.175s] [ 50%] Built target laser_mapping
+[0.186s] [ 56%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[0.199s] [ 75%] Built target imu_proc
+[0.199s] [ 81%] Built target lio
+[13.302s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K In member function ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’:
+[13.303s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:199:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_out_[m[K’ was not declared in this scope
+[13.303s]   199 |    [01;31m[Kcloud_out_[m[K.clear();
+[13.303s]       |    [01;31m[K^~~~~~~~~~[m[K
+[13.350s] [01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:205:36:[m[K [01;31m[Kerror: [m[K‘[01m[Knum_scans_[m[K’ was not declared in this scope
+[13.350s]   205 |         if ((msg->points[i].line < [01;31m[Knum_scans_[m[K) &&
+[13.350s]       |                                    [01;31m[K^~~~~~~~~~[m[K
+[18.516s] gmake[2]: *** [CMakeFiles/pre.dir/build.make:76: CMakeFiles/pre.dir/src/preprocess.cpp.o] Error 1
+[18.516s] gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/pre.dir/all] Error 2
+[18.517s] gmake: *** [Makefile:146: all] Error 2
+[18.525s] Invoked command in '/home/bxi_nx/ht_ws/build/fast_livo' returned '2': AMENT_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bxi_nx/ht_ws/install/vikit_ros:/opt/ros/humble:/home/bxi_nx/ht_ws/install/vikit_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/bxi_nx/ht_ws/install/vikit_ros/lib:/home/bxi_nx/ht_ws/install/vikit_common/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/usr/local/cuda-12.6/lib64:/home/bxi_nx/ws_livox/install/livox_ros_driver2/lib:/home/bxi_nx/ws_livox/install/interface/lib:/home/bxi_nx/ws_livox/install/communication/lib:/home/bxi_nx/gtsam/build/gtsam/libgtsam.so.4:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PKG_CONFIG_PATH=/home/bxi_nx/ht_ws/install/vikit_common/lib/aarch64-linux-gnu/pkgconfig:/home/bxi_nx/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/bxi_nx/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/fast_livo -- -j8 -l8

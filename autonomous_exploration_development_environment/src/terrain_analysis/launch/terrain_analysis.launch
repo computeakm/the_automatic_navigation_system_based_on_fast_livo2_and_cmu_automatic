@@ -4,7 +4,7 @@
     <param name="scanVoxelSize" value="0.05" />
     <param name="decayTime" value="2.0" />
     <param name="noDecayDis" value="4.0" />
-    <param name="clearingDis" value="100.0" />
+    <param name="clearingDis" value="8.0" />
     <param name="useSorting" value="false" />
     <param name="quantileZ" value="0.25" />
     <param name="considerDrop" value="true" />

@@ -1,0 +1,5 @@
+/home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+/home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_def.h
+/home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_api.h
+/home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+/home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so

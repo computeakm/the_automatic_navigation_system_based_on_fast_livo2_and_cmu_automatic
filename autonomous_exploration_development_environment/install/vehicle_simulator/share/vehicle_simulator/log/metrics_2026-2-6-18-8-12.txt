@@ -1,1 +1,0 @@
-/home/ht/autonomous_exploration_development_environment/src/vehicle_simulator/log/metrics_2026-2-6-18-8-12.txt

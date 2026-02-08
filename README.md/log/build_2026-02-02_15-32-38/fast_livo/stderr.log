@@ -1,0 +1,15 @@
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:[m[K In member function ‘[01m[Kvoid Preprocess::avia_handler(const SharedPtr&, pcl::PointCloud<pcl::PointXYZINormal>::Ptr&)[m[K’:
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:199:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_out_[m[K’ was not declared in this scope
+  199 |    [01;31m[Kcloud_out_[m[K.clear();
+      |    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:205:36:[m[K [01;31m[Kerror: [m[K‘[01m[Knum_scans_[m[K’ was not declared in this scope
+  205 |         if ((msg->points[i].line < [01;31m[Knum_scans_[m[K) &&
+      |                                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/bxi_nx/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:209:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kblind_near_sqr[m[K’ was not declared in this scope; did you mean ‘[01m[Kblind_sqr[m[K’?
+  209 |                 if ((dist > [01;31m[Kblind_near_sqr[m[K) && (dist < blind_sqr)) {
+      |                             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                             [32m[Kblind_sqr[m[K
+gmake[2]: *** [CMakeFiles/pre.dir/build.make:76: CMakeFiles/pre.dir/src/preprocess.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:201: CMakeFiles/pre.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,112 @@
+[0.035s] Invoking command in '/home/bxi_nx/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8
+[0.134s] [35m[1mConsolidate compiler generated dependencies of target octomap_server2[0m
+[0.142s] [ 33%] Built target octomap_server
+[0.225s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_server2.dir/src/octomap_server.cpp.o[0m
+[3.283s] In file included from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/conversions.h:50[m[K,
+[3.284s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:51[m[K,
+[3.284s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:2[m[K:
+[3.284s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[3.284s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[3.285s]       |  [01;35m[K^~~~~~~[m[K
+[11.890s] In file included from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:2[m[K:
+[11.890s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::handleNode(const iterator&)[m[K’:
+[11.890s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:210:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kit[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.891s]   210 |         virtual void handleNode([01;35m[Kconst OcTreeT::iterator& it[m[K) {};
+[11.891s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.891s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::handleNodeInBBX(const iterator&)[m[K’:
+[11.891s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:211:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kit[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.892s]   211 |         virtual void handleNodeInBBX([01;35m[Kconst OcTreeT::iterator& it[m[K) {};
+[11.892s]       |                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.892s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:[m[K In constructor ‘[01m[Koctomap_server::OctomapServer::OctomapServer(const rclcpp::NodeOptions&, std::string)[m[K’:
+[11.892s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:148:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Koctomap_server::OctomapServer::m_useColoredMap[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.892s]   148 |         bool [01;35m[Km_useColoredMap[m[K;
+[11.893s]       |              [01;35m[K^~~~~~~~~~~~~~~[m[K
+[11.893s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:118:16:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble octomap_server::OctomapServer::m_colorFactor[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.893s]   118 |         double [01;35m[Km_colorFactor[m[K;
+[11.893s]       |                [01;35m[K^~~~~~~~~~~~~[m[K
+[11.894s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:5:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.894s]     5 |     [01;35m[KOctomapServer[m[K::OctomapServer(
+[11.894s]       |     [01;35m[K^~~~~~~~~~~~~[m[K
+[12.073s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::insertCloudCallback(const ConstSharedPtr&)[m[K’:
+[12.073s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:351:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[12.074s]   351 |             rclcpp::Duration(1, 0)[01;31m[K;[m[K // 设置超时时间，避免瞬间查询失败
+[12.074s]       |                                   [01;31m[K^[m[K
+[12.074s]       |                                   [32m[K)[m[K
+[12.075s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:347:60:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[12.075s]   347 |             sensorToBaseTf = this->buffer_->lookupTransform[01;36m[K([m[K
+[12.075s]       |                                                            [01;36m[K^[m[K
+[12.075s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.075s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.077s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:8[m[K,
+[12.078s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:2[m[K:
+[12.078s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:354:13:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+[12.078s]   354 |             [01;31m[KRCLCPP_ERROR[m[K("Could not get transform: %s", ex.what());
+[12.078s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[12.079s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.079s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.079s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.079s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.079s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.081s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/include/octomap_server2/octomap_server.hpp:8[m[K,
+[12.081s]                  from [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:2[m[K:
+[12.081s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:354:13:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Could not get transform: %s")[m[K’, which is of non-class type ‘[01m[Kconst char [28][m[K’
+[12.082s]   354 |             [01;31m[KRCLCPP_ERROR[m[K("Could not get transform: %s", ex.what());
+[12.082s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[12.082s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:354:13:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Could not get transform: %s")[m[K’, which is of non-class type ‘[01m[Kconst char [28][m[K’
+[12.082s]   354 |             [01;31m[KRCLCPP_ERROR[m[K("Could not get transform: %s", ex.what());
+[12.083s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[12.097s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::publishAll(const rclcpp::Time&)[m[K’:
+[12.097s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:607:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.097s]   607 |                     double [01;35m[Ksize[m[K = it.getSize();
+[12.098s]       |                            [01;35m[K^~~~[m[K
+[12.109s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual bool octomap_server::OctomapServer::octomapBinarySrv(std::shared_ptr<octomap_msgs::srv::GetOctomap_Request_<std::allocator<void> > >, std::shared_ptr<octomap_msgs::srv::GetOctomap_Response_<std::allocator<void> > >)[m[K’:
+[12.110s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:795:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.110s]   795 |         [01;35m[Kconst std::shared_ptr<OctomapSrv::Request> req[m[K,
+[12.110s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.111s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual bool octomap_server::OctomapServer::octomapFullSrv(std::shared_ptr<octomap_msgs::srv::GetOctomap_Request_<std::allocator<void> > >, std::shared_ptr<octomap_msgs::srv::GetOctomap_Response_<std::allocator<void> > >)[m[K’:
+[12.111s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:814:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.111s]   814 |         [01;35m[Kconst std::shared_ptr<OctomapSrv::Request> req[m[K,
+[12.111s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.118s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kbool octomap_server::OctomapServer::clearBBXSrv(std::shared_ptr<octomap_msgs::srv::BoundingBoxQuery_Request_<std::allocator<void> > >, std::shared_ptr<octomap_msgs::srv::BoundingBoxQuery_Response_<std::allocator<void> > >)[m[K’:
+[12.118s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:829:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.119s]   829 |         [01;35m[Kstd::shared_ptr<BBXSrv::Response> resp[m[K) {
+[12.119s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[12.126s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kbool octomap_server::OctomapServer::resetSrv(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[12.126s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:867:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.126s]   867 |         for (auto i = 0; [01;35m[Ki < occupiedNodesVis.markers.size()[m[K; ++i){
+[12.127s]       |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.127s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:883:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<visualization_msgs::msg::Marker_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.127s]   883 |         for (auto i = 0; [01;35m[Ki < freeNodesVis.markers.size()[m[K; ++i) {
+[12.127s]       |                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.128s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:847:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.128s]   847 |         [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[12.128s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.128s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:848:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.129s]   848 |         [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> resp[m[K) {
+[12.129s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[12.172s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::handlePreNodeTraversal(const rclcpp::Time&)[m[K’:
+[12.172s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:1175:59:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.173s]  1175 |                 for (unsigned int j = mapUpdateBBXMinY; [01;35m[Kj <= mapUpdateBBXMaxY[m[K; ++j) {
+[12.173s]       |                                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[12.174s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:[m[K In member function ‘[01m[Kvirtual void octomap_server::OctomapServer::handlePostNodeTraversal(const rclcpp::Time&)[m[K’:
+[12.174s] [01m[K/home/bxi_nx/ht_ws/src/octomap_ros2/src/octomap_server.cpp:1185:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krostime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.175s]  1185 |         [01;35m[Kconst rclcpp::Time& rostime[m[K){
+[12.175s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[23.256s] gmake[2]: *** [CMakeFiles/octomap_server2.dir/build.make:76: CMakeFiles/octomap_server2.dir/src/octomap_server.cpp.o] Error 1
+[23.257s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/octomap_server2.dir/all] Error 2
+[23.258s] gmake: *** [Makefile:146: all] Error 2
+[23.264s] Invoked command in '/home/bxi_nx/ht_ws/build/octomap_server2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/octomap_server2 -- -j8 -l8

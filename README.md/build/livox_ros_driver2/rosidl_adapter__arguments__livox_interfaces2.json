@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/bxi_nx/ht_ws/src/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/bxi_nx/ht_ws/src/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

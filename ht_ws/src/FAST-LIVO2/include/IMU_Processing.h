@@ -49,7 +49,7 @@ public:
   void disable_exposure_est();
   void Process2(LidarMeasureGroup &lidar_meas, StatesGroup &stat, PointCloudXYZI::Ptr cur_pcl_un_);
   void UndistortPcl(LidarMeasureGroup &lidar_meas, StatesGroup &state_inout, PointCloudXYZI &pcl_out);
-
+  
   ofstream fout_imu;
   double IMU_mean_acc_norm;
   V3D unbiased_gyr;

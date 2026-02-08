@@ -1,0 +1,11 @@
+[ 25%] Built target vio
+[ 31%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[ 37%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[ 37%] Built target laser_mapping
+[ 50%] Built target imu_proc
+[ 62%] Built target pre
+[ 75%] Built target utils
+[ 81%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+gmake[2]: *** [CMakeFiles/lio.dir/build.make:76: CMakeFiles/lio.dir/src/voxel_map.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/lio.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

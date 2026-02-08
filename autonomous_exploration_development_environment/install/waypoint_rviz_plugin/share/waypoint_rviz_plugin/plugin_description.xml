@@ -1,1 +1,9 @@
-/home/ht/autonomous_exploration_development_environment/src/waypoint_rviz_plugin/plugin_description.xml
+<library path="waypoint_rviz_plugin">
+  <class name="waypoint_rviz_plugin/WaypointTool"
+         type="waypoint_rviz_plugin::WaypointTool"
+         base_class_type="rviz_common::Tool">
+    <description>
+      A tool for sending waypoints
+    </description>
+  </class>
+</library>

@@ -1,1 +1,0 @@
-string application_config

@@ -1,0 +1,18 @@
+[0.044s] Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
+[0.240s] [ 42%] Built target livox_lidar_sdk_shared
+[0.264s] [ 84%] Built target livox_lidar_sdk_static
+[0.425s] [ 86%] Built target livox_lidar_quick_start
+[0.454s] [ 91%] Built target logger
+[0.456s] [ 91%] Built target lidar_cmd_observer
+[0.474s] [ 93%] Built target debug_point_cloud
+[0.502s] [ 96%] Built target multi_lidars_upgrade
+[0.505s] [100%] Built target livox_lidar_rmc_time_sync
+[0.566s] Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
+[0.570s] Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2
+[0.609s] -- Install configuration: ""
+[0.609s] -- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+[0.609s] -- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_def.h
+[0.610s] -- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_api.h
+[0.610s] -- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/include/livox_lidar_cfg.h
+[0.610s] -- Up-to-date: /home/bxi_nx/ht_ws/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so
+[0.778s] Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2
