@@ -1,0 +1,1 @@
+/home/ht/ht_ws/src/realsense-ros/realsense2_ros_mqtt_bridge/launch/rs_launch.py

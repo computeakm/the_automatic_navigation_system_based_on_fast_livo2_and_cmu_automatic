@@ -1,0 +1,4 @@
+Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common
+Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common

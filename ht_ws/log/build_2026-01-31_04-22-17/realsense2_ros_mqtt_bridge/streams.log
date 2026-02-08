@@ -1,0 +1,17 @@
+[0.317s] Invoking command in '/home/ht/ht_ws/build/realsense2_ros_mqtt_bridge': PYTHONPATH=/home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/build --no-deps symlink_data
+[0.443s] running develop
+[0.512s] running egg_info
+[0.512s] writing realsense2_ros_mqtt_bridge.egg-info/PKG-INFO
+[0.512s] writing dependency_links to realsense2_ros_mqtt_bridge.egg-info/dependency_links.txt
+[0.512s] writing entry points to realsense2_ros_mqtt_bridge.egg-info/entry_points.txt
+[0.512s] writing requirements to realsense2_ros_mqtt_bridge.egg-info/requires.txt
+[0.512s] writing top-level names to realsense2_ros_mqtt_bridge.egg-info/top_level.txt
+[0.513s] reading manifest file 'realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+[0.514s] writing manifest file 'realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+[0.514s] running build_ext
+[0.514s] Creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/realsense2-ros-mqtt-bridge.egg-link (link to .)
+[0.515s] Installing realsense2_ros_mqtt_bridge script to /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/realsense2_ros_mqtt_bridge
+[0.515s] 
+[0.515s] Installed /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge
+[0.515s] running symlink_data
+[0.531s] Invoked command in '/home/ht/ht_ws/build/realsense2_ros_mqtt_bridge' returned '0': PYTHONPATH=/home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/build --no-deps symlink_data

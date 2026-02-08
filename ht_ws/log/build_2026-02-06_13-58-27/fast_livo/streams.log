@@ -1,0 +1,187 @@
+[0.008s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[0.043s] [ 12%] Built target utils
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[0.056s] [ 18%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[0.061s] [ 25%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[0.063s] [ 31%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[0.069s] [ 37%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[0.083s] [ 43%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[0.085s] [ 50%] [32mBuilding CXX object CMakeFiles/vio.dir/src/visual_point.cpp.o[0m
+[0.086s] [ 56%] [32mBuilding CXX object CMakeFiles/vio.dir/src/frame.cpp.o[0m
+[2.224s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[2.224s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/IMU_Processing.h:18[m[K,
+[2.224s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/IMU_Processing.cpp:13[m[K:
+[2.224s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[2.224s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[2.225s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.225s]       |              [32m[KPointXYZRGB[m[K
+[2.233s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[2.233s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[2.233s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.233s]       |                         [32m[KPointTypeRGBA[m[K
+[2.233s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.233s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[2.233s]       |                                     [01;31m[K^[m[K
+[2.305s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[2.305s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+[2.305s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/vio.h:16[m[K,
+[2.305s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/vio.cpp:13[m[K:
+[2.305s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[2.305s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[2.305s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.305s]       |              [32m[KPointXYZRGB[m[K
+[2.314s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[2.314s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[2.314s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.314s]       |                         [32m[KPointTypeRGBA[m[K
+[2.314s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.314s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[2.314s]       |                                     [01;31m[K^[m[K
+[2.427s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[2.427s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/voxel_map.h:16[m[K,
+[2.427s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/voxel_map.cpp:13[m[K:
+[2.427s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[2.427s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[2.427s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.427s]       |              [32m[KPointXYZRGB[m[K
+[2.435s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[2.435s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[2.435s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.435s]       |                         [32m[KPointTypeRGBA[m[K
+[2.436s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.436s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[2.436s]       |                                     [01;31m[K^[m[K
+[2.465s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[2.465s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/preprocess.h:16[m[K,
+[2.465s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/preprocess.cpp:13[m[K:
+[2.465s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[2.465s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[2.465s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.465s]       |              [32m[KPointXYZRGB[m[K
+[2.469s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[2.469s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/visual_point.h:17[m[K,
+[2.469s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/feature.h:16[m[K,
+[2.469s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/frame.cpp:14[m[K:
+[2.469s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[2.469s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[2.469s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[2.469s]       |              [32m[KPointXYZRGB[m[K
+[2.474s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[2.474s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[2.474s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.474s]       |                         [32m[KPointTypeRGBA[m[K
+[2.474s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.474s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[2.474s]       |                                     [01;31m[K^[m[K
+[2.478s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[2.478s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[2.478s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.478s]       |                         [32m[KPointTypeRGBA[m[K
+[2.478s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.478s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[2.478s]       |                                     [01;31m[K^[m[K
+[3.026s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[3.027s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/IMU_Processing.h:18[m[K,
+[3.027s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/LIVMapper.h:16[m[K,
+[3.027s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:13[m[K:
+[3.027s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[3.027s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[3.027s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[3.027s]       |              [32m[KPointXYZRGB[m[K
+[3.036s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[3.036s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[3.036s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[3.036s]       |                         [32m[KPointTypeRGBA[m[K
+[3.036s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.036s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[3.036s]       |                                     [01;31m[K^[m[K
+[3.570s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/common_lib.h:17[m[K,
+[3.570s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/visual_point.h:17[m[K,
+[3.571s]                  from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/visual_point.cpp:13[m[K:
+[3.571s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:9:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZIRGB[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a type; did you mean ‘[01m[KPointXYZRGB[m[K’?
+[3.571s]     9 | typedef pcl::[01;31m[KPointXYZIRGB[m[K PointTypeRGB;
+[3.571s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[3.571s]       |              [32m[KPointXYZRGB[m[K
+[3.586s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[3.586s]    13 | typedef pcl::PointCloud<[01;31m[KPointTypeRGB[m[K> PointCloudXYZRGB;
+[3.586s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[3.586s]       |                         [32m[KPointTypeRGBA[m[K
+[3.586s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/utils/types.h:13:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.586s]    13 | typedef pcl::PointCloud<PointTypeRGB[01;31m[K>[m[K PointCloudXYZRGB;
+[3.586s]       |                                     [01;31m[K^[m[K
+[6.594s] gmake[2]: *** [CMakeFiles/vio.dir/build.make:90：CMakeFiles/vio.dir/src/frame.cpp.o] 错误 1
+[6.594s] gmake[2]: *** 正在等待未完成的任务....
+[6.657s] In file included from [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:13[m[K:
+[6.658s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/LIVMapper.h:144:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[6.658s]   144 |   PointCloudXYZRGB[01;31m[K::[m[KPtr pcl_wait_save;
+[6.658s]       |                   [01;31m[K^~[m[K
+[6.658s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/LIVMapper.h:144:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.658s]   144 |   PointCloudXYZRGB::[01;31m[KPtr[m[K pcl_wait_save;
+[6.658s]       |                     [01;31m[K^~~[m[K
+[6.658s]       |                        [32m[K;[m[K
+[6.664s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/include/LIVMapper.h:144:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpcl_wait_save[m[K’ does not name a type
+[6.664s]   144 |   PointCloudXYZRGB::Ptr [01;31m[Kpcl_wait_save[m[K;
+[6.664s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[6.772s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:[m[K In constructor ‘[01m[KLIVMapper::LIVMapper(rclcpp::Node::SharedPtr&, std::string, const rclcpp::NodeOptions&)[m[K’:
+[6.772s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:40:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpcl_wait_save[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl_wait_pub[m[K’?
+[6.772s]    40 |   [01;31m[Kpcl_wait_save[m[K.reset(new PointCloudXYZRGB());
+[6.772s]       |   [01;31m[K^~~~~~~~~~~~~[m[K
+[6.772s]       |   [32m[Kpcl_wait_pub[m[K
+[7.055s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:[m[K In member function ‘[01m[Kvoid LIVMapper::savePCD()[m[K’:
+[7.055s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:572:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpcl_wait_save[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl_wait_pub[m[K’?
+[7.055s]   572 |   if (pcd_save_en && ([01;31m[Kpcl_wait_save[m[K->points.size() > 0 || pcl_wait_save_intensity->points.size() > 0) && pcd_save_interval < 0)
+[7.055s]       |                       [01;31m[K^~~~~~~~~~~~~[m[K
+[7.055s]       |                       [32m[Kpcl_wait_pub[m[K
+[7.068s] gmake[2]: *** [CMakeFiles/pre.dir/build.make:76：CMakeFiles/pre.dir/src/preprocess.cpp.o] 错误 1
+[7.068s] gmake[1]: *** [CMakeFiles/Makefile2:201：CMakeFiles/pre.dir/all] 错误 2
+[7.068s] gmake[1]: *** 正在等待未完成的任务....
+[7.193s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:[m[K In member function ‘[01m[Kvoid LIVMapper::publish_frame_world(const SharedPtr&, VIOManagerPtr)[m[K’:
+[7.193s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1227:3:[m[K [01;31m[Kerror: [m[K‘[01m[KPointCloudXYZIRGB[m[K’ has not been declared
+[7.193s]  1227 |   [01;31m[KPointCloudXYZIRGB[m[K::Ptr laserCloudWorldRGB(new PointCloudXYZIRGB());
+[7.193s]       |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[7.221s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1239:7:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudWorldRGB[m[K’ was not declared in this scope
+[7.221s]  1239 |       [01;31m[KlaserCloudWorldRGB[m[K->reserve(size);
+[7.221s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.236s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1244:9:[m[K [01;31m[Kerror: [m[K‘[01m[KPointTypeRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypeRGBA[m[K’?
+[7.236s]  1244 |         [01;31m[KPointTypeRGB[m[K pointRGB;
+[7.236s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[7.236s]       |         [32m[KPointTypeRGBA[m[K
+[7.248s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1245:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpointRGB[m[K’ was not declared in this scope
+[7.248s]  1245 |         [01;31m[KpointRGB[m[K.x = pcl_wait_pub->points[i].x;
+[7.248s]       |         [01;31m[K^~~~~~~~[m[K
+[7.284s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1281:20:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudWorldRGB[m[K’ was not declared in this scope
+[7.284s]  1281 |     pcl::toROSMsg(*[01;31m[KlaserCloudWorldRGB[m[K, laserCloudmsg);
+[7.285s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.302s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1302:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kpcl_wait_save[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl_wait_pub[m[K’?
+[7.302s]  1302 |       *[01;31m[Kpcl_wait_save[m[K += *laserCloudWorldRGB;
+[7.302s]       |        [01;31m[K^~~~~~~~~~~~~[m[K
+[7.303s]       |        [32m[Kpcl_wait_pub[m[K
+[7.325s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1302:26:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudWorldRGB[m[K’ was not declared in this scope; did you mean ‘[01m[KlaserCloudWorld[m[K’?
+[7.325s]  1302 |       *pcl_wait_save += *[01;31m[KlaserCloudWorldRGB[m[K;
+[7.325s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.325s]       |                          [32m[KlaserCloudWorld[m[K
+[7.342s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1310:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kpcl_wait_save[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl_wait_pub[m[K’?
+[7.342s]  1310 |     if (([01;31m[Kpcl_wait_save[m[K->size() > 0 || pcl_wait_save_intensity->size() > 0) && pcd_save_interval > 0 && scan_wait_num >= pcd_save_interval)
+[7.342s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[7.342s]       |          [32m[Kpcl_wait_pub[m[K
+[7.343s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1321:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kswap[m[K’ in ‘[01m[K0[m[K’, which is of non-class type ‘[01m[KPointCloudXYZRGB[m[K’ {aka ‘[01m[Kint[m[K’}
+[7.343s]  1321 |           PointCloudXYZRGB().[01;31m[Kswap[m[K(*pcl_wait_save);
+[7.343s]       |                              [01;31m[K^~~~[m[K
+[7.370s] [01m[K/home/ht/ht_ws/src/FAST-LIVO2/src/LIVMapper.cpp:1335:6:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudWorldRGB[m[K’ was not declared in this scope
+[7.371s]  1335 |   if([01;31m[KlaserCloudWorldRGB[m[K->size() > 0)  PointCloudXYZI().swap(*pcl_wait_pub);
+[7.371s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.265s] gmake[2]: *** [CMakeFiles/imu_proc.dir/build.make:76：CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o] 错误 1
+[8.265s] gmake[1]: *** [CMakeFiles/Makefile2:227：CMakeFiles/imu_proc.dir/all] 错误 2
+[8.394s] gmake[2]: *** [CMakeFiles/vio.dir/build.make:104：CMakeFiles/vio.dir/src/visual_point.cpp.o] 错误 1
+[13.249s] gmake[2]: *** [CMakeFiles/vio.dir/build.make:76：CMakeFiles/vio.dir/src/vio.cpp.o] 错误 1
+[13.249s] gmake[1]: *** [CMakeFiles/Makefile2:149：CMakeFiles/vio.dir/all] 错误 2
+[15.769s] gmake[2]: *** [CMakeFiles/laser_mapping.dir/build.make:76：CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o] 错误 1
+[15.769s] gmake[1]: *** [CMakeFiles/Makefile2:253：CMakeFiles/laser_mapping.dir/all] 错误 2
+[16.870s] gmake[2]: *** [CMakeFiles/lio.dir/build.make:76：CMakeFiles/lio.dir/src/voxel_map.cpp.o] 错误 1
+[16.870s] gmake[1]: *** [CMakeFiles/Makefile2:175：CMakeFiles/lio.dir/all] 错误 2
+[16.870s] gmake: *** [Makefile:146：all] 错误 2
+[16.872s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '2': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16

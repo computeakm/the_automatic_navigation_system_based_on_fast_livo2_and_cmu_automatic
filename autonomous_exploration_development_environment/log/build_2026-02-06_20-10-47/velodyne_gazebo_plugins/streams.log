@@ -1,0 +1,29 @@
+[0.029s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins -- -j16 -l16
+[0.076s] [100%] Built target gazebo_ros_velodyne_laser
+[0.091s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins -- -j16 -l16
+[0.092s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins
+[0.109s] -- Install configuration: "Release"
+[0.109s] -- Execute custom install script
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.hpp
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.sh
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.dsv
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.sh
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.dsv
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.bash
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.sh
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.zsh
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.dsv
+[0.109s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/ament_index/resource_index/packages/velodyne_gazebo_plugins
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake
+[0.109s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.xml
+[0.155s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/velodyne_gazebo_plugins

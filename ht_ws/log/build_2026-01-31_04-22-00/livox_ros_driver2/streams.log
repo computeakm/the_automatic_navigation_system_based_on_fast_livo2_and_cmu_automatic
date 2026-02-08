@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/ht/ht_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/livox_ros_driver2 -- -j16 -l16
+[0.045s] [  7%] Built target livox_interfaces2__rosidl_generator_c
+[0.047s] failed to create symbolic link '/home/ht/ht_ws/build/livox_ros_driver2/ament_cmake_python/livox_ros_driver2/livox_ros_driver2' because existing path cannot be removed: Is a directory
+[0.047s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_livox_ros_driver2.dir/build.make:70：CMakeFiles/ament_cmake_python_symlink_livox_ros_driver2] 错误 1
+[0.048s] gmake[1]: *** [CMakeFiles/Makefile2:425：CMakeFiles/ament_cmake_python_symlink_livox_ros_driver2.dir/all] 错误 2
+[0.048s] gmake[1]: *** 正在等待未完成的任务....
+[0.049s] [  8%] Built target livox_interfaces2__cpp
+[0.054s] [ 12%] Built target livox_ros_driver2_node
+[0.063s] [ 26%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[0.064s] [ 26%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[0.067s] [ 33%] Built target livox_interfaces2__rosidl_typesupport_c
+[0.067s] gmake: *** [Makefile:146：all] 错误 2
+[0.152s] Invoked command in '/home/ht/ht_ws/build/livox_ros_driver2' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/livox_ros_driver2 -- -j16 -l16

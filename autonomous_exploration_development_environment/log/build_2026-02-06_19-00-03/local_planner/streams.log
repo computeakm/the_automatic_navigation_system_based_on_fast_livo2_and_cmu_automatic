@@ -1,0 +1,31 @@
+[0.026s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/local_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/local_planner -- -j16 -l16
+[0.070s] [ 50%] Built target localPlanner
+[0.071s] [100%] Built target pathFollower
+[0.101s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/local_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/local_planner -- -j16 -l16
+[0.102s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/local_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/local_planner
+[0.109s] -- Install configuration: "Release"
+[0.110s] -- Execute custom install script
+[0.110s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/lib/local_planner/localPlanner
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/lib/local_planner/pathFollower
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/launch/local_planner.launch
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/correspondences.txt
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/pathList.ply
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/path_generator.m
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/paths.ply
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/startPaths.ply
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/package_run_dependencies/local_planner
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/parent_prefix_path/local_planner
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/ament_prefix_path.dsv
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/path.sh
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/path.dsv
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.bash
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.sh
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.zsh
+[0.112s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.dsv
+[0.113s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/package.dsv
+[0.119s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/packages/local_planner
+[0.119s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/cmake/local_plannerConfig.cmake
+[0.119s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/cmake/local_plannerConfig-version.cmake
+[0.119s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/package.xml
+[0.165s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/local_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/local_planner

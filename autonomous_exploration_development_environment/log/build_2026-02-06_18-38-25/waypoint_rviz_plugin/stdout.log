@@ -1,0 +1,24 @@
+[ 16%] [34m[1mAutomatic MOC for target waypoint_rviz_plugin[0m
+[ 16%] Built target waypoint_rviz_plugin_autogen
+[100%] Built target waypoint_rviz_plugin
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin//plugin_description.xml
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/waypoint_rviz_plugin
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/waypoint_rviz_plugin
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/environment/path.sh
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/environment/path.dsv
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/local_setup.bash
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/local_setup.sh
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/local_setup.zsh
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/local_setup.dsv
+-- Symlinking: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/package.dsv
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/ament_index/resource_index/packages/waypoint_rviz_plugin
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/waypoint_rviz_plugin
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/cmake/waypoint_rviz_pluginConfig.cmake
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/cmake/waypoint_rviz_pluginConfig-version.cmake
+-- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/share/waypoint_rviz_plugin/package.xml
+-- Up-to-date: /home/ht/autonomous_exploration_development_environment/install/waypoint_rviz_plugin/lib/waypoint_rviz_plugin/libwaypoint_rviz_plugin.so

@@ -1,0 +1,88 @@
+[0.007s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[0.013s] -- Build Type: Release
+[0.013s] -- Current CPU architecture: x86_64
+[0.013s] -- Using general x86 optimizations: -O3 -march=native -mtune=native -funroll-loops
+[0.015s] -- Processor count: 16
+[0.015s] -- Multithreading enabled. Cores: 4
+[0.017s] -- OpenMP found
+[0.022s] -- mimalloc not found, proceeding without it
+[0.022s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.093s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.097s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.112s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.113s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.117s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.122s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.146s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.147s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.202s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.229s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.229s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.236s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.245s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.254s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.264s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.287s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.304s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.475s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.480s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.576s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.581s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.586s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.673s] -- Found Qhull version 8.0.2
+[0.764s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.868s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.868s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.868s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.912s] -- Found livox_ros_driver2: 1.0.0 (/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[0.923s] -- Found vikit_common: 0.0.0 (/home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake)
+[0.930s] -- Found vikit_ros: 0.0.0 (/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake)
+[0.934s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.935s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.943s] [33mCMake Warning (dev) at CMakeLists.txt:104 (find_package):
+[0.943s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[0.943s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[0.944s]   command to set the policy and suppress this warning.
+[0.944s] 
+[0.944s]   CMake variable PCL_ROOT is set to:
+[0.944s] 
+[0.944s]     /usr
+[0.944s] 
+[0.944s]   For compatibility, CMake is ignoring the variable.
+[0.944s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.944s] [0m
+[0.952s] -- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") 
+[1.029s] -- Configuring done
+[1.131s] -- Generating done
+[1.152s] -- Build files have been written to: /home/ht/ht_ws/build/fast_livo
+[1.162s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[1.163s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[1.195s] [35m[1mConsolidate compiler generated dependencies of target utils[0m
+[1.198s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[1.198s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[1.198s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[1.211s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[1.215s] [ 12%] Built target utils
+[1.232s] [ 18%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[1.235s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[1.236s] [ 25%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[1.241s] [ 31%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[1.247s] [ 37%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[1.251s] [ 43%] [32mBuilding CXX object CMakeFiles/vio.dir/src/visual_point.cpp.o[0m
+[1.252s] [ 50%] [32mBuilding CXX object CMakeFiles/vio.dir/src/frame.cpp.o[0m
+[1.255s] [ 56%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[9.479s] [ 62%] [32m[1mLinking CXX static library libpre.a[0m
+[9.504s] [ 62%] Built target pre
+[10.779s] [ 68%] [32m[1mLinking CXX static library libimu_proc.a[0m
+[10.804s] [ 68%] Built target imu_proc
+[19.085s] [ 75%] [32m[1mLinking CXX static library libvio.a[0m
+[19.110s] [ 75%] Built target vio
+[23.850s] [ 81%] [32m[1mLinking CXX static library liblio.a[0m
+[23.870s] [ 81%] Built target lio
+[29.701s] [ 87%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[29.757s] [ 87%] Built target laser_mapping
+[29.767s] [35m[1mConsolidate compiler generated dependencies of target fastlivo_mapping[0m
+[29.786s] [ 93%] [32mBuilding CXX object CMakeFiles/fastlivo_mapping.dir/src/main.cpp.o[0m
+[35.193s] [100%] [32m[1mLinking CXX executable fastlivo_mapping[0m
+[36.013s] [100%] Built target fastlivo_mapping

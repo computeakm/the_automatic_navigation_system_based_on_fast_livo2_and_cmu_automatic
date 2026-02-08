@@ -1,0 +1,134 @@
+[0.024s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/local_planner -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/local_planner
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.134s] -- The CXX compiler identification is GNU 11.4.0
+[0.139s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.203s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.203s] -- Detecting C compile features
+[0.203s] -- Detecting C compile features - done
+[0.206s] -- Detecting CXX compiler ABI info
+[0.279s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.412s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.468s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.498s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.536s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.541s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.551s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.561s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.576s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.609s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.611s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.669s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.690s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.720s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.727s] -- Looking for pthread.h
+[0.788s] -- Looking for pthread.h - found
+[0.789s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.858s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.860s] -- Found Threads: TRUE  
+[0.920s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.954s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.972s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.080s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.098s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.099s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.099s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.103s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.139s] -- Checking for module 'eigen3'
+[1.148s] --   Found eigen3, version 3.4.0
+[1.171s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.171s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.199s] -- Checking for module 'flann'
+[1.210s] --   Found flann, version 1.9.1
+[1.247s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.247s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.081s] -- Checking for module 'libusb-1.0'
+[2.093s] --   Found libusb-1.0, version 1.0.25
+[2.138s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.141s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.208s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.356s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.364s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.376s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.489s] -- Found Qhull version 8.0.2
+[2.612s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.729s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.729s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.730s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.730s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.731s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.732s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.732s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.732s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.733s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.734s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.734s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.735s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.736s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.736s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.737s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.738s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.739s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.739s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.740s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.741s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.741s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.742s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.742s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.743s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.743s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.746s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.767s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.857s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.859s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.859s] -- Configured cppcheck include dirs: 
+[2.859s] -- Configured cppcheck exclude dirs and/or files: 
+[2.860s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.860s] -- Configured cpplint exclude dirs and/or files: 
+[2.861s] -- Added test 'lint_cmake' to check CMake code style
+[2.861s] -- Added test 'uncrustify' to check C / C++ code style
+[2.861s] -- Configured uncrustify additional arguments: 
+[2.862s] -- Added test 'xmllint' to check XML markup files
+[2.862s] -- Configuring done
+[2.921s] -- Generating done
+[2.935s] -- Build files have been written to: /home/ht/autonomous_exploration_development_environment/build/local_planner
+[2.962s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/local_planner -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/local_planner
+[2.964s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/local_planner -- -j16 -l16
+[3.019s] [ 50%] [32mBuilding CXX object CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o[0m
+[3.019s] [ 50%] [32mBuilding CXX object CMakeFiles/localPlanner.dir/src/localPlanner.cpp.o[0m
+[35.531s] [ 75%] [32m[1mLinking CXX executable pathFollower[0m
+[35.883s] [ 75%] Built target pathFollower
+[42.407s] [100%] [32m[1mLinking CXX executable localPlanner[0m
+[42.916s] [100%] Built target localPlanner
+[42.922s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/local_planner -- -j16 -l16
+[42.923s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/local_planner
+[42.929s] -- Install configuration: "Release"
+[42.929s] -- Execute custom install script
+[42.930s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/lib/local_planner/localPlanner
+[42.934s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/lib/local_planner/pathFollower
+[42.940s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/launch/local_planner.launch
+[42.945s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/correspondences.txt
+[42.950s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/pathList.ply
+[42.956s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/path_generator.m
+[42.961s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/paths.ply
+[42.966s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/paths/startPaths.ply
+[42.971s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/package_run_dependencies/local_planner
+[42.976s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/parent_prefix_path/local_planner
+[42.981s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/ament_prefix_path.sh
+[42.986s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/ament_prefix_path.dsv
+[42.991s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/path.sh
+[42.996s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/environment/path.dsv
+[43.002s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.bash
+[43.007s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.sh
+[43.012s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.zsh
+[43.016s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/local_setup.dsv
+[43.021s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/package.dsv
+[43.025s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/ament_index/resource_index/packages/local_planner
+[43.030s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/cmake/local_plannerConfig.cmake
+[43.035s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/cmake/local_plannerConfig-version.cmake
+[43.039s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/local_planner/share/local_planner/package.xml
+[43.046s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/local_planner

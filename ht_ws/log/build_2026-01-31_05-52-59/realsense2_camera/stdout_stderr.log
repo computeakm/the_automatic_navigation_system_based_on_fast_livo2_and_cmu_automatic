@@ -1,0 +1,90 @@
+-- Create Release Build.
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 16.0.17 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found realsense2_camera_msgs: 4.51.1 (/home/ht/ht_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+-- Build for ROS2 Humble
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ht/ht_ws/build/realsense2_camera
+[35m[1mConsolidate compiler generated dependencies of target realsense2_camera_node[0m
+[  5%] [32mBuilding CXX object CMakeFiles/realsense2_frame_latency_node.dir/rclcpp_components/node_main_realsense2_frame_latency_node.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target realsense2_camera[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend_foxy.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/tools/frame_latency/frame_latency.cpp.o[0m
+[ 89%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[ 89%] Built target realsense2_camera_node
+[ 94%] [32m[1mLinking CXX executable realsense2_frame_latency_node[0m
+[ 94%] Built target realsense2_frame_latency_node
+[100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[100%] Built target realsense2_camera
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+-- Symlinking: /home/ht/ht_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_frame_latency_node
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/lib/librealsense2_camera.so
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/base_realsense_node.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/constants.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/dynamic_params.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/image_publisher.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/named_filter.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/profile_manager.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/realsense_node_factory.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/ros_param_backend.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/ros_sensor.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/ros_utils.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/sensor_params.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/include/t265_realsense_node.h
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+-- Symlinking: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/realsense2_camera/share/realsense2_camera/package.xml

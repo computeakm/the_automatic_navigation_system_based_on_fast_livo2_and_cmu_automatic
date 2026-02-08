@@ -1,0 +1,89 @@
+[0.007s] Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+[0.022s] [0mCurrent CPU archtecture: x86_64[0m
+[0.022s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Configuring done
+[0.149s] -- Generating done
+[0.151s] -- Build files have been written to: /home/ht/ht_ws/build/vikit_common
+[0.168s] [35m[1mConsolidate compiler generated dependencies of target vikit_common[0m
+[0.186s] [ 21%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o[0m
+[0.187s] [ 21%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/math_utils.cpp.o[0m
+[0.187s] [ 21%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/vision.cpp.o[0m
+[0.187s] [ 21%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o[0m
+[0.187s] [ 31%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/performance_monitor.cpp.o[0m
+[0.187s] [ 31%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/user_input_thread.cpp.o[0m
+[0.187s] [ 36%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o[0m
+[0.190s] [ 42%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/equidistant_camera.cpp.o[0m
+[0.190s] [ 47%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/polynomial_camera.cpp.o[0m
+[0.190s] [ 52%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o[0m
+[0.190s] [ 57%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/homography.cpp.o[0m
+[0.193s] [ 63%] [32mBuilding CXX object CMakeFiles/vikit_common.dir/src/img_align.cpp.o[0m
+[8.556s] [ 68%] [32m[1mLinking CXX shared library libvikit_common.so[0m
+[8.612s] [ 68%] Built target vikit_common
+[8.622s] [ 73%] [32mBuilding CXX object CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o[0m
+[8.624s] [ 78%] [32mBuilding CXX object CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o[0m
+[8.625s] [ 84%] [32mBuilding CXX object CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o[0m
+[9.760s] [ 89%] [32m[1mLinking CXX executable test_vk_common_patch_score[0m
+[9.947s] [ 89%] Built target test_vk_common_patch_score
+[10.442s] [ 94%] [32m[1mLinking CXX executable test_vk_common_camera[0m
+[10.543s] [100%] [32m[1mLinking CXX executable test_vk_common_triangulation[0m
+[10.644s] [100%] Built target test_vk_common_camera
+[10.742s] [100%] Built target test_vk_common_triangulation
+[10.748s] Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+[10.755s] Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common
+[10.761s] -- Install configuration: "Release"
+[10.761s] -- Installing: /home/ht/ht_ws/install/vikit_common/lib/libvikit_common.so
+[10.761s] -- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera
+[10.762s] -- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera" to ""
+[10.762s] -- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation
+[10.762s] -- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation" to ""
+[10.762s] -- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score
+[10.762s] -- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score" to ""
+[10.762s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/polynomial_camera.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/abstract_camera.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/atan_camera.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/homography.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/ringbuffer.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/math_utils.h
+[10.763s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/img_align.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/patch_score.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/robust_cost.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/vision.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/user_input_thread.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/equidistant_camera.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/performance_monitor.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/blender_utils.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/pinhole_camera.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver_impl.hpp
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/omni_camera.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader_types.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/timer.h
+[10.764s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/sample.h
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/aligned_mem.h
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.sh
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.dsv
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/package_run_dependencies/vikit_common
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/parent_prefix_path/vikit_common
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.sh
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.dsv
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/path.sh
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/path.dsv
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.bash
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.sh
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.zsh
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.dsv
+[10.765s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/package.dsv
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/packages/vikit_common
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport-release.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_libraries-extras.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_targets-extras.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig-version.cmake
+[10.766s] -- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/package.xml
+[10.767s] Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common

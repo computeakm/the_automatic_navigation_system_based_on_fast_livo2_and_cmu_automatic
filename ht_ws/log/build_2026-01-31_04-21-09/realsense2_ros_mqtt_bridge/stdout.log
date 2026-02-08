@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating realsense2_ros_mqtt_bridge.egg-info
+writing realsense2_ros_mqtt_bridge.egg-info/PKG-INFO
+writing dependency_links to realsense2_ros_mqtt_bridge.egg-info/dependency_links.txt
+writing entry points to realsense2_ros_mqtt_bridge.egg-info/entry_points.txt
+writing requirements to realsense2_ros_mqtt_bridge.egg-info/requires.txt
+writing top-level names to realsense2_ros_mqtt_bridge.egg-info/top_level.txt
+writing manifest file 'realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+reading manifest file 'realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+writing manifest file 'realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/realsense2-ros-mqtt-bridge.egg-link (link to .)
+Installing realsense2_ros_mqtt_bridge script to /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/lib/realsense2_ros_mqtt_bridge
+
+Installed /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge
+running symlink_data
+creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/ament_index
+creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index
+creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/resource/realsense2_ros_mqtt_bridge -> /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/package.xml -> /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge
+creating /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge/launch
+symbolically linking /home/ht/ht_ws/build/realsense2_ros_mqtt_bridge/launch/rs_launch.py -> /home/ht/ht_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge/launch

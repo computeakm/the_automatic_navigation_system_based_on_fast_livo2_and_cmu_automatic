@@ -1,0 +1,24 @@
+[0.022s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/loam_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/loam_interface -- -j16 -l16
+[0.108s] [100%] Built target loamInterface
+[0.119s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/loam_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/loam_interface -- -j16 -l16
+[0.121s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/loam_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/loam_interface
+[0.138s] -- Install configuration: "Release"
+[0.138s] -- Execute custom install script
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/lib/loam_interface/loamInterface
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/launch/loam_interface.launch
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/ament_index/resource_index/package_run_dependencies/loam_interface
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/ament_index/resource_index/parent_prefix_path/loam_interface
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/environment/ament_prefix_path.sh
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/environment/ament_prefix_path.dsv
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/environment/path.sh
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/environment/path.dsv
+[0.138s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/local_setup.bash
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/local_setup.sh
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/local_setup.zsh
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/local_setup.dsv
+[0.139s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/package.dsv
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/ament_index/resource_index/packages/loam_interface
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/cmake/loam_interfaceConfig.cmake
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/cmake/loam_interfaceConfig-version.cmake
+[0.139s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/loam_interface/share/loam_interface/package.xml
+[0.161s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/loam_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/loam_interface

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-fe90f34e6811959b1906.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "realsense2_camera",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera-Release-e5ad9a4c508d2c8ece0d.json",
+					"name" : "realsense2_camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_node-Release-8866f23a028c82bff1e3.json",
+					"name" : "realsense2_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_camera_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_camera_uninstall-Release-da2046b6b8e5f5888f3c.json",
+					"name" : "realsense2_camera_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realsense2_frame_latency_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realsense2_frame_latency_node-Release-6bc4cc0ff2a6f7abcc1e.json",
+					"name" : "realsense2_frame_latency_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-5e4e29d7a27deeafa663.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ht/ht_ws/build/realsense2_camera",
+		"source" : "/home/ht/ht_ws/src/realsense-ros/realsense2_camera"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

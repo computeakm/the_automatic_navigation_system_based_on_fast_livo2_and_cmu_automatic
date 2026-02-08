@@ -1,0 +1,26 @@
+[0.028s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/waypoint_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/waypoint_example -- -j16 -l16
+[0.076s] [100%] Built target waypointExample
+[0.091s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/waypoint_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/waypoint_example -- -j16 -l16
+[0.092s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/waypoint_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/waypoint_example
+[0.118s] -- Install configuration: "Release"
+[0.118s] -- Execute custom install script
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/lib/waypoint_example/waypointExample
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/launch/waypoint_example_garage.launch
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/data/boundary_garage.ply
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/data/waypoints_garage.ply
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/ament_index/resource_index/package_run_dependencies/waypoint_example
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/ament_index/resource_index/parent_prefix_path/waypoint_example
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/environment/ament_prefix_path.sh
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/environment/ament_prefix_path.dsv
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/environment/path.sh
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/environment/path.dsv
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/local_setup.bash
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/local_setup.sh
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/local_setup.zsh
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/local_setup.dsv
+[0.118s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/package.dsv
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/ament_index/resource_index/packages/waypoint_example
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/cmake/waypoint_exampleConfig.cmake
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/cmake/waypoint_exampleConfig-version.cmake
+[0.118s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/waypoint_example/share/waypoint_example/package.xml
+[0.128s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/waypoint_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/waypoint_example

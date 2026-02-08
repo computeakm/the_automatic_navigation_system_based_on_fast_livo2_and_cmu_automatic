@@ -1,0 +1,104 @@
+[0.007s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[0.014s] -- Build Type: Release
+[0.014s] -- Current CPU architecture: x86_64
+[0.014s] -- Using general x86 optimizations: -O3 -march=native -mtune=native -funroll-loops
+[0.016s] -- Processor count: 16
+[0.016s] -- Multithreading enabled. Cores: 4
+[0.019s] -- OpenMP found
+[0.023s] -- mimalloc not found, proceeding without it
+[0.023s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.091s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.096s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.111s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.112s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.115s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.127s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.144s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.145s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.198s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.224s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.224s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.231s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.240s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.249s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.259s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.288s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.307s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.562s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.566s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.769s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.778s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.787s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.943s] -- Found Qhull version 8.0.2
+[1.041s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.140s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.141s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.141s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.189s] -- Found livox_ros_driver2: 1.0.0 (/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[1.199s] -- Found vikit_common: 0.0.0 (/home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake)
+[1.205s] -- Found vikit_ros: 0.0.0 (/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake)
+[1.209s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.210s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.218s] [33mCMake Warning (dev) at CMakeLists.txt:103 (find_package):
+[1.218s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[1.218s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[1.218s]   command to set the policy and suppress this warning.
+[1.218s] 
+[1.218s]   CMake variable PCL_ROOT is set to:
+[1.218s] 
+[1.218s]     /usr
+[1.218s] 
+[1.218s]   For compatibility, CMake is ignoring the variable.
+[1.218s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.219s] [0m
+[1.226s] -- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") 
+[1.305s] -- Configuring done
+[1.401s] -- Generating done
+[1.421s] -- Build files have been written to: /home/ht/ht_ws/build/fast_livo
+[1.435s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[1.436s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[1.463s] [35m[1mConsolidate compiler generated dependencies of target utils[0m
+[1.464s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[1.465s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[1.467s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[1.469s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[1.470s] [ 12%] Built target utils
+[1.478s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[1.478s] [ 25%] Built target imu_proc
+[1.480s] [ 37%] Built target pre
+[1.485s] [ 62%] Built target vio
+[1.486s] [ 75%] Built target laser_mapping
+[1.490s] [ 87%] Built target lio
+[1.497s] [35m[1mConsolidate compiler generated dependencies of target fastlivo_mapping[0m
+[1.515s] [100%] Built target fastlivo_mapping
+[1.521s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[1.522s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo
+[1.527s] -- Install configuration: "Release"
+[1.528s] -- Execute custom install script
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/lib/fast_livo/fastlivo_mapping
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/MARS_LVIG.yaml
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/avia.yaml
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_MARS_LVIG.yaml
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_pinhole.yaml
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia.launch.py
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia_marslvig.launch.py
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/M300.rviz
+[1.528s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/fast_livo2.rviz
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/package_run_dependencies/fast_livo
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/parent_prefix_path/fast_livo
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.sh
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.dsv
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.sh
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.dsv
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.bash
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.sh
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.zsh
+[1.529s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.dsv
+[1.529s] -- Symlinking: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.dsv
+[1.534s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/packages/fast_livo
+[1.534s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.534s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig.cmake
+[1.534s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig-version.cmake
+[1.534s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.xml
+[1.536s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo

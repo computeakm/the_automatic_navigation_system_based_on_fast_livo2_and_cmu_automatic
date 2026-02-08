@@ -1,0 +1,145 @@
+[0.025s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/vehicle_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/vehicle_simulator -- -j16 -l16
+[0.100s] [100%] Built target vehicleSimulator
+[0.134s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/vehicle_simulator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/vehicle_simulator -- -j16 -l16
+[0.136s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/vehicle_simulator': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/vehicle_simulator
+[0.142s] -- Install configuration: "Release"
+[0.142s] -- Execute custom install script
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/lib/vehicle_simulator/vehicleSimulator
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_campus.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_forest.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_garage.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_indoor.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_real_robot.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/system_tunnel.launch
+[0.142s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/launch/vehicle_simulator.launch
+[0.142s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-27-35.txt
+[0.147s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-3-19.txt
+[0.147s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-33-19.txt
+[0.151s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-34-27.txt
+[0.158s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-36-59.txt
+[0.163s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-37-48.txt
+[0.168s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-5-17.txt
+[0.168s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-6-3.txt
+[0.173s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/metrics_2026-2-6-18-8-12.txt
+[0.178s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/readme.txt
+[0.178s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-27-35.txt
+[0.182s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-3-19.txt
+[0.182s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-33-19.txt
+[0.188s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-34-27.txt
+[0.194s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-36-59.txt
+[0.201s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-37-48.txt
+[0.205s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-5-17.txt
+[0.206s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-6-3.txt
+[0.211s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/log/trajectory_2026-2-6-18-8-12.txt
+[0.215s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/bark1.jpg
+[0.221s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/campus.dae
+[0.226s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/leaf3.png.002.png
+[0.230s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/photo_2020-11-01_11-54-02.jpg
+[0.235s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/photo_2020-11-01_11-56-17.jpg
+[0.240s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/texture_1001.png.001.png
+[0.244s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/texture_1002.png.001.png
+[0.248s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/texture_1003.png.001.png
+[0.254s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/texture_1004.png.001.png
+[0.258s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/meshes/texture_1005.png.001.png
+[0.262s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/model.config
+[0.268s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/model.sdf
+[0.272s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/preview/overview.png
+[0.277s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/campus/preview/pointcloud.ply
+[0.284s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/download_environments.sh
+[0.284s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/materials/scripts/grass.material
+[0.289s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/materials/textures/Grass_Albedo.jpg
+[0.293s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/materials/textures/flat_normal.png
+[0.298s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/materials/textures/grass_dry.png
+[0.302s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/model.config
+[0.307s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grass_plane/model.sdf
+[0.311s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/materials/scripts/grey_wall.material
+[0.316s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/materials/textures/grey_wall.png
+[0.322s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/model-1_3.sdf
+[0.326s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/model-1_4.sdf
+[0.330s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/model.config
+[0.336s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/grey_wall/model.sdf
+[0.341s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/materials/scripts/house_1.material
+[0.345s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/materials/textures/House_1_Diffuse.png
+[0.351s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/materials/textures/House_1_Normal.png
+[0.356s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/materials/textures/House_1_Spec.png
+[0.361s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/meshes/house_1.dae
+[0.365s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/model-1_3.sdf
+[0.371s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/model-1_4.sdf
+[0.375s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/model.config
+[0.379s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_1/model.sdf
+[0.383s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/materials/scripts/house_2.material
+[0.388s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/materials/textures/House_2_Diffuse.png
+[0.392s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/meshes/house_2.dae
+[0.396s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/model-1_3.sdf
+[0.401s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/model-1_4.sdf
+[0.405s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/model.config
+[0.409s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/house_2/model.sdf
+[0.413s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/materials/scripts/caster_fp.glsl
+[0.419s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/materials/scripts/caster_vp.glsl
+[0.423s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/materials/scripts/oak_tree.material
+[0.428s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/materials/textures/bark_diffuse.png
+[0.432s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/materials/textures/branch_diffuse.png
+[0.436s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/meshes/oak_tree.dae
+[0.440s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/model.config
+[0.444s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/oak_tree/model.sdf
+[0.450s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/materials/scripts/pine_tree.material
+[0.454s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/materials/textures/bark_diffuse.png
+[0.459s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/materials/textures/branch_2_diffuse.png
+[0.463s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/meshes/pine_tree.dae
+[0.469s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/model.config
+[0.473s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/pine_tree/model.sdf
+[0.478s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/preview/overview.png
+[0.484s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/preview/pointcloud.ply
+[0.490s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/vrc_driving_terrain/materials/scripts/grass.material
+[0.495s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/vrc_driving_terrain/materials/textures/grass_dry.png
+[0.500s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/vrc_driving_terrain/materials/textures/heightmap.png
+[0.506s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/vrc_driving_terrain/model.config
+[0.511s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/forest/vrc_driving_terrain/model.sdf
+[0.515s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/meshes/blue-concrete-texture-3.jpg
+[0.522s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/meshes/garage.dae
+[0.527s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/meshes/imgonline-com-ua-tile-RySXiqZBriXUB4J.jpg
+[0.532s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/meshes/imgonline-com-ua-tile-pLFAF53NCY1Spr.jpg
+[0.536s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/meshes/imgonline-com-ua-tile-turvdQ7ZY0r.jpg
+[0.541s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/model.config
+[0.545s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/model.sdf
+[0.549s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/preview/overview.png
+[0.554s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/garage/preview/pointcloud.ply
+[0.559s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/meshes/imgonline-com-ua-tile-K49qRoCnvbl.jpg
+[0.565s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/meshes/imgonline-com-ua-tile-PQCma89EHs3BX1.jpg
+[0.570s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/meshes/imgonline-com-ua-tile-RySXiqZBriXUB4J.jpg
+[0.575s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/meshes/indoor.dae
+[0.580s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/model.config
+[0.586s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/model.sdf
+[0.591s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/preview/overview.png
+[0.597s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/indoor/preview/pointcloud.ply
+[0.602s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/meshes/tunnel.dae
+[0.607s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/meshes/wall_texture.jpg
+[0.613s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/model.config
+[0.617s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/model.sdf
+[0.621s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/preview/overview.png
+[0.624s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/mesh/tunnel/preview/pointcloud.ply
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/rviz/vehicle_simulator.rviz
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/urdf/camera.urdf.xacro
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/urdf/lidar.urdf.xacro
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/urdf/robot.sdf
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/world/campus.world
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/world/forest.world
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/world/garage.world
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/world/indoor.world
+[0.630s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/world/tunnel.world
+[0.631s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/ament_index/resource_index/package_run_dependencies/vehicle_simulator
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/ament_index/resource_index/parent_prefix_path/vehicle_simulator
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/environment/ament_prefix_path.sh
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/environment/ament_prefix_path.dsv
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/environment/path.sh
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/environment/path.dsv
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/local_setup.bash
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/local_setup.sh
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/local_setup.zsh
+[0.632s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/local_setup.dsv
+[0.632s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/package.dsv
+[0.637s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/ament_index/resource_index/packages/vehicle_simulator
+[0.637s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/cmake/vehicle_simulatorConfig.cmake
+[0.637s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/cmake/vehicle_simulatorConfig-version.cmake
+[0.637s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/vehicle_simulator/share/vehicle_simulator/package.xml
+[0.638s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/vehicle_simulator' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/vehicle_simulator

@@ -1,0 +1,63 @@
+[0.006s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.092s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.151s] -- Detecting C compiler ABI info - done
+[0.160s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.161s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.164s] -- Detecting CXX compiler ABI info
+[0.235s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.240s] -- Build Type: Release
+[0.240s] -- Current CPU architecture: x86_64
+[0.240s] -- Using general x86 optimizations: -O3 -march=native -mtune=native -funroll-loops
+[0.243s] -- Processor count: 16
+[0.243s] -- Multithreading enabled. Cores: 4
+[0.456s] -- OpenMP found
+[0.460s] -- mimalloc not found, proceeding without it
+[0.461s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.545s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.591s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.612s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.614s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.618s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.624s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.632s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.654s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.655s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.704s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.722s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.747s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.751s] -- Looking for pthread.h
+[0.827s] -- Looking for pthread.h - found
+[0.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.886s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.887s] -- Found Threads: TRUE  
+[0.914s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.914s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.922s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.931s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.940s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.955s] [31mCMake Error at CMakeLists.txt:95 (find_package):
+[0.955s]   By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has
+[0.955s]   asked CMake to find a package configuration file provided by "pcl_ros", but
+[0.955s]   CMake did not find one.
+[0.955s] 
+[0.955s]   Could not find a package configuration file provided by "pcl_ros" with any
+[0.955s]   of the following names:
+[0.955s] 
+[0.955s]     pcl_rosConfig.cmake
+[0.955s]     pcl_ros-config.cmake
+[0.955s] 
+[0.955s]   Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set
+[0.955s]   "pcl_ros_DIR" to a directory containing one of the above files.  If
+[0.955s]   "pcl_ros" provides a separate development package or SDK, be sure it has
+[0.955s]   been installed.
+[0.955s] 
+[0.955s] [0m
+[0.955s] -- Configuring incomplete, errors occurred!
+[0.955s] See also "/home/ht/ht_ws/build/fast_livo/CMakeFiles/CMakeOutput.log".
+[0.960s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '1': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo

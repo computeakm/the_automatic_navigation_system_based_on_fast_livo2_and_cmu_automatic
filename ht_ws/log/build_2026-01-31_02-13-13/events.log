@@ -1,0 +1,403 @@
+[0.000000] (-) TimerEvent: {}
+[0.000380] (vikit_common) JobQueued: {'identifier': 'vikit_common', 'dependencies': OrderedDict()}
+[0.000408] (vikit_ros) JobQueued: {'identifier': 'vikit_ros', 'dependencies': OrderedDict([('vikit_common', '/home/ht/ht_ws/install/vikit_common')])}
+[0.000438] (fast_livo) JobQueued: {'identifier': 'fast_livo', 'dependencies': OrderedDict([('vikit_common', '/home/ht/ht_ws/install/vikit_common'), ('vikit_ros', '/home/ht/ht_ws/install/vikit_ros')])}
+[0.000469] (vikit_common) JobStarted: {'identifier': 'vikit_common'}
+[0.004039] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'cmake'}
+[0.004478] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'build'}
+[0.005050] (vikit_common) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ht/ht_ws/build/vikit_common', '--', '-j16', '-l16'], 'cwd': '/home/ht/ht_ws/build/vikit_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/vikit_common'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.022184] (vikit_common) StderrLine: {'line': b'\x1b[0mCurrent CPU archtecture: x86_64\x1b[0m\n'}
+[0.022456] (vikit_common) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099834] (-) TimerEvent: {}
+[0.144625] (vikit_common) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.149541] (vikit_common) StdoutLine: {'line': b'-- Generating done\n'}
+[0.151546] (vikit_common) StdoutLine: {'line': b'-- Build files have been written to: /home/ht/ht_ws/build/vikit_common\n'}
+[0.168586] (vikit_common) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vikit_common\x1b[0m\n'}
+[0.186657] (vikit_common) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o\x1b[0m\n'}
+[0.186948] (vikit_common) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/math_utils.cpp.o\x1b[0m\n'}
+[0.187021] (vikit_common) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/vision.cpp.o\x1b[0m\n'}
+[0.187068] (vikit_common) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o\x1b[0m\n'}
+[0.187109] (vikit_common) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/performance_monitor.cpp.o\x1b[0m\n'}
+[0.187146] (vikit_common) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/user_input_thread.cpp.o\x1b[0m\n'}
+[0.187527] (vikit_common) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o\x1b[0m\n'}
+[0.189977] (vikit_common) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/equidistant_camera.cpp.o\x1b[0m\n'}
+[0.190334] (vikit_common) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/polynomial_camera.cpp.o\x1b[0m\n'}
+[0.190486] (vikit_common) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o\x1b[0m\n'}
+[0.190865] (vikit_common) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/homography.cpp.o\x1b[0m\n'}
+[0.193743] (vikit_common) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/vikit_common.dir/src/img_align.cpp.o\x1b[0m\n'}
+[0.199923] (-) TimerEvent: {}
+[0.300258] (-) TimerEvent: {}
+[0.400651] (-) TimerEvent: {}
+[0.501194] (-) TimerEvent: {}
+[0.601723] (-) TimerEvent: {}
+[0.702121] (-) TimerEvent: {}
+[0.802534] (-) TimerEvent: {}
+[0.902955] (-) TimerEvent: {}
+[1.003445] (-) TimerEvent: {}
+[1.103884] (-) TimerEvent: {}
+[1.204308] (-) TimerEvent: {}
+[1.304809] (-) TimerEvent: {}
+[1.405244] (-) TimerEvent: {}
+[1.505737] (-) TimerEvent: {}
+[1.606189] (-) TimerEvent: {}
+[1.706744] (-) TimerEvent: {}
+[1.807201] (-) TimerEvent: {}
+[1.907658] (-) TimerEvent: {}
+[2.008156] (-) TimerEvent: {}
+[2.108530] (-) TimerEvent: {}
+[2.208977] (-) TimerEvent: {}
+[2.309395] (-) TimerEvent: {}
+[2.409809] (-) TimerEvent: {}
+[2.510213] (-) TimerEvent: {}
+[2.610606] (-) TimerEvent: {}
+[2.711039] (-) TimerEvent: {}
+[2.811401] (-) TimerEvent: {}
+[2.911713] (-) TimerEvent: {}
+[3.012050] (-) TimerEvent: {}
+[3.112396] (-) TimerEvent: {}
+[3.212787] (-) TimerEvent: {}
+[3.313085] (-) TimerEvent: {}
+[3.413360] (-) TimerEvent: {}
+[3.513627] (-) TimerEvent: {}
+[3.613923] (-) TimerEvent: {}
+[3.714202] (-) TimerEvent: {}
+[3.814454] (-) TimerEvent: {}
+[3.914694] (-) TimerEvent: {}
+[4.014991] (-) TimerEvent: {}
+[4.115238] (-) TimerEvent: {}
+[4.215537] (-) TimerEvent: {}
+[4.315780] (-) TimerEvent: {}
+[4.416069] (-) TimerEvent: {}
+[4.516307] (-) TimerEvent: {}
+[4.616545] (-) TimerEvent: {}
+[4.716783] (-) TimerEvent: {}
+[4.817020] (-) TimerEvent: {}
+[4.917254] (-) TimerEvent: {}
+[5.017491] (-) TimerEvent: {}
+[5.117708] (-) TimerEvent: {}
+[5.217950] (-) TimerEvent: {}
+[5.318168] (-) TimerEvent: {}
+[5.418387] (-) TimerEvent: {}
+[5.518588] (-) TimerEvent: {}
+[5.618802] (-) TimerEvent: {}
+[5.719021] (-) TimerEvent: {}
+[5.819245] (-) TimerEvent: {}
+[5.919476] (-) TimerEvent: {}
+[6.019749] (-) TimerEvent: {}
+[6.119968] (-) TimerEvent: {}
+[6.220183] (-) TimerEvent: {}
+[6.320403] (-) TimerEvent: {}
+[6.420601] (-) TimerEvent: {}
+[6.520817] (-) TimerEvent: {}
+[6.621016] (-) TimerEvent: {}
+[6.721264] (-) TimerEvent: {}
+[6.821470] (-) TimerEvent: {}
+[6.921687] (-) TimerEvent: {}
+[7.021907] (-) TimerEvent: {}
+[7.122226] (-) TimerEvent: {}
+[7.222480] (-) TimerEvent: {}
+[7.322727] (-) TimerEvent: {}
+[7.422954] (-) TimerEvent: {}
+[7.523202] (-) TimerEvent: {}
+[7.623397] (-) TimerEvent: {}
+[7.723599] (-) TimerEvent: {}
+[7.823820] (-) TimerEvent: {}
+[7.924047] (-) TimerEvent: {}
+[8.024264] (-) TimerEvent: {}
+[8.124507] (-) TimerEvent: {}
+[8.224710] (-) TimerEvent: {}
+[8.324938] (-) TimerEvent: {}
+[8.425172] (-) TimerEvent: {}
+[8.525408] (-) TimerEvent: {}
+[8.556871] (vikit_common) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libvikit_common.so\x1b[0m\n'}
+[8.612029] (vikit_common) StdoutLine: {'line': b'[ 68%] Built target vikit_common\n'}
+[8.622188] (vikit_common) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o\x1b[0m\n'}
+[8.624902] (vikit_common) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o\x1b[0m\n'}
+[8.625024] (vikit_common) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o\x1b[0m\n'}
+[8.625433] (-) TimerEvent: {}
+[8.725604] (-) TimerEvent: {}
+[8.825851] (-) TimerEvent: {}
+[8.926129] (-) TimerEvent: {}
+[9.026368] (-) TimerEvent: {}
+[9.126608] (-) TimerEvent: {}
+[9.226842] (-) TimerEvent: {}
+[9.327087] (-) TimerEvent: {}
+[9.427345] (-) TimerEvent: {}
+[9.527614] (-) TimerEvent: {}
+[9.627978] (-) TimerEvent: {}
+[9.728392] (-) TimerEvent: {}
+[9.760197] (vikit_common) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable test_vk_common_patch_score\x1b[0m\n'}
+[9.828522] (-) TimerEvent: {}
+[9.928850] (-) TimerEvent: {}
+[9.947088] (vikit_common) StdoutLine: {'line': b'[ 89%] Built target test_vk_common_patch_score\n'}
+[10.028964] (-) TimerEvent: {}
+[10.129258] (-) TimerEvent: {}
+[10.229508] (-) TimerEvent: {}
+[10.329730] (-) TimerEvent: {}
+[10.430021] (-) TimerEvent: {}
+[10.442637] (vikit_common) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_vk_common_camera\x1b[0m\n'}
+[10.530199] (-) TimerEvent: {}
+[10.542995] (vikit_common) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_vk_common_triangulation\x1b[0m\n'}
+[10.630330] (-) TimerEvent: {}
+[10.644283] (vikit_common) StdoutLine: {'line': b'[100%] Built target test_vk_common_camera\n'}
+[10.730442] (-) TimerEvent: {}
+[10.742751] (vikit_common) StdoutLine: {'line': b'[100%] Built target test_vk_common_triangulation\n'}
+[10.748532] (vikit_common) CommandEnded: {'returncode': 0}
+[10.749137] (vikit_common) JobProgress: {'identifier': 'vikit_common', 'progress': 'install'}
+[10.755697] (vikit_common) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ht/ht_ws/build/vikit_common'], 'cwd': '/home/ht/ht_ws/build/vikit_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/vikit_common'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[10.761061] (vikit_common) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.761294] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/lib/libvikit_common.so\n'}
+[10.761681] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera\n'}
+[10.761891] (vikit_common) StdoutLine: {'line': b'-- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_camera" to ""\n'}
+[10.762028] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation\n'}
+[10.762171] (vikit_common) StdoutLine: {'line': b'-- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_triangulation" to ""\n'}
+[10.762308] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score\n'}
+[10.762626] (vikit_common) StdoutLine: {'line': b'-- Set runtime path of "/home/ht/ht_ws/install/vikit_common/lib/vikit_common/test_vk_common_patch_score" to ""\n'}
+[10.762786] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common\n'}
+[10.762938] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit\n'}
+[10.763089] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/polynomial_camera.h\n'}
+[10.763235] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/abstract_camera.h\n'}
+[10.763367] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/atan_camera.h\n'}
+[10.763527] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/homography.h\n'}
+[10.763640] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/ringbuffer.h\n'}
+[10.763715] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver.h\n'}
+[10.763790] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/math_utils.h\n'}
+[10.763868] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/img_align.h\n'}
+[10.763931] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/patch_score.h\n'}
+[10.764020] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/robust_cost.h\n'}
+[10.764095] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/vision.h\n'}
+[10.764157] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/user_input_thread.h\n'}
+[10.764219] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/equidistant_camera.h\n'}
+[10.764307] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/performance_monitor.h\n'}
+[10.764368] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/blender_utils.h\n'}
+[10.764517] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/pinhole_camera.h\n'}
+[10.764617] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/nlls_solver_impl.hpp\n'}
+[10.764677] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/omni_camera.h\n'}
+[10.764737] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader.h\n'}
+[10.764795] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/file_reader_types.h\n'}
+[10.764875] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/timer.h\n'}
+[10.764930] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/sample.h\n'}
+[10.764984] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/include/vikit_common/vikit/aligned_mem.h\n'}
+[10.765040] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.sh\n'}
+[10.765095] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/library_path.dsv\n'}
+[10.765150] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/package_run_dependencies/vikit_common\n'}
+[10.765205] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/parent_prefix_path/vikit_common\n'}
+[10.765265] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.sh\n'}
+[10.765324] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/ament_prefix_path.dsv\n'}
+[10.765382] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/path.sh\n'}
+[10.765467] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/environment/path.dsv\n'}
+[10.765642] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.bash\n'}
+[10.765703] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.sh\n'}
+[10.765762] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.zsh\n'}
+[10.765820] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/local_setup.dsv\n'}
+[10.765878] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/package.dsv\n'}
+[10.765937] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/ament_index/resource_index/packages/vikit_common\n'}
+[10.765995] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport.cmake\n'}
+[10.766054] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonExport-release.cmake\n'}
+[10.766114] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.766173] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.766232] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.766330] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.766390] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig.cmake\n'}
+[10.766552] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake/vikit_commonConfig-version.cmake\n'}
+[10.766619] (vikit_common) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_common/share/vikit_common/package.xml\n'}
+[10.766881] (vikit_common) CommandEnded: {'returncode': 0}
+[10.783791] (vikit_common) JobEnded: {'identifier': 'vikit_common', 'rc': 0}
+[10.784694] (vikit_ros) JobStarted: {'identifier': 'vikit_ros'}
+[10.790013] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'cmake'}
+[10.790592] (vikit_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/ht/ht_ws/src/rpg_vikit/vikit_ros', '-DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/vikit_ros'], 'cwd': '/home/ht/ht_ws/build/vikit_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/home/ht/ht_ws/install/vikit_common/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ht/ht_ws/install/vikit_common/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/vikit_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/ht/ht_ws/install/vikit_common')]), 'shell': False}
+[10.829197] (vikit_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[10.830502] (-) TimerEvent: {}
+[10.861474] (vikit_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[10.865735] (vikit_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.906054] (vikit_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.910571] (vikit_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[10.910755] (vikit_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.911008] (vikit_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.912713] (vikit_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.930571] (-) TimerEvent: {}
+[10.976302] (vikit_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.980435] (vikit_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[10.980555] (vikit_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.980822] (vikit_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.981719] (vikit_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[11.030656] (-) TimerEvent: {}
+[11.069558] (vikit_ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[11.115579] (vikit_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[11.130712] (-) TimerEvent: {}
+[11.136474] (vikit_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[11.138646] (vikit_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.143106] (vikit_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[11.149094] (vikit_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.157240] (vikit_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.178566] (vikit_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.179721] (vikit_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.229267] (vikit_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.230804] (-) TimerEvent: {}
+[11.249723] (vikit_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.271524] (vikit_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.275224] (vikit_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.330910] (vikit_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[11.331022] (-) TimerEvent: {}
+[11.331147] (vikit_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[11.405735] (vikit_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[11.406453] (vikit_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.431129] (-) TimerEvent: {}
+[11.433320] (vikit_ros) StdoutLine: {'line': b'-- Found vikit_common: 0.0.0 (/home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake)\n'}
+[11.444134] (vikit_ros) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[11.471769] (vikit_ros) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[11.525223] (vikit_ros) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[11.526441] (vikit_ros) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[11.529929] (vikit_ros) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[11.530611] (vikit_ros) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[11.530658] (vikit_ros) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[11.531208] (-) TimerEvent: {}
+[11.571990] (vikit_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.579306] (vikit_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[11.581652] (vikit_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/ht/ht_ws/build/vikit_ros\n'}
+[11.587480] (vikit_ros) CommandEnded: {'returncode': 0}
+[11.587917] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'build'}
+[11.588111] (vikit_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ht/ht_ws/build/vikit_ros', '--', '-j16', '-l16'], 'cwd': '/home/ht/ht_ws/build/vikit_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/home/ht/ht_ws/install/vikit_common/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ht/ht_ws/install/vikit_common/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/vikit_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/ht/ht_ws/install/vikit_common')]), 'shell': False}
+[11.622031] (vikit_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vikit_ros.dir/src/output_helper.cpp.o\x1b[0m\n'}
+[11.631305] (-) TimerEvent: {}
+[11.731518] (-) TimerEvent: {}
+[11.831742] (-) TimerEvent: {}
+[11.931970] (-) TimerEvent: {}
+[12.032191] (-) TimerEvent: {}
+[12.132419] (-) TimerEvent: {}
+[12.232625] (-) TimerEvent: {}
+[12.332848] (-) TimerEvent: {}
+[12.433075] (-) TimerEvent: {}
+[12.533364] (-) TimerEvent: {}
+[12.633572] (-) TimerEvent: {}
+[12.733799] (-) TimerEvent: {}
+[12.834018] (-) TimerEvent: {}
+[12.934249] (-) TimerEvent: {}
+[13.034495] (-) TimerEvent: {}
+[13.134705] (-) TimerEvent: {}
+[13.234948] (-) TimerEvent: {}
+[13.335216] (-) TimerEvent: {}
+[13.435473] (-) TimerEvent: {}
+[13.535705] (-) TimerEvent: {}
+[13.635926] (-) TimerEvent: {}
+[13.736109] (-) TimerEvent: {}
+[13.836389] (-) TimerEvent: {}
+[13.936670] (-) TimerEvent: {}
+[14.036954] (-) TimerEvent: {}
+[14.137185] (-) TimerEvent: {}
+[14.222311] (vikit_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvikit_ros.so\x1b[0m\n'}
+[14.237359] (-) TimerEvent: {}
+[14.299036] (vikit_ros) StdoutLine: {'line': b'[100%] Built target vikit_ros\n'}
+[14.305586] (vikit_ros) CommandEnded: {'returncode': 0}
+[14.306045] (vikit_ros) JobProgress: {'identifier': 'vikit_ros', 'progress': 'install'}
+[14.306179] (vikit_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ht/ht_ws/build/vikit_ros'], 'cwd': '/home/ht/ht_ws/build/vikit_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/home/ht/ht_ws/install/vikit_common/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ht/ht_ws/install/vikit_common/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/vikit_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/ht/ht_ws/install/vikit_common')]), 'shell': False}
+[14.310838] (vikit_ros) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[14.310932] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/include/vikit_ros\n'}
+[14.310964] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/include/vikit_ros/vikit\n'}
+[14.310992] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/include/vikit_ros/vikit/params_helper.h\n'}
+[14.311031] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/include/vikit_ros/vikit/output_helper.h\n'}
+[14.311077] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/include/vikit_ros/vikit/camera_loader.h\n'}
+[14.311110] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/lib/libvikit_ros.so\n'}
+[14.311288] (vikit_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/ht/ht_ws/install/vikit_ros/lib/libvikit_ros.so" to ""\n'}
+[14.311416] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.sh\n'}
+[14.311537] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/library_path.dsv\n'}
+[14.311641] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/ament_index/resource_index/package_run_dependencies/vikit_ros\n'}
+[14.311672] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/ament_index/resource_index/parent_prefix_path/vikit_ros\n'}
+[14.311755] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.sh\n'}
+[14.311784] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/ament_prefix_path.dsv\n'}
+[14.311866] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.sh\n'}
+[14.311937] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/environment/path.dsv\n'}
+[14.311962] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.bash\n'}
+[14.311986] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.sh\n'}
+[14.312026] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.zsh\n'}
+[14.312049] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/local_setup.dsv\n'}
+[14.312073] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv\n'}
+[14.312097] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/ament_index/resource_index/packages/vikit_ros\n'}
+[14.312136] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport.cmake\n'}
+[14.312188] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport-release.cmake\n'}
+[14.312223] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.312246] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.312270] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.312323] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.312349] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig.cmake\n'}
+[14.312374] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosConfig-version.cmake\n'}
+[14.312415] (vikit_ros) StdoutLine: {'line': b'-- Installing: /home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.xml\n'}
+[14.313377] (vikit_ros) CommandEnded: {'returncode': 0}
+[14.320280] (vikit_ros) JobEnded: {'identifier': 'vikit_ros', 'rc': 0}
+[14.320853] (fast_livo) JobStarted: {'identifier': 'fast_livo'}
+[14.325799] (fast_livo) JobProgress: {'identifier': 'fast_livo', 'progress': 'cmake'}
+[14.326239] (fast_livo) Command: {'cmd': ['/usr/bin/cmake', '/home/ht/ht_ws/src/FAST-LIVO2', '-DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo'], 'cwd': '/home/ht/ht_ws/build/fast_livo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ht'), ('XDG_SESSION_TYPE', 'wayland'), ('ROS_PACKAGE_PATH', '/home/ht/ht_ws/install/vikit_common/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ht'), ('OLDPWD', '/home/ht/ht_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1820'), ('IM_CONFIG_CHECK_ENV', '1'), ('FISHROS_URL', 'http://mirror.fishros.com/install/'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ht'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig'), ('USERNAME', 'ht'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nodejs/node-v18.12.1-linux-x64/bin/:/opt/nodejs/node-v18.12.1-linux-x64/bin/'), ('SESSION_MANAGER', 'local/ht-System-Product-Name:@/tmp/.ICE-unix/1797,unix/ht-System-Product-Name:/tmp/.ICE-unix/1797'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dccab497_47ea_4602_81b2_7097fa559ec2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1D4XJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.124'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ht/ht_ws/build/fast_livo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common')]), 'shell': False}
+[14.337471] (-) TimerEvent: {}
+[14.366694] (fast_livo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[14.412493] (fast_livo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[14.416610] (fast_livo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.437561] (-) TimerEvent: {}
+[14.471497] (fast_livo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.481276] (fast_livo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[14.481601] (fast_livo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.482095] (fast_livo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.484954] (fast_livo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.537658] (-) TimerEvent: {}
+[14.555590] (fast_livo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.559789] (fast_livo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[14.559947] (fast_livo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.560212] (fast_livo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.560508] (fast_livo) StdoutLine: {'line': b'-- Build Type: Release\n'}
+[14.560570] (fast_livo) StdoutLine: {'line': b'-- Current CPU architecture: x86_64\n'}
+[14.560595] (fast_livo) StdoutLine: {'line': b'-- Using general x86 optimizations: -O3 -march=native -mtune=native -funroll-loops\n'}
+[14.563703] (fast_livo) StdoutLine: {'line': b'-- Processor count: 16\n'}
+[14.563760] (fast_livo) StdoutLine: {'line': b'-- Multithreading enabled. Cores: 4\n'}
+[14.637760] (-) TimerEvent: {}
+[14.738013] (-) TimerEvent: {}
+[14.776721] (fast_livo) StdoutLine: {'line': b'-- OpenMP found\n'}
+[14.781115] (fast_livo) StdoutLine: {'line': b'-- mimalloc not found, proceeding without it\n'}
+[14.781761] (fast_livo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[14.838118] (-) TimerEvent: {}
+[14.865453] (fast_livo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[14.912128] (fast_livo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[14.932380] (fast_livo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[14.934494] (fast_livo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[14.938185] (-) TimerEvent: {}
+[14.938646] (fast_livo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[14.944813] (fast_livo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[14.952797] (fast_livo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.974342] (fast_livo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[14.975529] (fast_livo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[15.025234] (fast_livo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[15.038277] (-) TimerEvent: {}
+[15.043071] (fast_livo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[15.067781] (fast_livo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.071667] (fast_livo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.138447] (-) TimerEvent: {}
+[15.147887] (fast_livo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.148337] (fast_livo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.206677] (fast_livo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[15.207634] (fast_livo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.234825] (fast_livo) StdoutLine: {'line': b'-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[15.235268] (fast_livo) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[15.238489] (-) TimerEvent: {}
+[15.242321] (fast_livo) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[15.251606] (fast_livo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[15.261249] (fast_livo) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[15.275769] (fast_livo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:95 (find_package):\n'}
+[15.275891] (fast_livo) StderrLine: {'line': b'  By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[15.275923] (fast_livo) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "pcl_ros", but\n'}
+[15.275948] (fast_livo) StderrLine: {'line': b'  CMake did not find one.\n'}
+[15.275971] (fast_livo) StderrLine: {'line': b'\n'}
+[15.275995] (fast_livo) StderrLine: {'line': b'  Could not find a package configuration file provided by "pcl_ros" with any\n'}
+[15.276019] (fast_livo) StderrLine: {'line': b'  of the following names:\n'}
+[15.276041] (fast_livo) StderrLine: {'line': b'\n'}
+[15.276063] (fast_livo) StderrLine: {'line': b'    pcl_rosConfig.cmake\n'}
+[15.276085] (fast_livo) StderrLine: {'line': b'    pcl_ros-config.cmake\n'}
+[15.276108] (fast_livo) StderrLine: {'line': b'\n'}
+[15.276129] (fast_livo) StderrLine: {'line': b'  Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set\n'}
+[15.276151] (fast_livo) StderrLine: {'line': b'  "pcl_ros_DIR" to a directory containing one of the above files.  If\n'}
+[15.276172] (fast_livo) StderrLine: {'line': b'  "pcl_ros" provides a separate development package or SDK, be sure it has\n'}
+[15.276196] (fast_livo) StderrLine: {'line': b'  been installed.\n'}
+[15.276217] (fast_livo) StderrLine: {'line': b'\n'}
+[15.276238] (fast_livo) StderrLine: {'line': b'\x1b[0m\n'}
+[15.276262] (fast_livo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[15.276289] (fast_livo) StdoutLine: {'line': b'See also "/home/ht/ht_ws/build/fast_livo/CMakeFiles/CMakeOutput.log".\n'}
+[15.280879] (fast_livo) CommandEnded: {'returncode': 1}
+[15.291155] (fast_livo) JobEnded: {'identifier': 'fast_livo', 'rc': 1}
+[15.301595] (-) EventReactorShutdown: {}

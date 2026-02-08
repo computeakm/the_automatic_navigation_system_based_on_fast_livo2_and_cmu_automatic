@@ -1,0 +1,9 @@
+[0mCurrent CPU archtecture: x86_64[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    HUMBLE_ROS
+    ROS_EDITION
+
+[0m

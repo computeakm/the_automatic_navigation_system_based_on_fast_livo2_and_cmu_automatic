@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ht/ht_ws/build/realsense2_camera/realsense2_frame_latency_node" "TARGETS" "realsense2_frame_latency_node" "DESTINATION" "lib/realsense2_camera")

@@ -1,0 +1,5 @@
+[0.008s] Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+[0.051s] [ 68%] Built target vikit_common
+[0.069s] [ 78%] Built target test_vk_common_patch_score
+[0.069s] [ 89%] Built target test_vk_common_camera
+[0.070s] [100%] Built target test_vk_common_triangulation

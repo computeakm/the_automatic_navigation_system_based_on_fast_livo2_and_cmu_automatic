@@ -1,0 +1,3 @@
+Invoking command in '/home/ht/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/octomap_ros2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/octomap_server2
+Invoked command in '/home/ht/ht_ws/build/octomap_server2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/octomap_ros2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/octomap_server2
+Invoking command in '/home/ht/ht_ws/build/octomap_server2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/octomap_server2 -- -j16 -l16

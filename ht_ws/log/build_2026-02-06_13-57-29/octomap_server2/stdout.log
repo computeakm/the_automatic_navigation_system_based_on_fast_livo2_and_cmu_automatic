@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target octomap_server2[0m
+[ 33%] Built target octomap_server
+[ 50%] [32mBuilding CXX object CMakeFiles/octomap_server2.dir/src/octomap_server.cpp.o[0m

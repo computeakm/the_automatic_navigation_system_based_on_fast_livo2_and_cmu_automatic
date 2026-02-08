@@ -1,0 +1,368 @@
+[0.050s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']
+[0.050s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x789480c3b370>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x789480c3ae60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x789480c3ae60>>)
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.121s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ht/ht_ws'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/FAST-LIVO2) by extension 'ros'
+[0.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/FAST-LIVO2' with type 'ros.ament_cmake' and name 'fast_livo'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'ros'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['cmake', 'python']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'cmake'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'python'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extensions ['python_setup_py']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit) by extension 'python_setup_py'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_common) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rpg_vikit/vikit_common' with type 'ros.catkin' and name 'vikit_common'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/rpg_vikit/vikit_ros) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rpg_vikit/vikit_ros' with type 'ros.ament_cmake' and name 'vikit_ros'
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.142s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_args' from command line to '['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_first' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_force_configure' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'ament_cmake_args' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.164s] DEBUG:colcon.colcon_core.verb:Building package 'livox_ros_driver2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ht/ht_ws/build/livox_ros_driver2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ht/ht_ws/install/livox_ros_driver2', 'merge_install': False, 'path': '/home/ht/ht_ws/src/livox_ros_driver2', 'symlink_install': False, 'test_result_base': None}
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_args' from command line to '['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_target' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_clean_first' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'cmake_force_configure' from command line to 'False'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'ament_cmake_args' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.164s] Level 5:colcon.colcon_core.verb:set package 'vikit_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.164s] DEBUG:colcon.colcon_core.verb:Building package 'vikit_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ht/ht_ws/build/vikit_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ht/ht_ws/install/vikit_common', 'merge_install': False, 'path': '/home/ht/ht_ws/src/rpg_vikit/vikit_common', 'symlink_install': False, 'test_result_base': None}
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_args' from command line to '['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_target' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'vikit_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.165s] DEBUG:colcon.colcon_core.verb:Building package 'vikit_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ht/ht_ws/build/vikit_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ht/ht_ws/install/vikit_ros', 'merge_install': False, 'path': '/home/ht/ht_ws/src/rpg_vikit/vikit_ros', 'symlink_install': False, 'test_result_base': None}
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_args' from command line to '['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble']'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_target' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_clean_first' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'cmake_force_configure' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'ament_cmake_args' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'fast_livo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.165s] DEBUG:colcon.colcon_core.verb:Building package 'fast_livo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ht/ht_ws/build/fast_livo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS_EDITION=ROS2', '-DHUMBLE_ROS=humble'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ht/ht_ws/install/fast_livo', 'merge_install': False, 'path': '/home/ht/ht_ws/src/FAST-LIVO2', 'symlink_install': False, 'test_result_base': None}
+[0.165s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.166s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.166s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/ht/ht_ws/src/rpg_vikit/vikit_common' with build type 'catkin'
+[0.166s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ht/ht_ws/src/rpg_vikit/vikit_common'
+[0.167s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ht/ht_ws/src/livox_ros_driver2' with build type 'ament_cmake'
+[0.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ht/ht_ws/src/livox_ros_driver2'
+[0.169s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.169s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake /home/ht/ht_ws/src/rpg_vikit/vikit_common -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/vikit_common
+[0.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/livox_ros_driver2
+[0.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake /home/ht/ht_ws/src/rpg_vikit/vikit_common -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/vikit_common
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+[3.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/livox_ros_driver2
+[3.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/livox_ros_driver2 -- -j16 -l16
+[10.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/livox_ros_driver2 -- -j16 -l16
+[10.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/livox_ros_driver2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/ht_ws/build/livox_ros_driver2
+[10.315s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[10.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/ht_ws/build/livox_ros_driver2
+[10.317s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2' for CMake module files
+[10.318s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2' for CMake config files
+[10.318s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[10.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[10.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[10.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[10.320s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib'
+[10.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[10.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[10.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[10.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[10.321s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/bin'
+[10.321s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[10.321s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib/python3.10/site-packages'
+[10.321s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/bin'
+[10.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[10.322s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[10.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[10.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[10.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[10.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[10.323s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[10.323s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2' for CMake module files
+[10.324s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2' for CMake config files
+[10.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[10.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[10.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[10.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[10.325s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib'
+[10.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[10.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[10.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[10.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[10.325s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/bin'
+[10.325s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[10.325s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/lib/python3.10/site-packages'
+[10.326s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/livox_ros_driver2/bin'
+[10.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[10.326s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[10.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[10.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[10.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[10.327s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[12.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_common -- -j16 -l16
+[12.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_common': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common
+[12.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_common' returned '0': /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_common
+[12.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'ros_package_path')
+[12.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.ps1'
+[12.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.dsv'
+[12.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ros_package_path.sh'
+[12.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'pkg_config_path')
+[12.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.ps1'
+[12.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.dsv'
+[12.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path.sh'
+[12.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'pkg_config_path_multiarch')
+[12.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.ps1'
+[12.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.dsv'
+[12.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/pkg_config_path_multiarch.sh'
+[12.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_common)
+[12.632s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common' for CMake module files
+[12.633s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common' for CMake config files
+[12.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'cmake_prefix_path')
+[12.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.ps1'
+[12.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.dsv'
+[12.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/cmake_prefix_path.sh'
+[12.634s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common/lib'
+[12.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_common', 'ld_library_path_lib')
+[12.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.ps1'
+[12.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.dsv'
+[12.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_common/share/vikit_common/hook/ld_library_path_lib.sh'
+[12.635s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common/bin'
+[12.635s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common/lib/pkgconfig/vikit_common.pc'
+[12.635s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common/lib/python3.10/site-packages'
+[12.635s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_common/bin'
+[12.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_common/share/vikit_common/package.ps1'
+[12.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/vikit_common/share/vikit_common/package.dsv'
+[12.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_common/share/vikit_common/package.sh'
+[12.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_common/share/vikit_common/package.bash'
+[12.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_common/share/vikit_common/package.zsh'
+[12.637s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/vikit_common/share/colcon-core/packages/vikit_common)
+[12.638s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ht/ht_ws/src/rpg_vikit/vikit_ros' with build type 'ament_cmake'
+[12.638s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ht/ht_ws/src/rpg_vikit/vikit_ros'
+[12.638s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.638s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_ros': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/rpg_vikit/vikit_ros -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/vikit_ros
+[13.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/rpg_vikit/vikit_ros -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/vikit_ros
+[13.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_ros': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_ros -- -j16 -l16
+[16.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/vikit_ros -- -j16 -l16
+[16.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/vikit_ros': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_ros
+[16.153s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_ros)
+[16.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/vikit_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/vikit_ros
+[16.153s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros' for CMake module files
+[16.153s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros' for CMake config files
+[16.153s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'cmake_prefix_path')
+[16.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.ps1'
+[16.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.dsv'
+[16.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.sh'
+[16.154s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib'
+[16.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'ld_library_path_lib')
+[16.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.ps1'
+[16.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.dsv'
+[16.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.sh'
+[16.155s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/bin'
+[16.155s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib/pkgconfig/vikit_ros.pc'
+[16.155s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib/python3.10/site-packages'
+[16.155s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/bin'
+[16.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.ps1'
+[16.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv'
+[16.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.sh'
+[16.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.bash'
+[16.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.zsh'
+[16.156s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/vikit_ros/share/colcon-core/packages/vikit_ros)
+[16.156s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vikit_ros)
+[16.156s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros' for CMake module files
+[16.157s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros' for CMake config files
+[16.157s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'cmake_prefix_path')
+[16.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.ps1'
+[16.157s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.dsv'
+[16.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/cmake_prefix_path.sh'
+[16.158s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib'
+[16.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('vikit_ros', 'ld_library_path_lib')
+[16.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.ps1'
+[16.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.dsv'
+[16.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/hook/ld_library_path_lib.sh'
+[16.158s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/bin'
+[16.159s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib/pkgconfig/vikit_ros.pc'
+[16.159s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/lib/python3.10/site-packages'
+[16.159s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/vikit_ros/bin'
+[16.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.ps1'
+[16.159s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.dsv'
+[16.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.sh'
+[16.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.bash'
+[16.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/package.zsh'
+[16.160s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/vikit_ros/share/colcon-core/packages/vikit_ros)
+[16.160s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ht/ht_ws/src/FAST-LIVO2' with build type 'ament_cmake'
+[16.160s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ht/ht_ws/src/FAST-LIVO2'
+[16.160s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[19.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake /home/ht/ht_ws/src/FAST-LIVO2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/fast_livo
+[19.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[54.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[54.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo
+[54.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_livo)
+[54.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/home/ht/ht_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common:/home/ht/ht_ws/install/livox_ros_driver2 LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:/home/ht/ht_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig PYTHONPATH=/home/ht/ht_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo
+[54.142s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo' for CMake module files
+[54.143s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo' for CMake config files
+[54.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_livo', 'cmake_prefix_path')
+[54.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.ps1'
+[54.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.dsv'
+[54.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.sh'
+[54.147s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib'
+[54.147s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/bin'
+[54.147s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib/pkgconfig/fast_livo.pc'
+[54.147s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib/python3.10/site-packages'
+[54.148s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/bin'
+[54.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.ps1'
+[54.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.dsv'
+[54.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.sh'
+[54.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.bash'
+[54.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.zsh'
+[54.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/fast_livo/share/colcon-core/packages/fast_livo)
+[54.151s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fast_livo)
+[54.151s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo' for CMake module files
+[54.151s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo' for CMake config files
+[54.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('fast_livo', 'cmake_prefix_path')
+[54.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.ps1'
+[54.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.dsv'
+[54.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ht/ht_ws/install/fast_livo/share/fast_livo/hook/cmake_prefix_path.sh'
+[54.153s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib'
+[54.153s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/bin'
+[54.153s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib/pkgconfig/fast_livo.pc'
+[54.154s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/lib/python3.10/site-packages'
+[54.154s] Level 1:colcon.colcon_core.environment:checking '/home/ht/ht_ws/install/fast_livo/bin'
+[54.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.ps1'
+[54.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.dsv'
+[54.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.sh'
+[54.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.bash'
+[54.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/ht/ht_ws/install/fast_livo/share/fast_livo/package.zsh'
+[54.157s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ht/ht_ws/install/fast_livo/share/colcon-core/packages/fast_livo)
+[54.157s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[54.158s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[54.158s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[54.158s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[54.162s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[54.162s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[54.162s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[54.169s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[54.170s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ht/ht_ws/install/local_setup.ps1'
+[54.170s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ht/ht_ws/install/_local_setup_util_ps1.py'
+[54.171s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ht/ht_ws/install/setup.ps1'
+[54.172s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ht/ht_ws/install/local_setup.sh'
+[54.172s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ht/ht_ws/install/_local_setup_util_sh.py'
+[54.173s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ht/ht_ws/install/setup.sh'
+[54.174s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ht/ht_ws/install/local_setup.bash'
+[54.174s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ht/ht_ws/install/setup.bash'
+[54.174s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ht/ht_ws/install/local_setup.zsh'
+[54.175s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ht/ht_ws/install/setup.zsh'

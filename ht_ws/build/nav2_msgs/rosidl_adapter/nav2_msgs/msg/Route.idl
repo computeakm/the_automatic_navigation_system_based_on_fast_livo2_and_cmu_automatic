@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from nav2_msgs/msg/Route.msg
+// generated code does not contain a copyright notice
+
+#include "nav2_msgs/msg/RouteEdge.idl"
+#include "nav2_msgs/msg/RouteNode.idl"
+#include "std_msgs/msg/Header.idl"
+
+module nav2_msgs {
+  module msg {
+    struct Route {
+      std_msgs::msg::Header header;
+
+      float route_cost;
+
+      @verbatim (language="comment", text=
+        "ordered set of nodes of the route")
+      sequence<nav2_msgs::msg::RouteNode> nodes;
+
+      @verbatim (language="comment", text=
+        "ordered set of edges that connect nodes")
+      sequence<nav2_msgs::msg::RouteEdge> edges;
+    };
+  };
+};

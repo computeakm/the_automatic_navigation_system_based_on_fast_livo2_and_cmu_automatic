@@ -1,0 +1,129 @@
+[0.019s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/terrain_analysis -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/terrain_analysis
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.135s] -- The CXX compiler identification is GNU 11.4.0
+[0.140s] -- Detecting C compiler ABI info
+[0.200s] -- Detecting C compiler ABI info - done
+[0.205s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.205s] -- Detecting C compile features
+[0.205s] -- Detecting C compile features - done
+[0.208s] -- Detecting CXX compiler ABI info
+[0.280s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.289s] -- Detecting CXX compile features
+[0.289s] -- Detecting CXX compile features - done
+[0.292s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.445s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.503s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.525s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.557s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.561s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.568s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.577s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.591s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.622s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.624s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.678s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.698s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.735s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.742s] -- Looking for pthread.h
+[0.800s] -- Looking for pthread.h - found
+[0.801s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.866s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.868s] -- Found Threads: TRUE  
+[0.925s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.957s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.975s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.083s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.099s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.103s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.103s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.105s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.139s] -- Checking for module 'eigen3'
+[1.147s] --   Found eigen3, version 3.4.0
+[1.168s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.168s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.205s] -- Checking for module 'flann'
+[1.214s] --   Found flann, version 1.9.1
+[1.249s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.249s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.057s] -- Checking for module 'libusb-1.0'
+[2.067s] --   Found libusb-1.0, version 1.0.25
+[2.096s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.098s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.162s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.324s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.329s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.338s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.471s] -- Found Qhull version 8.0.2
+[2.611s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.758s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.759s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.760s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.761s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.762s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.763s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.764s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.765s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.765s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.766s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.768s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.769s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.770s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.771s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.772s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.773s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.774s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.775s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.776s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.777s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.778s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.778s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.779s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.780s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.781s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.784s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.799s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.899s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.899s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.900s] -- Configured cppcheck include dirs: 
+[2.900s] -- Configured cppcheck exclude dirs and/or files: 
+[2.900s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.900s] -- Configured cpplint exclude dirs and/or files: 
+[2.901s] -- Added test 'lint_cmake' to check CMake code style
+[2.903s] -- Added test 'uncrustify' to check C / C++ code style
+[2.903s] -- Configured uncrustify additional arguments: 
+[2.903s] -- Added test 'xmllint' to check XML markup files
+[2.903s] -- Configuring done
+[2.948s] -- Generating done
+[2.961s] -- Build files have been written to: /home/ht/autonomous_exploration_development_environment/build/terrain_analysis
+[2.999s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/terrain_analysis -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/terrain_analysis
+[3.001s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/terrain_analysis -- -j16 -l16
+[3.064s] [ 50%] [32mBuilding CXX object CMakeFiles/terrainAnalysis.dir/src/terrainAnalysis.cpp.o[0m
+[9.110s] [01m[K/home/ht/autonomous_exploration_development_environment/src/terrain_analysis/src/terrainAnalysis.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[9.110s] [01m[K/home/ht/autonomous_exploration_development_environment/src/terrain_analysis/src/terrainAnalysis.cpp:485:43:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[9.110s]   485 |                 if ([01;35m[Kangle4 > minDyObsVFOV && angle4 < maxDyObsVFOV[m[K || fabs(pointZ4) < absDyObsRelZThre) {
+[9.110s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[34.115s] [100%] [32m[1mLinking CXX executable terrainAnalysis[0m
+[34.705s] [100%] Built target terrainAnalysis
+[34.715s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/terrain_analysis -- -j16 -l16
+[34.716s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/terrain_analysis
+[34.721s] -- Install configuration: "Release"
+[34.721s] -- Execute custom install script
+[34.722s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/lib/terrain_analysis/terrainAnalysis
+[34.730s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/launch/terrain_analysis.launch
+[34.739s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/ament_index/resource_index/package_run_dependencies/terrain_analysis
+[34.746s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/ament_index/resource_index/parent_prefix_path/terrain_analysis
+[34.754s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/environment/ament_prefix_path.sh
+[34.760s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/environment/ament_prefix_path.dsv
+[34.766s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/environment/path.sh
+[34.771s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/environment/path.dsv
+[34.776s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/local_setup.bash
+[34.783s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/local_setup.sh
+[34.790s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/local_setup.zsh
+[34.799s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/local_setup.dsv
+[34.807s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/package.dsv
+[34.814s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/ament_index/resource_index/packages/terrain_analysis
+[34.819s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/cmake/terrain_analysisConfig.cmake
+[34.827s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/cmake/terrain_analysisConfig-version.cmake
+[34.833s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/terrain_analysis/share/terrain_analysis/package.xml
+[34.840s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/terrain_analysis' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/terrain_analysis

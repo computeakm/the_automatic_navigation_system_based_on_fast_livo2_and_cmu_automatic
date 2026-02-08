@@ -1,0 +1,57 @@
+[0.009s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target pre[0m
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target vio[0m
+[0.041s] [ 12%] Built target utils
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target lio[0m
+[0.059s] [ 18%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[0.059s] [ 25%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[0.061s] [ 31%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[0.064s] [ 37%] [32mBuilding CXX object CMakeFiles/vio.dir/src/frame.cpp.o[0m
+[0.064s] [ 43%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/vio.dir/src/visual_point.cpp.o[0m
+[0.077s] [ 56%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[10.357s] [ 62%] [32m[1mLinking CXX static library libimu_proc.a[0m
+[10.387s] [ 62%] Built target imu_proc
+[10.404s] [ 68%] [32m[1mLinking CXX static library libpre.a[0m
+[10.428s] [ 68%] Built target pre
+[18.357s] [ 75%] [32m[1mLinking CXX static library libvio.a[0m
+[18.381s] [ 75%] Built target vio
+[23.393s] [ 81%] [32m[1mLinking CXX static library liblio.a[0m
+[23.416s] [ 81%] Built target lio
+[28.940s] [ 87%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[28.991s] [ 87%] Built target laser_mapping
+[29.020s] [ 93%] [32mBuilding CXX object CMakeFiles/fastlivo_mapping.dir/src/main.cpp.o[0m
+[34.296s] [100%] [32m[1mLinking CXX executable fastlivo_mapping[0m
+[35.125s] [100%] Built target fastlivo_mapping
+[35.131s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --build /home/ht/ht_ws/build/fast_livo -- -j16 -l16
+[35.132s] Invoking command in '/home/ht/ht_ws/build/fast_livo': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo
+[35.137s] -- Install configuration: "Release"
+[35.137s] -- Execute custom install script
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/lib/fast_livo/fastlivo_mapping
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/MARS_LVIG.yaml
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/avia.yaml
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_MARS_LVIG.yaml
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_pinhole.yaml
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia.launch.py
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia_marslvig.launch.py
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/M300.rviz
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/fast_livo2.rviz
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/package_run_dependencies/fast_livo
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/parent_prefix_path/fast_livo
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.sh
+[35.138s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.dsv
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.sh
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.dsv
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.bash
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.sh
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.zsh
+[35.139s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.dsv
+[35.139s] -- Symlinking: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.dsv
+[35.144s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/packages/fast_livo
+[35.144s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.144s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig.cmake
+[35.144s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig-version.cmake
+[35.144s] -- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.xml
+[35.146s] Invoked command in '/home/ht/ht_ws/build/fast_livo' returned '0': AMENT_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ht/ht_ws/install/vikit_ros:/opt/ros/humble:/home/ht/ht_ws/install/vikit_common LD_LIBRARY_PATH=/home/ht/ht_ws/install/vikit_ros/lib:/home/ht/ht_ws/install/vikit_common/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ht/ht_ws/install/vikit_common/lib/x86_64-linux-gnu/pkgconfig:/home/ht/ht_ws/install/vikit_common/lib/pkgconfig ROS_PACKAGE_PATH=/home/ht/ht_ws/install/vikit_common/share /usr/bin/cmake --install /home/ht/ht_ws/build/fast_livo

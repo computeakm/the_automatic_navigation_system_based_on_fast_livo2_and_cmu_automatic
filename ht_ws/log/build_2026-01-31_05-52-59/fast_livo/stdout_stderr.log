@@ -1,0 +1,118 @@
+-- Build Type: Release
+-- Current CPU architecture: x86_64
+-- Using general x86 optimizations: -O3 -march=native -mtune=native -funroll-loops
+-- Processor count: 16
+-- Multithreading enabled. Cores: 4
+-- OpenMP found
+-- mimalloc not found, proceeding without it
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found livox_ros_driver2: 1.0.0 (/home/ht/ht_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+-- Found vikit_common: 0.0.0 (/home/ht/ht_ws/install/vikit_common/share/vikit_common/cmake)
+-- Found vikit_ros: 0.0.0 (/home/ht/ht_ws/install/vikit_ros/share/vikit_ros/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[33mCMake Warning (dev) at CMakeLists.txt:103 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found Eigen3: TRUE (found suitable version "3.4.0", minimum required is "3.4.0") 
+-- Configuring done
+-- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TOOLS
+
+[0m
+-- Build files have been written to: /home/ht/ht_ws/build/fast_livo
+[35m[1mConsolidate compiler generated dependencies of target utils[0m
+[35m[1mConsolidate compiler generated dependencies of target vio[0m
+[35m[1mConsolidate compiler generated dependencies of target pre[0m
+[35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
+[35m[1mConsolidate compiler generated dependencies of target imu_proc[0m
+[ 12%] Built target utils
+[35m[1mConsolidate compiler generated dependencies of target lio[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/vio.dir/src/vio.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/pre.dir/src/preprocess.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/vio.dir/src/visual_point.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vio.dir/src/frame.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m
+[ 62%] [32m[1mLinking CXX static library libpre.a[0m
+[ 62%] Built target pre
+[ 68%] [32m[1mLinking CXX static library libimu_proc.a[0m
+[ 68%] Built target imu_proc
+[ 75%] [32m[1mLinking CXX static library libvio.a[0m
+[ 75%] Built target vio
+[ 81%] [32m[1mLinking CXX static library liblio.a[0m
+[ 81%] Built target lio
+[ 87%] [32m[1mLinking CXX static library liblaser_mapping.a[0m
+[ 87%] Built target laser_mapping
+[35m[1mConsolidate compiler generated dependencies of target fastlivo_mapping[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/fastlivo_mapping.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable fastlivo_mapping[0m
+[100%] Built target fastlivo_mapping
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/lib/fast_livo/fastlivo_mapping
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/MARS_LVIG.yaml
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/avia.yaml
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_MARS_LVIG.yaml
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/config/camera_pinhole.yaml
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia.launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/launch/mapping_avia_marslvig.launch.py
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/M300.rviz
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/rviz_cfg/fast_livo2.rviz
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/package_run_dependencies/fast_livo
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/parent_prefix_path/fast_livo
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/environment/path.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.bash
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.sh
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.zsh
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/local_setup.dsv
+-- Symlinking: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.dsv
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/ament_index/resource_index/packages/fast_livo
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/cmake/fast_livoConfig-version.cmake
+-- Up-to-date symlink: /home/ht/ht_ws/install/fast_livo/share/fast_livo/package.xml

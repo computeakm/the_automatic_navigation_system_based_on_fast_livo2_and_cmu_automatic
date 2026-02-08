@@ -1,0 +1,89 @@
+[0.026s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/visualization_tools -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/visualization_tools
+[0.039s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.153s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.160s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.188s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.190s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.197s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.205s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.217s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.246s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.246s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.318s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.360s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.361s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.388s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.405s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.486s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.489s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.491s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.492s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.523s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.546s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.747s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.750s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.855s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.861s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.866s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.974s] -- Found Qhull version 8.0.2
+[1.085s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.220s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.282s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.332s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.333s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.333s] -- Configured cppcheck include dirs: 
+[1.333s] -- Configured cppcheck exclude dirs and/or files: 
+[1.333s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.334s] -- Configured cpplint exclude dirs and/or files: 
+[1.334s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.334s] -- Added test 'lint_cmake' to check CMake code style
+[1.334s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.334s] -- Added test 'uncrustify' to check C / C++ code style
+[1.334s] -- Configured uncrustify additional arguments: 
+[1.334s] -- Added test 'xmllint' to check XML markup files
+[1.336s] -- Configuring done
+[1.358s] -- Generating done
+[1.364s] -- Build files have been written to: /home/ht/autonomous_exploration_development_environment/build/visualization_tools
+[1.376s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ht/autonomous_exploration_development_environment/src/visualization_tools -DCMAKE_INSTALL_PREFIX=/home/ht/autonomous_exploration_development_environment/install/visualization_tools
+[1.377s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/visualization_tools -- -j16 -l16
+[1.409s] [35m[1mConsolidate compiler generated dependencies of target visualizationTools[0m
+[1.415s] [  0%] Built target ament_cmake_python_symlink_visualization_tools
+[1.423s] [100%] Built target visualizationTools
+[1.550s] running egg_info
+[1.550s] writing visualization_tools.egg-info/PKG-INFO
+[1.550s] writing dependency_links to visualization_tools.egg-info/dependency_links.txt
+[1.550s] writing top-level names to visualization_tools.egg-info/top_level.txt
+[1.551s] reading manifest file 'visualization_tools.egg-info/SOURCES.txt'
+[1.551s] writing manifest file 'visualization_tools.egg-info/SOURCES.txt'
+[1.566s] [100%] Built target ament_cmake_python_build_visualization_tools_egg
+[1.573s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ht/autonomous_exploration_development_environment/build/visualization_tools -- -j16 -l16
+[1.574s] Invoking command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/visualization_tools
+[1.578s] -- Install configuration: "Release"
+[1.578s] -- Execute custom install script
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/lib/visualization_tools/visualizationTools
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/launch/visualization_tools.launch
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/pythonpath.sh
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/pythonpath.dsv
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/PKG-INFO
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/top_level.txt
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools/__init__.py
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/lib/visualization_tools/realTimePlot.py
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/ament_index/resource_index/package_run_dependencies/visualization_tools
+[1.579s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/ament_index/resource_index/parent_prefix_path/visualization_tools
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/ament_prefix_path.sh
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/ament_prefix_path.dsv
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/path.sh
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/environment/path.dsv
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/local_setup.bash
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/local_setup.sh
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/local_setup.zsh
+[1.580s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/local_setup.dsv
+[1.580s] -- Symlinking: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/package.dsv
+[1.584s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/ament_index/resource_index/packages/visualization_tools
+[1.584s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/cmake/visualization_toolsConfig.cmake
+[1.584s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/cmake/visualization_toolsConfig-version.cmake
+[1.584s] -- Up-to-date symlink: /home/ht/autonomous_exploration_development_environment/install/visualization_tools/share/visualization_tools/package.xml
+[1.602s] Listing '/home/ht/autonomous_exploration_development_environment/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools'...
+[1.606s] Invoked command in '/home/ht/autonomous_exploration_development_environment/build/visualization_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ht/autonomous_exploration_development_environment/build/visualization_tools

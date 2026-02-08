@@ -1,0 +1,1 @@
+/home/ht/ht_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/srv/_safety_preset_read_s.c

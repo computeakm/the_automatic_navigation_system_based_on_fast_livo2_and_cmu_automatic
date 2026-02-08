@@ -1,0 +1,1 @@
+/home/ht/ht_ws/src/realsense-ros/realsense2_camera/include/dynamic_params.h

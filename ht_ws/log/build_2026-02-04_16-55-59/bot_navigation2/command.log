@@ -1,0 +1,6 @@
+Invoking command in '/home/ht/ht_ws/build/bot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/bot_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/bot_navigation2
+Invoked command in '/home/ht/ht_ws/build/bot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ht/ht_ws/src/bot_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ht/ht_ws/install/bot_navigation2
+Invoking command in '/home/ht/ht_ws/build/bot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/bot_navigation2 -- -j16 -l16
+Invoked command in '/home/ht/ht_ws/build/bot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ht/ht_ws/build/bot_navigation2 -- -j16 -l16
+Invoking command in '/home/ht/ht_ws/build/bot_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/ht_ws/build/bot_navigation2
+Invoked command in '/home/ht/ht_ws/build/bot_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ht/ht_ws/build/bot_navigation2

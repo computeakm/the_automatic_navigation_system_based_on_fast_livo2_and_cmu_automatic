@@ -1,0 +1,4 @@
+source;share/fast_livo/local_setup.bash
+source;share/fast_livo/local_setup.dsv
+source;share/fast_livo/local_setup.sh
+source;share/fast_livo/local_setup.zsh
