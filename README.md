@@ -5,6 +5,7 @@
 不使用gazebo的分支，理论上可以直接部署在机器上，使用ros2版本为humbel<br>
 部署流程 （ht_ws文件夹）<br>
 1. LIVOX-SDK(不要放在包下面哦ovo)<br>
+    
     git clone https://github.com/Livox-SDK/Livox-SDK2.git
     
     cd ./Livox-SDK2/
@@ -16,13 +17,15 @@
     cmake .. && make -j
     
     sudo make install
+
 2. livox_ros_driver2（这个东东记得编译的时候拿出来不然会报错，单独编译一次即可）<br>
   （去ws_livox下面启动哦，git的时候路径不要在这个下面）<br>
-  git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
   
-  cd ws_livox/src/livox_ros_driver2
+  	git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
   
-  ./build.sh humble
+  	cd ws_livox/src/livox_ros_driver2
+  
+  	./build.sh humble
   
   (ps:我里面有了，如果用我里面的可以看下面的教程，不用的可以脱出来删掉)
   
@@ -32,49 +35,54 @@
   
    2.1 修改/src/livox_ros_driver2/config/mid360配置文件（ps:我用的是mid360,其他的可能要做适配）<br>   
        可以看看参考配置：<br>
-         {
-      "lidar_summary_info" : {
-        "lidar_type": 8
-      },
-      "MID360": {
-        "lidar_net_info" : {
-          "cmd_data_port": 56100,
-          "push_msg_port": 56200,
-          "point_data_port": 56300,
-          "imu_data_port": 56400,
-          "log_data_port": 56500
-        },
-        "host_net_info" : {
-          "cmd_data_ip" : "192.168.1.51",
-          "cmd_data_port": 56101,
-          "push_msg_ip": "192.168.1.51",
-          "push_msg_port": 56201,
-          "point_data_ip": "192.168.1.51",
-          "point_data_port": 56301,
-          "imu_data_ip" : "192.168.1.51",
-          "imu_data_port": 56401,
-          "log_data_ip" : "",
-          "log_data_port": 56501
-        }
-      },
-          "lidar_configs" :[ 
-          {
-              "ip" : "192.168.1.192",
-              "pcl_data_type" : 1,
-              "pattern_mode" : 0,
-              "extrinsic_parameter" : {
-                "roll": 0.0,
-                "pitch": 0.0,
-                "yaw": 0.0,
-                "x": 0,
-                "y": 0,
-                "z": 0
-              }
-            }
-          ]
-        }
+   ```   
+         { <br>
+      "lidar_summary_info" : { <br>
+        "lidar_type": 8 <br>
+      }, <br>
+      "MID360": { <br>
+        "lidar_net_info" : { <br>
+          "cmd_data_port": 56100, <br>
+          "push_msg_port": 56200, <br>
+          "point_data_port": 56300, <br>
+          "imu_data_port": 56400, <br>
+          "log_data_port": 56500 <br>
+        }, <br>
+        "host_net_info" : { <br>
+          "cmd_data_ip" : "192.168.1.51", <br>
+          "cmd_data_port": 56101, <br>
+          "push_msg_ip": "192.168.1.51", <br>
+          "push_msg_port": 56201, <br>
+          "point_data_ip": "192.168.1.51", <br>
+          "point_data_port": 56301, <br>
+          "imu_data_ip" : "192.168.1.51", <br>
+          "imu_data_port": 56401, <br>
+          "log_data_ip" : "", <br>
+          "log_data_port": 56501 <br>
+        } <br>
+      }, <br>
+          "lidar_configs" :[  <br>
+          { <br>
+              "ip" : "192.168.1.192", <br>
+              "pcl_data_type" : 1, <br>
+              "pattern_mode" : 0, <br>
+              "extrinsic_parameter" : { <br>
+                "roll": 0.0, <br>
+                "pitch": 0.0, <br>
+                "yaw": 0.0, <br>
+                "x": 0, <br>
+                "y": 0, <br>
+                "z": 0 <br>
+              } <br>
+            } <br>
+          ] <br>
+        } <br>
+      <br>
+   ```
       2.2 修改动态链接库路径<br>
+      
         错误信息： [livox_ros_driver2_node-1] 抛出 "class_loader::LibraryLoadException" 异常 [livox_ros_driver2_node-1] 具体错误：无法加载库 dlopen 错误：liblivox_lidar_sdk_shared.so - 无法打开共享对象文件（文件不存在），位于 ./src/shared_library.c:99<br>
+        
         # 找到 Livox SDK 安装位置
         
         find ~ -name "liblivox_lidar_sdk_shared.so" 2>/dev/null
@@ -104,16 +112,20 @@
       
 4. 编译安装第三方库 Sophus<br>
   
-  git clone https://github.com/strasdat/Sophus.git
+  	git clone https://github.com/strasdat/Sophus.git
   
-  cd Sophus
+  	cd Sophus
   
-  git checkout a621ff
+  	git checkout a621ff
+   
    4.1 修改源码错误（好像是兼容性问题）<br>
-      需要修改的代码文件是sophus/so2.cpp<br>
-      将32和33行的代码，修改为如下所示<br>
-      unit_complex_.real(1.);<br>
-      unit_complex_.imag(0.);<br>
+      	需要修改的代码文件是sophus/so2.cpp<br>
+      	将32和33行的代码，修改为如下所示<br>
+      	
+      	unit_complex_.real(1.);
+      	
+      	unit_complex_.imag(0.);
+  
   
   mkdir build && cd build
   
