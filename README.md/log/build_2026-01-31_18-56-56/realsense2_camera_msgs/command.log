@@ -1,1 +1,0 @@
-Invoking command in '/home/bxi_nx/ht_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/bxi_nx/ht_ws/src/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/realsense2_camera_msgs

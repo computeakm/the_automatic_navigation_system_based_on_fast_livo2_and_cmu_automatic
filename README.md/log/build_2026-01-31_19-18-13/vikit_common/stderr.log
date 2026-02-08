@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/vikit_common.dir/build.make:293: CMakeFiles/vikit_common.dir/depend] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/vikit_common.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

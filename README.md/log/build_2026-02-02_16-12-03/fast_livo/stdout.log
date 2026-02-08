@@ -1,8 +1,0 @@
-[ 25%] Built target vio
-[35m[1mConsolidate compiler generated dependencies of target laser_mapping[0m
-[ 37%] Built target laser_mapping
-[ 50%] Built target imu_proc
-[35m[1mConsolidate compiler generated dependencies of target pre[0m
-[ 62%] Built target pre
-[ 75%] Built target utils
-[ 81%] [32mBuilding CXX object CMakeFiles/lio.dir/src/voxel_map.cpp.o[0m

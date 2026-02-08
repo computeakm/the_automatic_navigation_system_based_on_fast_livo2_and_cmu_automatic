@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblio.a CMakeFiles/lio.dir/src/voxel_map.cpp.o
-/usr/bin/ranlib liblio.a

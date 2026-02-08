@@ -1,2 +1,0 @@
-realsense2_camera::RealSenseNodeFactory;lib/librealsense2_camera.so
-rs2_ros::tools::frame_latency::FrameLatencyNode;lib/librealsense2_camera.so

@@ -1,2 +1,0 @@
-Invoking command in '/home/bxi_nx/ht_ws/build/vikit_common': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8
-Invoked command in '/home/bxi_nx/ht_ws/build/vikit_common' returned '-2': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/vikit_common -- -j8 -l8

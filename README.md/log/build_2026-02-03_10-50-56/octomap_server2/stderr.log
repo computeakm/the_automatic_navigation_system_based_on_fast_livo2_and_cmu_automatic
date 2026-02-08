@@ -1,7 +1,0 @@
-[0m** WARNING ** io features related to pcap will be disabled[0m
-[31mCMake Error at CMakeLists.txt:70 (target_compile_definitions):
-  Cannot specify compile definitions for target "octomap_server2_color" which
-  is not built by this project.
-
-[0m
-gmake: *** [Makefile:362: cmake_check_build_system] Error 1

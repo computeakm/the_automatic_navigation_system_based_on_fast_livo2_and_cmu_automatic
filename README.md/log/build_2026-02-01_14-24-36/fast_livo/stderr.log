@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/laser_mapping.dir/build.make:76: CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/laser_mapping.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

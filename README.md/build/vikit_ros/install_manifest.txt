@@ -1,3 +1,0 @@
-/home/bxi_nx/ht_ws/install/vikit_ros/lib/libvikit_ros.so
-/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport.cmake
-/home/bxi_nx/ht_ws/install/vikit_ros/share/vikit_ros/cmake/vikit_rosExport-release.cmake

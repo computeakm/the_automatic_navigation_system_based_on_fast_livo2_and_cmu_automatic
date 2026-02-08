@@ -1,6 +1,0 @@
-[ 12%] Built target utils
-[ 25%] Built target imu_proc
-[ 31%] [32mBuilding CXX object CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o[0m
-[ 43%] Built target pre
-[ 68%] Built target vio
-[ 81%] Built target lio

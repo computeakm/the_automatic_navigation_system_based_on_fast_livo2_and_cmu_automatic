@@ -1,7 +1,0 @@
-[0mCurrent CPU archtecture: aarch64[0m
-[33mCMake Warning:
-  Manually-specified variables were not used by the project:
-
-    CATKIN_INSTALL_INTO_PREFIX_ROOT
-
-[0m

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libimu_proc.a CMakeFiles/imu_proc.dir/src/IMU_Processing.cpp.o
-/usr/bin/ranlib libimu_proc.a

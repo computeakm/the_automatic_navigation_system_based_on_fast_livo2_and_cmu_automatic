@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblaser_mapping.a CMakeFiles/laser_mapping.dir/src/LIVMapper.cpp.o
-/usr/bin/ranlib liblaser_mapping.a

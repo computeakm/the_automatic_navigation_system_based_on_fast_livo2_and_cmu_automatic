@@ -1,6 +1,0 @@
-Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake /home/bxi_nx/ht_ws/src/Livox-SDK2 -DBUILD_TOOLS=ON -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/livox_sdk2
-Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake /home/bxi_nx/ht_ws/src/Livox-SDK2 -DBUILD_TOOLS=ON -DCMAKE_INSTALL_PREFIX=/home/bxi_nx/ht_ws/install/livox_sdk2
-Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
-Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/bxi_nx/ht_ws/build/livox_sdk2 -- -j8 -l8
-Invoking command in '/home/bxi_nx/ht_ws/build/livox_sdk2': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2
-Invoked command in '/home/bxi_nx/ht_ws/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/bxi_nx/ht_ws/build/livox_sdk2

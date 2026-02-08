@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvio.a CMakeFiles/vio.dir/src/vio.cpp.o CMakeFiles/vio.dir/src/frame.cpp.o CMakeFiles/vio.dir/src/visual_point.cpp.o
-/usr/bin/ranlib libvio.a
