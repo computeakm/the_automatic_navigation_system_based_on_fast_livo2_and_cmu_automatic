@@ -15,6 +15,17 @@ git clone https://github.com/Livox-SDK/Livox-SDK2.git
 cd ./Livox-SDK2/
 ```
 
+## 2. LIVOX_ROS2_Driver2
+
+```
+cd src/livox_ros_driver2
+```
+
+```
+./build.sh humble
+```
+
+
 ### 2.1 修改/src/livox\_ros\_driver2/config/mid360配置文件（ps:我用的是mid360,其他的可能要做适配）<br>
 
 可以看看参考配置:
@@ -86,7 +97,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key F6E65AC044F831AC80A
 ```
 sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u
 ```
-
 
 ```
 sudo apt-get install librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
@@ -187,5 +197,4 @@ source install/setup.bash
 
 ros2 launch vehicle_simulator system_real_robot.launch
 ```
-
 
